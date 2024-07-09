@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirza Naeem Beg - Portfolio</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/index.css">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <!-- Sidebar -->
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark sidebar">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                     <img src="assets/profile1.png" alt="Your Name" class="rounded-circle mb-3" width="150">
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
@@ -50,6 +46,11 @@
                             </a>
                         </li>
                         <li>
+                            <a href="papers.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-bookmark"></i> <span class="ms-1 d-none d-sm-inline">Papers</span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="contact.html" class="nav-link px-0 align-middle">
                                 <i class="fs-4 bi-envelope"></i> <span class="ms-1 d-none d-sm-inline">Contact</span>
                             </a>
@@ -57,7 +58,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- Main Content -->
             <div class="col py-3">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none">
                     <div class="container-fluid">
@@ -85,24 +85,32 @@
                                     <a class="nav-link" href="blog.html">Blog</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="papers.html">Papers</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
-                <section id="introduction">
-                    <h2>Introduction</h2>
-                    <p>Hello! I'm [Your Name], a 3rd-year Computer Science and Engineering undergraduate.</p>
-                    <h3>Objective</h3>
-                    <p>My goal is to explore various branches of computer science and contribute to innovative projects in the field.</p>
+                <h1 class="intro">Introduction</h1>
+                <section class="introduction">
+                    <div class="intro-container">
+                        <div class="pic-sec">
+                            <div class="photo"><img src="assets/profile2.jpeg" class="img-fluid" alt="Mirza Naeem Beg"></div>
+                            <h2 class="name">MIRZA NAEEM BEG</h2>
+                        </div><br><br><br>
+                        <div class="description">
+                            <p>Hello! I'm <strong>Mirza Naeem Beg</strong>, an enthusiastic Computer Science & Engineering undergraduate (3<sup>rd</sup> Year, 1<sup>st</sup> Semester) @ AUST, Bangladesh by maintaining a CGPA of 3.00+ out of 4.00. Originating from the vibrant city of Dhaka and growing up in the serene surroundings of Mymensingh, I have always been fascinated by the world of technology.</p>
+                            <p>My journey into the tech realm began during my high school and college years in Mymensingh, where I discovered my aspiration to become a Machine Learning Engineer. This ambition has driven me to explore various core branches of Computer Science, including <spann class="para-span">AI/ML, Web Development, Mobile App Development, Cybersecurity, Databases and Computer Networks</span>.</p>
+                            <p>With a deep-rooted interest in technology since my college days, I am committed to learning and growing in this ever-evolving field. I firmly believe that, In Sha Allah, I will become a valuable asset to the tech industry, contributing innovative solutions and advancements.</p>
+                        </div>
+                    </div>
                 </section>
-                <!-- Other sections will go here -->
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>

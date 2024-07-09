@@ -1,9 +1,8 @@
-/* General Styles */
+/* General*/
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #f1faee;
+    color: black;
     margin: 0;
     padding: 0;
 }
@@ -14,22 +13,27 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3 {
-    color: #ff006e;
-    margin-bottom: 20px;
-}
-
-/* Sidebar Styles */
+/* Sidebar */
 .sidebar {
+    margin: 10px;
     transition: all 0.3s;
+    background-color: #FAFFC4;
+    border-radius: 10px;
 }
 
 .sidebar .nav-link {
-    color: #fff;
+    margin-top: 10px;
+    padding: 0;
+    color: #000000;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    gap: 10px;
 }
 
 .sidebar .nav-link:hover {
-    color: #7386D5;
+    font-weight: 700;
+    border: 1px solid black ;
+    border-radius: 10px;
 }
 
 .sidebar img {
@@ -37,20 +41,28 @@ h1, h2, h3 {
     height: auto;
 }
 
-/* Navbar Styles */
+/* Navbar */
 .navbar {
     transition: all 0.3s;
 }
 
 .navbar-nav .nav-link {
-    color: #333;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0;
+    color: #000000;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ff006e;
+    color: black;
+    font-weight: 600;
+    border: 1px solid black ;
+    border-radius: 10px;
 }
 
-/* Section Styles */
+/* Section */
 section {
     background-color: #fff;
     padding: 20px;
@@ -59,31 +71,48 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Introduction Section */
-#introduction {
+/* Introduction */
+.intro {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
     text-align: left;
-}
-
-#introduction h1 {
     font-size: 2.5em;
 }
-
-/* Project Styles */
-.project {
-    margin-bottom: 20px;
+.pic-sec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
-
-.project h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.pic-sec .photo{
+    max-width: 400px;
+    object-fit: cover;
 }
-
-/* Contact Section */
-#contact p {
-    font-size: 1.1em;
+.name{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: #2ec4b6;
 }
-
-/* Responsive Styles */
+strong{
+    color: #0ead69;
+    font-family: 'Times New Roman', Times, serif;
+}
+.description{
+    margin: 10px;
+    padding: 15px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: 4px dashed #15616d;
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+}
+.para-span{
+    font-style: italic;
+    font-weight: 550;
+}
+/* Responsive */
 @media (max-width: 767.98px) {
     .sidebar {
         display: none;
