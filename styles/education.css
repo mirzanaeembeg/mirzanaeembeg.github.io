@@ -82,6 +82,9 @@ section {
     max-width: 100px;
     height: auto;
 }
+.fonts{
+    font-family: 'Courier New', Courier, monospace;
+}
 /* Responsive */
 @media (max-width: 767.98px) {
     .sidebar {
