@@ -9,10 +9,10 @@ body {
 
 .container {
     max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
 }
-
+.last-card {
+    max-width: 900px;
+}
 /* Sidebar */
 .sidebar {
     margin: 10px;
@@ -66,8 +66,6 @@ body {
 /* Section */
 section {
     background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -86,7 +84,7 @@ section {
 }
 
 .carousel-item img {
-    height: 200px;
+    max-height: 500px;
     object-fit: cover;
     width: 100%;
 }

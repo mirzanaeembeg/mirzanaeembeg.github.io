@@ -1,0 +1,71 @@
+We will focus on the GPA data you provided for courses related to different programming languages. Here's a summary:
+
+### Course GPAs:
+- **C Language:**
+  - Theory: 3.0/4.0 (3 Credits)
+  - Lab: 3.25/4.0 (1.5 Credits)
+
+- **Data Structures in C++:**
+  - Theory: 2.75/4.0 (3 Credits)
+  - Lab: 3.25/4.0 (1.5 Credits)
+
+- **Algorithms in C++:**
+  - Theory: 3.0/4.0 (3 Credits)
+  - Lab: 2.5/4.0 (1.5 Credits)
+
+- **OOP in Java:**
+  - Theory: 3.0/4.0 (3 Credits)
+  - Lab: 4.0/4.0 (1.5 Credits)
+
+### Calculating the Weighted GPA:
+1. **C Language:**
+   - Total Credits: 4.5
+   - Total Grade Points: (3.0 * 3) + (3.25 * 1.5) = 9 + 4.875 = 13.875
+   - GPA: 13.875 / 4.5 = 3.0833
+
+2. **Data Structures in C++:**
+   - Total Credits: 4.5
+   - Total Grade Points: (2.75 * 3) + (3.25 * 1.5) = 8.25 + 4.875 = 13.125
+   - GPA: 13.125 / 4.5 = 2.9167
+
+3. **Algorithms in C++:**
+   - Total Credits: 4.5
+   - Total Grade Points: (3.0 * 3) + (2.5 * 1.5) = 9 + 3.75 = 12.75
+   - GPA: 12.75 / 4.5 = 2.8333
+
+4. **OOP in Java:**
+   - Total Credits: 4.5
+   - Total Grade Points: (3.0 * 3) + (4.0 * 1.5) = 9 + 6 = 15
+   - GPA: 15 / 4.5 = 3.3333
+
+### Calculating Overall Proficiency (Weighted Average GPA):
+Total Credits = 4.5 + 4.5 + 4.5 + 4.5 = 18
+Total Grade Points = 13.875 + 13.125 + 12.75 + 15 = 54.75
+
+Overall GPA = 54.75 / 18 = 3.0417
+
+### Calculating Percentages:
+- **GPA to Percentage Conversion (Assuming GPA 4.0 = 100%):**
+  - C Language: 3.0833 / 4.0 * 100 = 77.08%
+  - Data Structures in C++: 2.9167 / 4.0 * 100 = 72.92%
+  - Algorithms in C++: 2.8333 / 4.0 * 100 = 70.83%
+  - OOP in Java: 3.3333 / 4.0 * 100 = 83.33%
+
+### Language Proficiency:
+- **C Language Proficiency:** 77.08%
+- **C++ Language Proficiency:** (Weighted Average of Data Structures and Algorithms)
+  - (72.92% + 70.83%) / 2 = 71.88%
+- **Java Language Proficiency:** 83.33%
+
+**Overall Language Proficiency (Average of all):**
+(77.08% + 71.88% + 83.33%) / 3 = 77.43%
+
+### Summary:
+- **C Language Proficiency:** 77.08%
+- **C++ Language Proficiency:** 71.88%
+- **Java Language Proficiency:** 83.33%
+- **Overall Language Proficiency:** 77.43%
+
+And I have completed the basic Python course from YouTube and also enrolled in the Code In Place (A course of Python Language) by Stanford University. From these I assume my Python proficiency is 72%.
+
+These percentages give a clear picture of my proficiency in each language based on my course performance.
