@@ -85,15 +85,16 @@ section {
     flex-direction: column;
     gap: 20px;
 }
-.pic-sec .photo{
+.pic-sec .photo .img-fluid{
     max-width: 400px;
     object-fit: cover;
+    border-radius: 40%;
 }
 .name{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     font-size: 2.5em;
-    color: #2ec4b6;
+    color: #03045e;
 }
 strong{
     color: #0ead69;
@@ -112,6 +113,18 @@ strong{
 .para-span{
     font-style: italic;
     font-weight: 550;
+}
+
+.word{
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    background-color: azure;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border: 1px #0ead69 solid;
+    border-radius: 50px;
+    box-shadow: 0 0 2px;
 }
 /* Responsive */
 @media (max-width: 767.98px) {
