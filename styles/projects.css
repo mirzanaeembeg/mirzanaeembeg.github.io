@@ -13,6 +13,9 @@ body {
 .last-card {
     max-width: 900px;
 }
+.card-body{
+    padding: 20px;
+}
 /* Sidebar */
 .sidebar {
     margin: 10px;

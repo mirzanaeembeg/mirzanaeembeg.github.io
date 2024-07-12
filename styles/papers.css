@@ -1,0 +1,154 @@
+/* General*/
+body {
+    line-height: 1.6;
+    background-color: #f1faee;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    margin: 10px;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+    background-color: #FAFFC4;
+    border-radius: 10px;
+}
+
+.sidebar .nav-link {
+    margin-top: 10px;
+    padding: 0;
+    color: #000000;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    gap: 10px;
+}
+
+.sidebar .nav-link:hover {
+    font-weight: 700;
+    border: 1px solid black ;
+    border-radius: 10px;
+}
+
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s;
+}
+
+.navbar-nav .nav-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0;
+    color: #000000;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black;
+    font-weight: 600;
+    border: 1px solid black ;
+    border-radius: 10px;
+}
+
+/* Section */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Papers */
+.intro {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    text-align: left;
+    font-size: 2.5em;
+}
+
+.papers-header {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+.paper-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.paper-card:hover {
+    transform: translateY(-5px);
+}
+.paper-card-body {
+    padding: 20px;
+}
+.paper-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #007bff;
+}
+.badge-custom {
+    background-color: #e7f5ff;
+    color: #007bff;
+    font-weight: normal;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.paper-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.paper-link:hover {
+    color: #0056b3;
+}
+.paper-abstract {
+    font-style: italic;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+.fonts{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Responsive */
+@media (max-width: 767.98px) {
+    .sidebar {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+    }
+}
