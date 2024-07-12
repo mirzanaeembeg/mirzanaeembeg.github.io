@@ -1,7 +1,7 @@
 /* General*/
 body {
     line-height: 1.6;
-    background-color: #f1faee;
+    background-color: #ffffff;
     color: black;
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body {
     margin: 10px;
     margin-bottom: 30px;
     transition: all 0.3s;
-    background-color: #FAFFC4;
+    background-color: #e9f7ff;
     border-radius: 10px;
 }
 
