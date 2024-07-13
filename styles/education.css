@@ -106,3 +106,30 @@ section {
         display: block;
     }
 }
+
+/* New styles for centering icons on small screens */
+@media (max-width: 767.98px) {
+    .card-body .row {
+        flex-direction: column;
+    }
+
+    .card-body .col-md-2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .university-logo {
+        max-width: 120px;  /* Slightly larger for better visibility */
+    }
+
+    .card-body .col-md-10 {
+        text-align: center;
+    }
+
+    .card-body h3.card-title,
+    .card-body h4.card-subtitle,
+    .card-body p.card-text {
+        text-align: center;
+    }
+}
