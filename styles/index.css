@@ -1,4 +1,4 @@
-/* General*/
+/* General */
 body {
     line-height: 1.6;
     background-color: #fff;
@@ -33,7 +33,7 @@ body {
 
 .sidebar .nav-link:hover {
     font-weight: 700;
-    border: 1px solid black ;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
@@ -59,7 +59,7 @@ body {
 .navbar-nav .nav-link:hover {
     color: black;
     font-weight: 600;
-    border: 1px solid black ;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
@@ -79,49 +79,58 @@ section {
     text-align: left;
     font-size: 2.5em;
 }
-.pic-sec{
+
+.pic-sec {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
 }
-.pic-sec .photo .img-fluid{
+
+.pic-sec .photo .img-fluid {
     max-width: 400px;
     object-fit: cover;
     border-radius: 40%;
 }
-.name{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     font-size: 2.5em;
     color: #03045e;
+    text-align: center;
+    word-wrap: break-word;
 }
-strong{
+
+strong {
     color: #0ead69;
     font-family: 'Times New Roman', Times, serif;
 }
-.description{
+
+.description {
     margin: 10px;
     padding: 15px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
     font-weight: 400;
     border: 4px dashed #15616d;
     box-shadow: 0 0 5px;
     border-radius: 10px;
 }
-.para-span{
+
+.para-span {
     font-style: italic;
     font-weight: 550;
 }
 
-.word{
+.word {
     font-size: 2rem;
     font-weight: 100;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 100px;
 }
+
 /* Responsive */
 @media (max-width: 767.98px) {
     .sidebar {
@@ -130,6 +139,22 @@ strong{
 
     .navbar {
         display: block;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .word {
+        font-size: 1.5rem;
+    }
+
+    .intro {
+        font-size: 2em;
     }
 }
 
@@ -140,5 +165,24 @@ strong{
 
     .sidebar {
         display: block;
+    }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 575.98px) {
+    .description {
+        font-size: 1rem;
+    }
+
+    .name {
+        font-size: 1.5em;
+    }
+
+    .word {
+        font-size: 1.2rem;
+    }
+
+    .intro {
+        font-size: 1.8em;
     }
 }
