@@ -80,12 +80,6 @@ section {
     font-size: 2.5em;
 }
 
-.contact-container {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
 .text-emphasis {
     color: #3498db;
 }
@@ -94,10 +88,34 @@ section {
     align-items: center;
     margin-bottom: 20px;
 }
-.icon {
-    font-size: 24px;
-    margin-right: 15px;
-    color: #3498db;
+
+.icon-link {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+    transform: scale(1.2);
+}
+
+.email-icon {
+    color: #D44638;
+}
+
+.linkedin-icon {
+    color: #0077B5;
+}
+
+.github-icon {
+    color: #333;
+}
+
+.facebook-icon {
+    color: #1877F2;
+}
+
+.instagram-icon {
+    color: #E4405F;
 }
 .contact-info {
     flex-grow: 1;
