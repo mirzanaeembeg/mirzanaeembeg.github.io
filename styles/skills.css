@@ -1,4 +1,4 @@
-/* General*/
+/* General styles */
 body {
     line-height: 1.6;
     background-color: #fff;
@@ -33,7 +33,7 @@ body {
 
 .sidebar .nav-link:hover {
     font-weight: 700;
-    border: 1px solid black ;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
@@ -59,7 +59,7 @@ body {
 .navbar-nav .nav-link:hover {
     color: black;
     font-weight: 600;
-    border: 1px solid black ;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
@@ -71,91 +71,130 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.container {
+    max-width: 1140px;
+}
 
-/* Skills */
-.intro {
-    font-family: 'Times New Roman', Times, serif;
-    color: #000000;
-    text-align: left;
-    font-size: 2.5em;
+/* Skills section */
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+/* Skills section */
+#skills {
+    background-color: #f8f9fa;
+    padding: 60px 0;
 }
 
 .skill-section {
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px;
     margin-bottom: 30px;
 }
-.skill-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #007bff;
-}
+
 .skill-title {
     font-weight: bold;
     margin-bottom: 20px;
     color: #343a40;
 }
-.tech-tools-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 300px;
-    margin: 0 auto;
+
+/* Progress bars */
+.skill-item {
+    margin-bottom: 15px;
 }
 
-.skill-item {
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.progress {
+    height: 25px;
     background-color: #e9ecef;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin: 5px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: flex-start;
+    height: 100%;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    transition: width 0.6s ease;
+}
+
+.overall .progress-bar {
+    background-color: #28a745;
+}
+
+/* Technologies and Tools */
+.tech-tools-container .skill-item {
+    background-color: #e9ecef;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
     font-size: 0.9rem;
     color: #495057;
     transition: all 0.3s ease;
 }
 
-.skill-item:hover {
+.tech-tools-container .skill-item:hover {
     background-color: #007bff;
     color: #ffffff;
-    transform: translateX(10px);
+    transform: translateX(5px);
 }
 
-.skill-item i {
+.tech-tools-container .skill-item i {
     margin-right: 10px;
-    width: 20px;
-    text-align: center;
-}
-.progress {
-    height: 10px;
-    margin-bottom: 10px;
-}
-.progress-bar {
-    background-color: #007bff;
-}
-.fonts{
-    font-family: 'Courier New', Courier, monospace;
-}
-/* Responsive */
-@media (max-width: 767.98px) {
-    .sidebar {
-        display: none;
-    }
-
-    .navbar {
-        display: block;
-    }
 }
 
-@media (min-width: 768px) {
-    .navbar {
-        display: none;
-    }
+/* Soft Skills cards */
+.card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
-    .sidebar {
-        display: block;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tech-tools-container .skill-item {
+        font-size: 0.8rem;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skill-section {
+        padding: 20px;
     }
 }
