@@ -16,6 +16,9 @@ body {
 .card-body{
     padding: 20px;
 }
+.card-title {
+    color: #007bff;
+}
 /* Sidebar */
 .sidebar {
     margin: 10px;

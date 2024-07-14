@@ -80,6 +80,9 @@ section {
     font-size: 2.5em;
 }
 
+.card-title {
+    color: #007bff;
+}
 .text-emphasis {
     color: #3498db;
 }

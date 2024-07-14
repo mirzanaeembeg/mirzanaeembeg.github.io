@@ -87,6 +87,12 @@ body {
     max-width: 1140px;
 }
 
+.intro {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    text-align: left;
+    font-size: 2.5em;
+}
 /* Skills section */
 #skills {
     background-color: #f8f9fa;
@@ -119,26 +125,41 @@ body {
 }
 
 .progress {
-    height: 25px;
+    height: 40px;
     background-color: #e9ecef;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.progress:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .progress-bar {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100%;
-    background-color: #007bff;
-    color: white;
+    padding-left: 15px;
     font-weight: bold;
-    padding-left: 10px;
+    color: #ffffff;
+    background-color: #007bff;
     transition: width 0.6s ease;
+}
+
+.progress-bar::before {
+    content: "\f121"; /* This is the Font Awesome code for the 'code' icon */
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
 }
 
 .overall .progress-bar {
     background-color: #28a745;
+}
+
+.overall .progress-bar::before {
+    content: "\f201"; /* This is the Font Awesome code for the 'chart' icon */
 }
 
 /* Technologies and Tools */
@@ -179,7 +200,6 @@ body {
 
 .card-title {
     color: #007bff;
-    font-weight: bold;
 }
 
 /* Responsive adjustments */

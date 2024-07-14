@@ -128,7 +128,9 @@ section {
     color: #6c757d;
     margin-top: 10px;
 }
-
+.card-title {
+    color: #007bff;
+}
 .fonts{
     font-family: 'Courier New', Courier, monospace;
 }
