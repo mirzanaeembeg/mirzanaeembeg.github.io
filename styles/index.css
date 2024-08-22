@@ -87,6 +87,7 @@ section {
 
 .pic-sec {
     display: flex;
+    text-align: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -107,6 +108,7 @@ section {
 .name {
     font-family: "Marck Script", cursive;
     font-weight: 500;
+    margin-bottom: 0;
     font-size: 2em;
     color: #03045e;
     text-align: center;
@@ -161,11 +163,28 @@ strong {
     margin-bottom: 100px;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .icon-link {
+    font-size: 1.5rem;
+    color: #333; /* Adjust color as needed */
+    transition: color 0.3s ease;
+  }
+  
+  .icon-link:hover {
+    color: #007bff; /* Adjust hover color as needed */
+  }
+
 /* Typewriter effect */
 .typewriter-container {
     text-align: center;
     min-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 #typewriter {
