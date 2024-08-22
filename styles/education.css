@@ -37,6 +37,7 @@ body {
   border: 1px solid black;
   border-radius: 10px;
   background-color: #d4f0ff;
+  transform: translateX(5px);
 }
 
 .sidebar img {

@@ -41,6 +41,7 @@ body {
     font-weight: 700;
     border: 1px solid black ;
     border-radius: 10px;
+    transform: translateX(5px);
 }
 
 .sidebar img {
@@ -75,7 +76,6 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 /* Introduction */
 .intro {
     font-family: 'Times New Roman', Times, serif;

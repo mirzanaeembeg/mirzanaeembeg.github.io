@@ -35,6 +35,7 @@ body {
     font-weight: 700;
     border: 1px solid black ;
     border-radius: 10px;
+    transform: translateX(5px);
 }
 
 .sidebar img {
@@ -80,9 +81,6 @@ section {
     font-size: 2.5em;
 }
 
-.card-title {
-    color: #007bff;
-}
 .text-emphasis {
     color: #3498db;
 }
