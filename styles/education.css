@@ -1,140 +1,144 @@
 /* General */
 body {
-    line-height: 1.6;
-    background-color: #fff;
-    color: black;
-    margin: 0;
-    padding: 0;
+  line-height: 1.6;
+  background-color: #fff;
+  color: black;
+  margin: 0;
+  padding: 0;
 }
 
-.card-title {
-    color: #007bff;
-}
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Sidebar */
 .sidebar {
-    margin: 10px;
-    margin-bottom: 30px;
-    transition: all 0.3s;
-    background-color: #e9f7ff;
-    border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+  background-color: #e9f7ff;
+  border-radius: 10px;
 }
 
 .sidebar .nav-link {
-    margin-top: 10px;
-    padding: 0;
-    color: #000000;
-    font-size: x-large;
-    font-family: 'Courier New', Courier, monospace;
-    gap: 10px;
+  margin-top: 10px;
+  padding: 0;
+  color: #000000;
+  font-size: x-large;
+  font-family: 'Courier New', Courier, monospace;
+  gap: 10px;
+  transition: all 0.3s;
 }
 
 .sidebar .nav-link:hover {
-    font-weight: 700;
-    border: 1px solid black ;
-    border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #d4f0ff;
 }
 
 .sidebar img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Navbar */
 .navbar {
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navbar-nav .nav-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 0;
-    color: #000000;
-    font-size: large;
-    font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0;
+  color: #000000;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: black;
-    font-weight: 600;
-    border: 1px solid black ;
-    border-radius: 10px;
+  color: black;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #f5f5f5;
 }
 
 /* Section */
 section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Education */
 .intro {
-    font-family: 'Times New Roman', Times, serif;
-    color: #000000;
-    text-align: left;
-    font-size: 2.5em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  text-align: left;
+  font-size: 2.5em;
 }
+
 .university-logo {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
-.fonts{
-    font-family: 'Courier New', Courier, monospace;
+
+.fonts {
+  font-family: 'Courier New', Courier, monospace;
 }
+
 /* Responsive */
 @media (max-width: 767.98px) {
-    .sidebar {
-        display: none;
-    }
+  .sidebar {
+      display: none;
+  }
 
-    .navbar {
-        display: block;
-    }
+  .navbar {
+      display: block;
+  }
 }
 
 @media (min-width: 768px) {
-    .navbar {
-        display: none;
-    }
+  .navbar {
+      display: none;
+  }
 
-    .sidebar {
-        display: block;
-    }
+  .sidebar {
+      display: block;
+  }
 }
 
 /* New styles for centering icons on small screens */
 @media (max-width: 767.98px) {
-    .card-body .row {
-        flex-direction: column;
-    }
+  .card-body .row {
+      flex-direction: column;
+  }
 
-    .card-body .col-md-2 {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
+  .card-body .col-md-2 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
 
-    .university-logo {
-        max-width: 120px;  /* Slightly larger for better visibility */
-    }
+  .university-logo {
+      max-width: 120px;  /* Slightly larger for better visibility */
+  }
 
-    .card-body .col-md-10 {
-        text-align: center;
-    }
+  .card-body .col-md-10 {
+      text-align: center;
+  }
 
-    .card-body h3.card-title,
-    .card-body h4.card-subtitle,
-    .card-body p.card-text {
-        text-align: center;
-    }
+  .card-body h3.card-title,
+  .card-body h4.card-subtitle,
+  .card-body p.card-text {
+      text-align: center;
+  }
 }
