@@ -23,7 +23,6 @@ body {
 .sidebar {
     margin: 10px;
     margin-bottom: 30px;
-    width: 18%;
     transition: all 0.3s;
     background-color: #e9f7ff;
     border-radius: 10px;
