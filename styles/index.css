@@ -135,7 +135,7 @@ section {
 }
 
 strong {
-    color: plum;
+    color: orchid;
     font-family: "Moderustic", sans-serif;
 }
 
@@ -152,8 +152,8 @@ strong {
 }
 
 .para-span {
-    font-style: italic;
-    font-weight: 700;
+    font-family: "Moderustic", sans-serif;;
+    font-weight: 100;
 }
 
 .word {
@@ -173,12 +173,14 @@ strong {
   
   .icon-link {
     font-size: 1.5rem;
-    color: #333; /* Adjust color as needed */
-    transition: color 0.3s ease;
   }
   
-  .icon-link:hover {
-    color: #007bff; /* Adjust hover color as needed */
+  .in{
+    color: #0077B5;
+  }
+
+  .gh{
+    color: black;
   }
 
 /* Typewriter effect */
