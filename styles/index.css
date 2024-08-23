@@ -20,6 +20,8 @@ body {
 .sidebar {
     margin: 10px;
     margin-bottom: 30px;
+    width: 18%;
+    /* position: relative; */
     transition: all 0.3s;
     background-color: #e9f7ff;
     border-radius: 10px;
@@ -166,7 +168,7 @@ strong {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.2rem;
     margin-bottom: 3rem;
   }
   
@@ -185,6 +187,7 @@ strong {
     text-align: center;
     min-height: 50px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 #typewriter {
@@ -248,7 +251,7 @@ strong {
         font-size: 1.8em;
     }
 
-    #typewriter {
+    /* #typewriter {
         font-size: 1em;
-    }
+    } */
 }
