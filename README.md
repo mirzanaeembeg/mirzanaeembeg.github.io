@@ -37,7 +37,7 @@ This portfolio project serves as a comprehensive overview of my educational back
 
 ### Usage
 
-#### Go tom your browser and visit: mirza-naeembeg.github.io
+#### Go tom your browser and visit: naeembeg.github.io
 
 ## Contributing
 
