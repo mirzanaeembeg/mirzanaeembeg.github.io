@@ -142,7 +142,7 @@ strong {
 .description {
     margin: 10px;
     padding: 15px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Moderustic", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
     border: 4px dashed #15616d;
@@ -151,10 +151,10 @@ strong {
     background: linear-gradient(145deg, #f3f4f6, #ffffff);
 }
 
-.para-span {
-    font-family: "Moderustic", sans-serif;;
+/*.para-span {
+    font-family: "Moderustic", sans-serif;
     font-weight: 100;
-}
+}*/
 
 .word {
     font-size: 2rem;
