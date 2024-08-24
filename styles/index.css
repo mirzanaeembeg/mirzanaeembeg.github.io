@@ -142,7 +142,7 @@ strong {
 .description {
     margin: 10px;
     padding: 15px;
-    font-family: "Moderustic", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
     font-weight: 400;
     border: 4px dashed #15616d;
