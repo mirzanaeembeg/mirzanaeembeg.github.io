@@ -168,7 +168,7 @@ strong {
     display: flex;
     justify-content: center;
     gap: 1.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
   }
   
   .icon-link {
@@ -197,6 +197,34 @@ strong {
     color: grey;
 }
 
+/*CV Button*/
+.cv-button-container {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  
+  .cv-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: black; /* Change this to match your color scheme */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cv-button:hover {
+    background-image: linear-gradient(to right,#FF2A67,#FF5D3A);
+    color: #fff;
+    box-shadow: 4px 5px 27px 4px rgba(255,45,45,0.85);
+    transition: background-image .3s linear;
+    transition: box-shadow .3s linear;
+  }
+  
+  .cv-button i {
+    margin-right: 5px;
+  }
 /* Responsive */
 @media (max-width: 767.98px) {
     .sidebar {
