@@ -206,7 +206,7 @@ strong {
   .cv-button {
     display: inline-block;
     padding: 10px;
-    background-color: black; /* Change this to match your color scheme */
+    background-color: red; /* Change this to match your color scheme */
     color: white;
     text-decoration: none;
     border-radius: 50px;
