@@ -139,6 +139,10 @@ strong {
     font-family: "Moderustic", sans-serif;
 }
 
+.emoji{
+    font-size: 1.9rem;
+    color: limegreen;
+}
 .description {
     margin: 10px;
     padding: 15px;
