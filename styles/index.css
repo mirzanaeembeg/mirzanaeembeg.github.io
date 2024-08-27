@@ -128,12 +128,12 @@ section {
     height: 3px;
     bottom: -5px;
     left: 0;
-    background: linear-gradient(90deg, #0ead69, #03045e);
+    background: linear-gradient(90deg, orange,#E85C90, #0D41E1);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
-.name:hover::after {
+.name:after {
     transform: scaleX(1);
 }
 
@@ -215,7 +215,11 @@ strong {
 #typewriter {
     font-family:"Jersey 10", sans-serif;
     font-size: 2em;
-    color: grey;
+    color: gray;
+    /* background: linear-gradient(to right, gray, green, orchid);
+    color: transparent;
+    background-clip: text;
+    display: inline-block; */
 }
 
 /*CV Button*/
