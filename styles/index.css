@@ -188,21 +188,13 @@ strong {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 1rem;
     margin-bottom: 0;
   }
   
   .icon-link {
     font-size: 1.5rem;
   }
- 
-  /* .in{
-    color: #0077B5;
-  }
-
-  .gh{
-    color: black;
-  } */
 
 /* Typewriter effect */
 .typewriter-container {
