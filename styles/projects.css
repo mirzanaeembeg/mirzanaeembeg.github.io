@@ -12,16 +12,10 @@ body {
 
 .container {
     max-width: 900px;
-}
-.last-card {
-    max-width: 900px;
-}
-.card-body{
+    margin: 0 auto;
     padding: 20px;
-}
-.card-title {
-    color: #007bff;
-}
+  }
+  
 /* Sidebar */
 .sidebar {
     margin: 10px;
@@ -76,6 +70,8 @@ body {
 /* Section */
 section {
     background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
