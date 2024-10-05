@@ -3,7 +3,7 @@
 
 # Portfolio Project
 
-Welcome to my portfolio project repository! This project showcases my skills, projects, and achievements in the field of computer science.
+Welcome to my portfolio project repository! This project showcases my skills, projects and achievements in the field of computer science.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ Welcome to my portfolio project repository! This project showcases my skills, pr
 
 ## About
 
-This portfolio project serves as a comprehensive overview of my educational background, skills, and practical experience in various programming languages and technologies. It includes sections detailing my education, projects, skills, learnings, and more.
+This portfolio project serves as a comprehensive overview of my educational background, skills, and practical experience in various programming languages and technologies. It includes sections detailing my education, projects, skills, learnings and more.
 
 ## Features
 
@@ -26,7 +26,6 @@ This portfolio project serves as a comprehensive overview of my educational back
 - **Skills:** An overview of my technical skills, including programming languages, frameworks, and tools.
 - **Learnings:** Information on online courses, certifications, and workshops completed related to computer science.
 - **Papers:** Section for academic papers, if applicable.
-- **Blogs:** Details about ongoing and completed courses to further enhance my skills.
 - **Contact:** How to reach out to me for collaborations or inquiries.
 
 ## Technologies Used
@@ -37,7 +36,7 @@ This portfolio project serves as a comprehensive overview of my educational back
 
 ### Usage
 
-#### Go tom your browser and visit: naeembeg.github.io
+#### Go to your browser and visit: [https://naeembeg.github.io/](https://naeembeg.github.io/)
 
 ## Contributing
 
