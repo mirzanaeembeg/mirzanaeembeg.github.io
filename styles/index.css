@@ -107,7 +107,7 @@ section {
 .pic-sec .photo .img-fluid {
     max-width: 360px;
     object-fit: cover;
-    border-radius: 40%;
+    border-radius: 50%;
     transition: transform 0.3s ease-in-out;
 }
 
