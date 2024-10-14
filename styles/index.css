@@ -101,7 +101,7 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .pic-sec .photo .img-fluid {
