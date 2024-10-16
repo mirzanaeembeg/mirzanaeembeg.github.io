@@ -153,8 +153,8 @@ strong {
     justify-content: flex-start;
     padding-left: 15px;
     font-weight: bold;
-    color: black;
-    background-color: coral;
+    color: white;
+    background-color: dodgerblue;
     transition: width 0.6s ease;
 }
 
@@ -164,10 +164,10 @@ strong {
     margin-right: 10px;
 }
 
-/* .overall .progress-bar {
+.overall .progress-bar {
     color: #ffffff;
     background-color: #03045e;
-} */
+}
 
 .overall .progress-bar::before {
     content: "\f201"; /* This is the Font Awesome code for the 'chart' icon */
