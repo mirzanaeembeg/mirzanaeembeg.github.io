@@ -72,6 +72,7 @@ body {
     text-align: center;
     margin-bottom: 2em;
     margin-top: .5em;
+    color: #03045e;
 }
 
 .pic-sec .photo .img-fluid {
@@ -159,7 +160,7 @@ body {
 }
 
 strong {
-    color: black;
+    color: #03045e;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }

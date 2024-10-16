@@ -71,6 +71,7 @@ body {
     margin-top: .5em;
     text-align: center;
     margin-bottom: 1.5em;
+    color: #03045e;
 }
 
 .row{
@@ -152,7 +153,7 @@ body {
 }
 
 strong {
-  color: black;
+  color: #03045e;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
 }
