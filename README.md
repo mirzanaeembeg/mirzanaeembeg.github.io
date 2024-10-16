@@ -36,6 +36,8 @@ This portfolio project serves as a comprehensive overview of my educational back
 
 ### Usage
 
+This is the V2.0 of my portfolio. You will find the V1.0 is zipped on the <strong>others</strong> folder of this repository.
+
 #### Go to your browser and visit: [https://naeembeg.github.io/](https://naeembeg.github.io/)
 
 ## Contributing

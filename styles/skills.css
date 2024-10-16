@@ -277,14 +277,6 @@ strong {
     .intro {
         font-size: 2em;
     }
-    
-    .row {
-        flex-direction: column;
-    }
-    
-    .col-md-4, .col-md-8 {
-        width: 100%;
-    }
 }
 
 @media (max-width: 576px) {
@@ -292,9 +284,9 @@ strong {
         font-size: 1.3em;
     }
     
-    .navbar-brand .tagline {
+    /* .navbar-brand .tagline {
         display: none;
-    }
+    } */
     
     .intro {
         font-size: 1.8em;
