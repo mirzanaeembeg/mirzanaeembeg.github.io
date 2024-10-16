@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,323 +10,383 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <img src="assets/profile2.png" class="rounded-circle mb-3" width="150" alt="Mirza Naeem Beg">
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-                        id="menu">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-person-badge"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Prefaces</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="education.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-mortarboard"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Education</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="projects.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-folder"></i> <span class="ms-1 d-none d-sm-inline">Projects</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="skills.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-braces"></i> <span class="ms-1 d-none d-sm-inline">Skills</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="learnings.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-book"></i> <span class="ms-1 d-none d-sm-inline">Learnings</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="papers.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-file-text"></i> <span class="ms-1 d-none d-sm-inline">Papers</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-envelope-paper"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Contact</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-brand" href="index.html">
+                    <span class="name">Naeem Beg</span>
+                    <span class="tagline">Ambitious • Resilient • Realistic</span>
+                </a>
             </div>
-            <div class="col py-3">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Prefaces</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="education.html">Education</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="projects.html">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="skills.html">Skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="learnings.html">Learnings</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="papers.html">Papers</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <h1 class="intro">Projects</h1>
-                <div class="card-body">
-                    <p class="card-text text-muted font-monospace">
-                        Here's an overview of my diverse project portfolio:
-                    </p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item font-monospace">Designed & Developed an e-commerce platform with an auction feature using HTML, CSS, Bootstrap, MySQL and PHP</li>
-                        <li class="list-group-item font-monospace">Created a personal portfolio website using HTML, CSS, Bootstrap and Git/GitHub</li>
-                        <li class="list-group-item font-monospace">Developed in collaboration, an action game using C/C++ with iGraphics</li>
-                        <li class="list-group-item font-monospace">Created in collaboration, a Java-based railway ticket management system using JavaSwing and MySQL</li>
-                        <li class="list-group-item font-monospace">Built in collaboration, a Flutter-based TikTok clone using Dart and Firebase</li>
-                        
-                    </ul>
-                </div>
-                <section id="projects" class="py-5">
-                    <div class="container">
-                        
-                        <!-- Project Type Toggle -->
-                        <div class="d-flex justify-content-center mb-5">
-                            <div class="btn-group" role="group" aria-label="Project type toggle">
-                                <input type="radio" class="btn-check" name="projectType" id="individualProjects" autocomplete="off" checked>
-                                <label class="btn btn-outline-info fonts" for="individualProjects">Individual Projects</label>
-                
-                                <input type="radio" class="btn-check" name="projectType" id="groupProjects" autocomplete="off">
-                                <label class="btn btn-outline-info fonts" for="groupProjects">Group Projects</label>
-                            </div>
-                        </div>
-                
-                        <!-- Individual Projects -->
-                        <div id="individualProjectsContent">
-                            <div class="row">
-                                <!-- Project 1 -->
-                                <div class="row align-items-start mb-5">
-                                    <div class="card h-100">
-                                        <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="assets/bechakena1.png" class="d-block w-100" alt="bechakena.com Screenshot 1">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="assets/bechakena2.png" class="d-block w-100" alt="bechakena.com Screenshot 2">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="assets/bechakena3.png" class="d-block w-100" alt="bechakena.com Screenshot 3">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title fw-bold fonts">BechaKena.Com (Built in Auction)</h5>
-                                            <p class="card-text text-start fonts">The e-commerce platform with an auction feature is a web-based project developed as part of my university coursework. It enables users to browse, bid on, and purchase products through a responsive interface built with HTML, CSS, Bootstrap, PHP, and MySQL. The purpose of this project is to enhance user engagement by combining traditional e-commerce with auction capabilities, showcasing my technical skills in full-stack development. This project applies advanced programming concepts and database management techniques, aiming to create a functional, scalable solution that demonstrates proficiency in both front-end and back-end technologies.</p>
-                                            <p><strong>Technologies used:</strong> HTML, CSS, Bootstrap, PHP & MySQL</p>
-                                            <p><strong>Key features:</strong></p>
-                                            <ul>
-                                                <li>Integrated Auction with real time Bidding.</li>
-                                                <li>Most of the demanding features for an e-commerce are implemented.</li>
-                                                <li>Robust Back-End Management.</li>
-                                            </ul>
-                                            <div class="d-flex justify-content-center mt-3">
-                                                <a href="https://github.com/naeembeg/CSE3100-SD-IV" target="_blank" class="btn btn-outline-dark mx-2">GitHub</a>
-                                                <a href="https://youtu.be/JnbI_pToNd4" target="_blank" class="btn btn-outline-danger mx-2">ScreenCast</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                
-                                <!-- Project 2 -->
-                                <div class="row align-items-start">
-                                    <div class="card h-100">
-                                        <div id="project2Carousel" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="assets/portfolio1.png" class="d-block w-100" alt="Portfolio Screenshot 1">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="assets/portfolio2.png" class="d-block w-100" alt="Portfolio Screenshot 2">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="assets/portfolio3.png" class="d-block w-100" alt="Portfolio Screenshot 3">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#project2Carousel" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#project2Carousel" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title fw-bold fonts">My-Portfolio</h5>
-                                            <p class="card-text text-start fonts">My portfolio project is a personal website designed to showcase my skills, projects, and experiences as a CSE undergraduate. Developed using HTML, CSS, Bootstrap, and some JavaScript, the portfolio highlights my proficiency in web development and version control using Git and GitHub. The purpose of this project is to create a professional online presence that effectively communicates my capabilities and achievements to potential employers and collaborators. It serves as a dynamic platform to demonstrate my technical expertise, creativity, and commitment to continuous learning and development in the field of computer science.</p>
-                                            <p><strong>Technologies used:</strong> HTML, CSS, Bootstrap, Git & GitHub</p>
-                                            <p><strong>Key features:</strong></p>
-                                            <ul>
-                                                <li>My Portfolio has a Responsive Design for every size of screen.</li>
-                                                <li>Dynamic Content Presentation in projects page.</li>
-                                                <li>Used Version Control in development and Deployment.</li>
-                                            </ul>
-                                            <div class="btn-center d-flex justify-content-center">
-                                                <a href="https://github.com/naeembeg/naeembeg.github.io" class="btn btn-outline-dark mx-2">GitHub</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!-- Group Projects -->
-                        <div id="groupProjectsContent" style="display: none;">
-                            <div class="row">
-                                <!-- Group Project 1 -->
-                                <div class="row align-items-start mb-5">
-                                    <div class="card h-100">
-                                        <div id="groupProject1Carousel" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="assets/doom1.png" class="d-block w-100" alt="DoomExploder Screenshot 1">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="assets/doom2.png" class="d-block w-100" alt="DoomExploder Screenshot 2">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="assets/doom3.png" class="d-block w-100" alt="DoomExploder Screenshot 3">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#groupProject1Carousel" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#groupProject1Carousel" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title fw-bold fonts">DoomExploder (An Action Game)</h5>
-                                            <p class="card-text text-start fonts">The action game project, developed collaboratively in a university software development course CSE1200, utilizes C and C++ with the iGraphics framework. This project emphasizes advanced features such as string manipulation, file handling, and multimedia integration, including sound and graphics. The purpose of this project is to apply structured programming techniques to create an engaging and interactive gaming experience. It aims to demonstrate our collective skills in developing complex software systems, enhance our understanding of game development processes, and provide a practical application of theoretical concepts learned in class.</p>
-                                            <p><strong>Technologies used:</strong> C & C++, iGraphics</p>
-                                            <p><strong>My contributions:</strong></p>
-                                            <ul>
-                                                <li>Contribute to develop the collision logic.</li>
-                                                <li>Contribute in sound implementation.</li>
-                                                <li>Contribute to graphics implementation also.</li>
-                                            </ul>
-                                            <p><strong>Teamwork experience:</strong> Our team collaborated to develop an action game using C and C++ with the iGraphics framework. We divided tasks based on individual strengths, with some members focusing on game logic and others on integrating sound and graphics. Regular meetings and code reviews ensured smooth progress and efficient issue resolution. This project honed our teamwork skills, highlighted the importance of effective communication, and provided hands-on experience in managing and delivering a complex software project.</p>
-                                            <p><strong>It was our very beginning level project, that's why we have no repository of this project.</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Group Project 2 -->
-                                <div class="row align-items-start mb-5">
-                                    <div class="card h-100">
-                                        <div id="groupProject2Carousel" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="assets/trend1.png" class="d-block w-100" alt="TrendWave Screenshot 1">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="assets/trend2.png" class="d-block w-100" alt="TrendWave Screenshot 2">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#groupProject2Carousel" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#groupProject2Carousel" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title fw-bold fonts">TrendWave (inspired by tiktok)</h5>
-                                            <p class="card-text text-start fonts">The TikTok clone project, developed collaboratively in a university software development course CSE2200, utilizes the Flutter framework, Dart language, and Firebase. This project aimed to create a mobile application replicating key features of TikTok, including video sharing, user profiles, and social interactions. The purpose was to gain hands-on experience in mobile app development, explore the capabilities of Flutter for cross-platform development, and understand backend integration with Firebase. This project allowed us to apply modern development practices, enhance our collaborative skills, and produce a functional, engaging social media application.</p>
-                                            <p><strong>Technologies used:</strong> Flutter, Dart language, Firebase</p>
-                                            <p><strong>My contributions:</strong></p>
-                                            <ul>
-                                                <li>Contribute to design the UI/UX.</li>
-                                                <li>Firebase and login page implementation.</li>
-                                                <li>Manage everything perfectly & present finally.</li>
-                                            </ul>
-                                            <p><strong>Teamwork experience:</strong> Our team effectively collaborated on the TikTok clone project using Flutter, Dart, and Firebase. We divided tasks based on strengths, with members focusing on front-end design, back-end integration, and feature implementation. Regular meetings and code reviews ensured seamless progress and timely issue resolution. This experience enhanced our teamwork, communication, and project management skills, leading to the successful creation of a functional and engaging mobile app.</p>
-                                            <p><strong>By that time we were not much familiar with Version Control system. And we collaborated in Discord Server. So this project also has no repository.</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-start mb-5">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title fw-bold fonts">RailWay Ticket Management System</h5>
-                                            <p class="card-text fonts">I have another group project which is JavaSwing-based focused on developing a railway ticket management system as part of our university software development course CSE2100. Leveraging JavaSwing for the front-end and MySQL for the back-end, this project aimed to provide users with a seamless ticket booking experience. The purpose was to apply object-oriented principles in Java, practice collaborative software development using Swing components for the graphical user interface, and integrate database functionalities for efficient data management. This project served as a practical application of theoretical concepts, enhancing our skills in Java programming, GUI design, and database management within a team environment.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add more group projects as needed -->
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fs-4 bi-person-badge"></i>
+                            <span>Prefaces</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-4 bi-mortarboard"></i>
+                            <span>Education</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-4 bi-folder"></i>
+                            <span>Projects</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-4 bi-braces"></i>
+                            <span>Skills</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="learnings.html"><i class="fs-4 bi-book"></i>
+                            <span>Learnings</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="papers.html"><i class="fs-4 bi-file-text"></i>
+                            <span>Papers</span></a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <script>document.addEventListener('DOMContentLoaded', function() {
-        const individualRadio = document.getElementById('individualProjects');
-        const groupRadio = document.getElementById('groupProjects');
-        const individualContent = document.getElementById('individualProjectsContent');
-        const groupContent = document.getElementById('groupProjectsContent');
-    
-        individualRadio.addEventListener('change', function() {
-            individualContent.style.display = 'block';
-            groupContent.style.display = 'none';
-        });
-    
-        groupRadio.addEventListener('change', function() {
-            individualContent.style.display = 'none';
-            groupContent.style.display = 'block';
-        });
-    });</script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    </nav>
+    <main class="container-fluid">
+        <h1 class="intro display-6"><i class="fs-1 bi-folder"></i> Projects</h1>
+        <div class="card-body">
+            <p class="card-text text-muted fonts">
+                Here's an overview of my diverse project portfolio:
+            </p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item fonts">Designed & Developed an e-commerce platform with an auction feature
+                    using HTML, CSS, Bootstrap, MySQL and PHP</li>
+                <li class="list-group-item fonts">Created a personal portfolio website using HTML, CSS, Bootstrap and
+                    Git/GitHub</li>
+                <li class="list-group-item fonts">Developed in collaboration, an action game using C/C++ with iGraphics
+                </li>
+                <li class="list-group-item fonts">Created in collaboration, a Java-based railway ticket management
+                    system using JavaSwing and MySQL</li>
+                <li class="list-group-item fonts">Built in collaboration, a Flutter-based TikTok clone using Dart and
+                    Firebase</li>
 
-    <footer class="copyright">
+            </ul>
+        </div>
+        <section id="projects" class="py-5">
+            <div class="container">
+
+                <!-- Project Type Toggle -->
+                <div class="d-flex justify-content-center mb-5">
+                    <div class="btn-group" role="group" aria-label="Project type toggle">
+                        <input type="radio" class="btn-check" name="projectType" id="individualProjects"
+                            autocomplete="off" checked>
+                        <label class="btn btn-outline-info fonts" for="individualProjects">Individual Projects</label>
+
+                        <input type="radio" class="btn-check" name="projectType" id="groupProjects" autocomplete="off">
+                        <label class="btn btn-outline-info fonts" for="groupProjects">Group Projects</label>
+                    </div>
+                </div>
+
+                <!-- Individual Projects -->
+                <div id="individualProjectsContent">
+                    <div class="row">
+                        <!-- Project 1 -->
+                        <div class="row align-items-start mb-5">
+                            <div class="card h-100">
+                                <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/bechakena1.png" class="d-block w-100"
+                                                alt="bechakena.com Screenshot 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/bechakena2.png" class="d-block w-100"
+                                                alt="bechakena.com Screenshot 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/bechakena3.png" class="d-block w-100"
+                                                alt="bechakena.com Screenshot 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#project1Carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#project1Carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fonts">BechaKena.Com (Built in Auction)</h5>
+                                    <p class="card-text text-start fonts">The e-commerce platform with an auction
+                                        feature is a web-based project developed as part of my university coursework. It
+                                        enables users to browse, bid on, and purchase products through a responsive
+                                        interface built with HTML, CSS, Bootstrap, PHP, and MySQL. The purpose of this
+                                        project is to enhance user engagement by combining traditional e-commerce with
+                                        auction capabilities, showcasing my technical skills in full-stack development.
+                                        This project applies advanced programming concepts and database management
+                                        techniques, aiming to create a functional, scalable solution that demonstrates
+                                        proficiency in both front-end and back-end technologies.</p>
+                                    <p><strong>Technologies used:</strong> HTML, CSS, Bootstrap, PHP & MySQL</p>
+                                    <p><strong>Key features:</strong></p>
+                                    <ul>
+                                        <li>Integrated Auction with real time Bidding.</li>
+                                        <li>Most of the demanding features for an e-commerce are implemented.</li>
+                                        <li>Robust Back-End Management.</li>
+                                    </ul>
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a href="https://github.com/naeembeg/CSE3100-SD-IV" target="_blank"
+                                            class="btn btn-outline-dark mx-2">GitHub</a>
+                                        <a href="https://youtu.be/JnbI_pToNd4" target="_blank"
+                                            class="btn btn-outline-danger mx-2">ScreenCast</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="row align-items-start">
+                            <div class="card h-100">
+                                <div id="project2Carousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/portfolio1.png" class="d-block w-100"
+                                                alt="Portfolio Screenshot 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/portfolio2.png" class="d-block w-100"
+                                                alt="Portfolio Screenshot 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/portfolio3.png" class="d-block w-100"
+                                                alt="Portfolio Screenshot 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#project2Carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#project2Carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fonts">My-Portfolio</h5>
+                                    <p class="card-text text-start fonts">My portfolio project is a personal website
+                                        designed to showcase my skills, projects, and experiences as a CSE
+                                        undergraduate. Developed using HTML, CSS, Bootstrap, and some JavaScript, the
+                                        portfolio highlights my proficiency in web development and version control using
+                                        Git and GitHub. The purpose of this project is to create a professional online
+                                        presence that effectively communicates my capabilities and achievements to
+                                        potential employers and collaborators. It serves as a dynamic platform to
+                                        demonstrate my technical expertise, creativity, and commitment to continuous
+                                        learning and development in the field of computer science.</p>
+                                    <p><strong>Technologies used:</strong> HTML, CSS, Bootstrap, Git & GitHub</p>
+                                    <p><strong>Key features:</strong></p>
+                                    <ul>
+                                        <li>My Portfolio has a Responsive Design for every size of screen.</li>
+                                        <li>Dynamic Content Presentation in projects page.</li>
+                                        <li>Used Version Control in development and Deployment.</li>
+                                    </ul>
+                                    <div class="btn-center d-flex justify-content-center">
+                                        <a href="https://github.com/naeembeg/naeembeg.github.io"
+                                            class="btn btn-outline-dark mx-2">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group Projects -->
+                <div id="groupProjectsContent" style="display: none;">
+                    <div class="row">
+                        <!-- Group Project 1 -->
+                        <div class="row align-items-start mb-5">
+                            <div class="card h-100">
+                                <div id="groupProject1Carousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/doom1.png" class="d-block w-100"
+                                                alt="DoomExploder Screenshot 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/doom2.png" class="d-block w-100"
+                                                alt="DoomExploder Screenshot 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/doom3.png" class="d-block w-100"
+                                                alt="DoomExploder Screenshot 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#groupProject1Carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#groupProject1Carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fonts">DoomExploder (An Action Game)</h5>
+                                    <p class="card-text text-start fonts">The action game project, developed
+                                        collaboratively in a university software development course CSE1200, utilizes C
+                                        and C++ with the iGraphics framework. This project emphasizes advanced features
+                                        such as string manipulation, file handling, and multimedia integration,
+                                        including sound and graphics. The purpose of this project is to apply structured
+                                        programming techniques to create an engaging and interactive gaming experience.
+                                        It aims to demonstrate our collective skills in developing complex software
+                                        systems, enhance our understanding of game development processes, and provide a
+                                        practical application of theoretical concepts learned in class.</p>
+                                    <p><strong>Technologies used:</strong> C & C++, iGraphics</p>
+                                    <p><strong>My contributions:</strong></p>
+                                    <ul>
+                                        <li>Contribute to develop the collision logic.</li>
+                                        <li>Contribute in sound implementation.</li>
+                                        <li>Contribute to graphics implementation also.</li>
+                                    </ul>
+                                    <p><strong>Teamwork experience:</strong> Our team collaborated to develop an action
+                                        game using C and C++ with the iGraphics framework. We divided tasks based on
+                                        individual strengths, with some members focusing on game logic and others on
+                                        integrating sound and graphics. Regular meetings and code reviews ensured smooth
+                                        progress and efficient issue resolution. This project honed our teamwork skills,
+                                        highlighted the importance of effective communication, and provided hands-on
+                                        experience in managing and delivering a complex software project.</p>
+                                    <p><strong>It was our very beginning level project, that's why we have no repository
+                                            of this project.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Group Project 2 -->
+                        <div class="row align-items-start mb-5">
+                            <div class="card h-100">
+                                <div id="groupProject2Carousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/trend1.png" class="d-block w-100"
+                                                alt="TrendWave Screenshot 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/trend2.png" class="d-block w-100"
+                                                alt="TrendWave Screenshot 2">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#groupProject2Carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#groupProject2Carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fonts">TrendWave (inspired by tiktok)</h5>
+                                    <p class="card-text text-start fonts">The TikTok clone project, developed
+                                        collaboratively in a university software development course CSE2200, utilizes
+                                        the Flutter framework, Dart language, and Firebase. This project aimed to create
+                                        a mobile application replicating key features of TikTok, including video
+                                        sharing, user profiles, and social interactions. The purpose was to gain
+                                        hands-on experience in mobile app development, explore the capabilities of
+                                        Flutter for cross-platform development, and understand backend integration with
+                                        Firebase. This project allowed us to apply modern development practices, enhance
+                                        our collaborative skills, and produce a functional, engaging social media
+                                        application.</p>
+                                    <p><strong>Technologies used:</strong> Flutter, Dart language, Firebase</p>
+                                    <p><strong>My contributions:</strong></p>
+                                    <ul>
+                                        <li>Contribute to design the UI/UX.</li>
+                                        <li>Firebase and login page implementation.</li>
+                                        <li>Manage everything perfectly & present finally.</li>
+                                    </ul>
+                                    <p><strong>Teamwork experience:</strong> Our team effectively collaborated on the
+                                        TikTok clone project using Flutter, Dart, and Firebase. We divided tasks based
+                                        on strengths, with members focusing on front-end design, back-end integration,
+                                        and feature implementation. Regular meetings and code reviews ensured seamless
+                                        progress and timely issue resolution. This experience enhanced our teamwork,
+                                        communication, and project management skills, leading to the successful creation
+                                        of a functional and engaging mobile app.</p>
+                                    <p><strong>By that time we were not much familiar with Version Control system. And
+                                            we collaborated in Discord Server. So this project also has no
+                                            repository.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-start mb-5">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fonts">RailWay Ticket Management System</h5>
+                                    <p class="card-text fonts">I have another group project which is JavaSwing-based
+                                        focused on developing a railway ticket management system as part of our
+                                        university software development course CSE2100. Leveraging JavaSwing for the
+                                        front-end and MySQL for the back-end, this project aimed to provide users with a
+                                        seamless ticket booking experience. The purpose was to apply object-oriented
+                                        principles in Java, practice collaborative software development using Swing
+                                        components for the graphical user interface, and integrate database
+                                        functionalities for efficient data management. This project served as a
+                                        practical application of theoretical concepts, enhancing our skills in Java
+                                        programming, GUI design, and database management within a team environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more group projects as needed -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer mt-5">
         <div class="container">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script>, Mirza Naeem Beg.</p>
+            <p class="text-center mb-3">&copy;
+                <script>document.write(new Date().getFullYear())</script>, Mirza Naeem Beg.
+            </p>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
+                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Research
+                        Collaborations, Part-time Positions</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-md-end"><i class="fs-4 bi-envelope-paper"></i> <strong>Contact Me:</strong></p>
+                    <div class="contact-info text-md-end">
+                        <a href="mailto:mirzanaeem278@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/naeembeg" class="footer-link" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/mrnimblenaeem" class="footer-link" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mn_beg/" class="footer-link" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            const individualRadio = document.getElementById('individualProjects');
+            const groupRadio = document.getElementById('groupProjects');
+            const individualContent = document.getElementById('individualProjectsContent');
+            const groupContent = document.getElementById('groupProjectsContent');
+
+            individualRadio.addEventListener('change', function () {
+                individualContent.style.display = 'block';
+                groupContent.style.display = 'none';
+            });
+
+            groupRadio.addEventListener('change', function () {
+                individualContent.style.display = 'none';
+                groupContent.style.display = 'block';
+            });
+        });</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

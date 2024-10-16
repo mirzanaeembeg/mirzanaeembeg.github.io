@@ -1,0 +1,258 @@
+I'm Mirza Naeem Beg; a Computer Science & Engineering undergrad (3rd Year 1st Semester) at Ahsanullah University of Science and Technology (AUST), Bangladesh, with a CGPA of 3.00+ out of 4.00. Currently, I am living in Dhaka, having spent much of my childhood in Mymensingh, where my love for technology flourished.
+
+My journey into the tech realm began during my high school and college years in Mymensingh. Just as people make words out of letters to communicate successfully with each other through meaningful sentences, machines—or computers—establish communication similarly. This kind of analogy sparked my interest in computer science, leading me to pursue a degree in Computer Science and Engineering. After my admission to CSE, I discovered my aspiration to become an industry leading AI/ML expert. This ambition has driven me to explore various core branches of Computer Science, including Problem Solving, AI/ML, Web Development, Mobile App Development, Cybersecurity, Databases, and Computer Networks.
+
+With a deep-rooted interest in technology since my college days, I am committed to learning and growing in this ever-evolving field. I firmly believe that one day, I will become a valuable asset to the tech industry, contributing innovative solutions and advancements to upcoming challenges.
+
+##My Educational qualification:
+
+I'm excited to share with you the key milestones and experiences that have shaped my educational path as a dedicated undergraduate in Computer Science & Engineering at AUST. My educational journey began in the serene city of Mymensingh, where I completed my schooling and college. These formative years ignited my passion for learning and curiosity about technology, setting the foundation for my current pursuits.
+
+Undergraduate:
+B. Sc. in Computer Science & Engineering
+Ahsanullah University Of Science And Technology
+Expected Graduation: March, 2026
+
+Current CGPA: 3.0+ / 4.0
+
+Key Courses Completed
+Elementary Structured Programming (CSE1101)
+Basic programming concepts and notations; Variables, Constants, Data types; Input and Output Statements; Control Structures; Functions and Subroutines; Processing Structured data: Arrays, Strings, Pointers, Structures.
+
+Obtained GPA: Theory: 3.0/4.0, Lab: 3.25/4.0
+
+Object Oriented Programming (CSE1205)
+Classes, Objects, Methods, Constructors, Destructors, Encapsulation, Object Reference, Polymorphism, Array of Objects, Class Hierarchy, Member Access, Inheritance, Overloading, Overriding, Extensive, Robust Program Design.
+
+Obtained GPA: Theory: 3.0/4.0, Lab: 4.0/4.0
+
+Data Structures (CSE2103)
+Data Structure Notation, Search Efficiency, Logical Values, Integers, Packed Words, Arrays, Lists (Sub-lists, Recursive Lists, Circular Lists, Orthogonal Lists), Stacks, Queues, Graphs (Binary Tree, Threaded Tree), Sorting, Searching, Hashing, Computational Problems.
+
+Obtained GPA: Theory: 2.75/4.0, Lab: 3.25/4.0
+
+Algorithms (CSE2207)
+Algorithmic Complexity Analysis; Methods for the design of efficient algorithms: Divide and Conquer, Greedy method, Dynamic programming, Backtracking, Branch and Bound, Polynomial evaluation, Lower bound theory, Intractable problems.
+
+Obtained GPA: Theory: 3.0/4.0, Lab: 2.5/4.0
+
+Numerical Methods (CSE2201)
+Iterative Methods, Evaluation of Polynomials, Bisection Method, False Position Method, Newton-Raphson Method, Secant Method, Fixed Point Method, Interpolation, Curve Fitting Methods, Numerical Differentiation, Numerical Integration, Systems of Linear Equations, Gaussian Elimination, Iteration Methods, Matrix Inversion Method, Gauss Elimination with Pivoting, Gauss-Jordan Method, Ordinary Differential Equations, Taylor's Series Method, Euler's Method, Predictor-Corrector Methods.
+
+Obtained GPA: Theory: 3.0/4.0, Lab: 4.0/4.0
+
+Software Development - I to IV
+Teams develop software using structured programming languages like C and C++, emphasizing advanced features such as strings, files, sound, and graphics. In Java, the focus shifts to object-oriented programming for collaborative software projects. Additionally, groups engage in creating applications with Flutter, adapting to current trends in the sector. Concurrently, ongoing teamwork in web development addresses contemporary advancements, ensuring projects align with current industry standards and technologies.
+
+Obtained GPA: 3.25, 3.5, 3.5 & N/A out of 4.0
+
+Mathematical Analysis for Computer Science (CSE3101 running)
+Recurrence Relations, Sum Calculations, Integer Functions, Binomial Coefficient, Number Theory, Probability Distributions, Expectations, Total Probability, Bayes' Rule, Discrete Distributions, Geometric Distribution, Poisson Distribution, Continuous Distributions, Exponential Distribution, Gaussian Distribution, Stochastic Processes, Random Variate Generation, Discrete-Parameter Markov Chain, Queueing Systems, M/m/1 Queuing System, M/M/m Queuing System, Algorithm, Machine Learning, Pattern Recognition, Simulation Modeling
+
+Obtained GPA: N/A
+
+Database (CSE3103 running)
+Data and database systems; Database design: Data models, Data dictionary, Functional dependency, Normal forms; Query languages: Relational algebra and calculus, SQL; Query processing: Interpretation, Cost estimation, Transaction management, Optimization; Storage and retrieval: Data organization, Indexing and hashing, Directory systems; Database management: Administration, Security, Integrity; Introduction to advanced database systems.
+
+Obtained GPA: N/A
+
+Intermediate:
+Higher Secondary Certificate (HSC)
+Mymensingh Government College
+Graduation Year: 2020
+
+Group: Science
+
+GPA: 5.0 / 5.0
+
+Secondary:
+Secondary School Certificate (SSC)
+Progressive Model School, Mymensingh
+Graduation Year: 2017
+
+Group: Science
+
+GPA: 5.0 / 5.0
+
+Skills Progress
+Programming
+80%
+Data Structures
+75%
+Problem Solving
+70%
+Algorithms
+65%
+
+
+#Projects
+Here's an overview of my diverse project portfolio:
+
+Designed an e-commerce platform with an auction feature using HTML, CSS, Bootstrap, MySQL, and PHP
+Created a personal portfolio website using HTML, CSS, Bootstrap, and Git/GitHub
+Developed an action game using C/C++ with iGraphics
+Created a Java-based railway ticket management system using JavaSwing and MySQL
+Built a Flutter-based TikTok clone using Dart and Firebase
+
+Personal Project:
+1. BechaKena.Com (Built in Auction)
+The e-commerce platform with an auction feature is a web-based project developed as part of my university coursework. It enables users to browse, bid on, and purchase products through a responsive interface built with HTML, CSS, Bootstrap, PHP, and MySQL. The purpose of this project is to enhance user engagement by combining traditional e-commerce with auction capabilities, showcasing my technical skills in full-stack development. This project applies advanced programming concepts and database management techniques, aiming to create a functional, scalable solution that demonstrates proficiency in both front-end and back-end technologies.
+
+Technologies used: HTML, CSS, Bootstrap, PHP & MySQL
+
+Key features:
+
+Integrated Auction with real time Bidding.
+Most of the demanding features for an e-commerce are implemented.
+Robust Back-End Management.
+
+2. My-Portfolio
+My portfolio project is a personal website designed to showcase my skills, projects, and experiences as a CSE undergraduate. Developed using HTML, CSS, Bootstrap, and some JavaScript, the portfolio highlights my proficiency in web development and version control using Git and GitHub. The purpose of this project is to create a professional online presence that effectively communicates my capabilities and achievements to potential employers and collaborators. It serves as a dynamic platform to demonstrate my technical expertise, creativity, and commitment to continuous learning and development in the field of computer science.
+
+Technologies used: HTML, CSS, Bootstrap, Git & GitHub
+
+Key features:
+
+My Portfolio has a Responsive Design for every size of screen.
+Dynamic Content Presentation in projects page.
+Used Version Control in development and Deployment.
+
+Group Project:
+1. DoomExploder (An Action Game)
+The action game project, developed collaboratively in a university software development course CSE1200, utilizes C and C++ with the iGraphics framework. This project emphasizes advanced features such as string manipulation, file handling, and multimedia integration, including sound and graphics. The purpose of this project is to apply structured programming techniques to create an engaging and interactive gaming experience. It aims to demonstrate our collective skills in developing complex software systems, enhance our understanding of game development processes, and provide a practical application of theoretical concepts learned in class.
+
+Technologies used: C & C++, iGraphics
+
+My contributions:
+
+Contribute to develop the collision logic.
+Contribute in sound implementation.
+Contribute to graphics implementation also.
+Teamwork experience: Our team collaborated to develop an action game using C and C++ with the iGraphics framework. We divided tasks based on individual strengths, with some members focusing on game logic and others on integrating sound and graphics. Regular meetings and code reviews ensured smooth progress and efficient issue resolution. This project honed our teamwork skills, highlighted the importance of effective communication, and provided hands-on experience in managing and delivering a complex software project.
+
+It was our very beginning level project, that's why we have no repository of this project.
+
+
+2. TrendWave (inspired by tiktok)
+The TikTok clone project, developed collaboratively in a university software development course CSE2200, utilizes the Flutter framework, Dart language, and Firebase. This project aimed to create a mobile application replicating key features of TikTok, including video sharing, user profiles, and social interactions. The purpose was to gain hands-on experience in mobile app development, explore the capabilities of Flutter for cross-platform development, and understand backend integration with Firebase. This project allowed us to apply modern development practices, enhance our collaborative skills, and produce a functional, engaging social media application.
+
+Technologies used: Flutter, Dart language, Firebase
+
+My contributions:
+
+Contribute to design the UI/UX.
+Firebase and login page implementation.
+Manage everything perfectly & present finally.
+Teamwork experience: Our team effectively collaborated on the TikTok clone project using Flutter, Dart, and Firebase. We divided tasks based on strengths, with members focusing on front-end design, back-end integration, and feature implementation. Regular meetings and code reviews ensured seamless progress and timely issue resolution. This experience enhanced our teamwork, communication, and project management skills, leading to the successful creation of a functional and engaging mobile app.
+
+By that time we were not much familiar with Version Control system. And we collaborated in Discord Server. So this project also has no repository.
+
+3. RailWay Ticket Management System
+I have another group project which is JavaSwing-based focused on developing a railway ticket management system as part of our university software development course CSE2100. Leveraging JavaSwing for the front-end and MySQL for the back-end, this project aimed to provide users with a seamless ticket booking experience. The purpose was to apply object-oriented principles in Java, practice collaborative software development using Swing components for the graphical user interface, and integrate database functionalities for efficient data management. This project served as a practical application of theoretical concepts, enhancing our skills in Java programming, GUI design, and database management within a team environment.
+
+##Skills
+Here's an overview of my technical abilities, developed through various projects:
+
+Web Development Technologies: HTML, CSS, Bootstrap and PHP.
+Familiar Programming Languages: C/C++, Java & Python.
+Databases: Microsoft SQL Server & MySQL.
+Version Control: Git & GitHub.
+
+Technical Proficiencies:
+Programming Languages:
+C
+77.08%
+C++
+71.88%
+Java
+83.33%
+Python
+72%
+Overall Proficiency
+84.85%
+
+Technologies and Tools:
+Git
+GitHub
+CSS
+Bootstrap
+PHP
+SQL
+Flutter
+Firebase
+
+Soft Skills:
+ Problem Solving
+Ability to analyze complex problems and develop effective solutions. I solve problems on online platforms and read CP books to further enhance my problem-solving skills in my leisure time. I aim to sharpen my analytical thinking and improve my approach to solving complex issues efficiently.
+
+ Communication
+Developing verbal and written communication skills to collaborate effectively with peers and mentors. Learning to explain technical concepts clearly and contribute to project discussions. Gaining experience in creating documentation and reports for better understanding and transparency.
+
+ Teamwork
+Building teamwork skills to effectively collaborate with classmates and project partners. Learning to contribute to group projects, share ideas, and support team members. Gaining experience in coordinating tasks and working together towards common goals.
+
+#Learnings
+I'm glad you've found your way to my Learning page. This is where I document my ongoing journey in computer science education and share my excitement for continuous learning.
+
+Currently, I'm embarking on a new adventure with Stanford University's Code in Place 2024 course. This program will enhance my Python programming skills and deepen my understanding of object-oriented programming. I'm looking forward to how this course will expand my knowledge and prepare me for future projects.
+
+My learning path so far has included completing a course on Python basics and object-oriented programming through HackerRank. This experience has built a solid foundation for my programming skills and fueled my enthusiasm to take on more challenges.
+
+Looking ahead, I'm planning to dive into Andrew Ng's renowned machine learning course on Coursera later this year. This next step will not only introduce me to key concepts in machine learning but also provide hands-on experience crucial for future work in AI and data science.
+
+My Learning in Progress!
+
+
+1. Code in Place 2024
+ In Progress
+
+Institution: Stanford University
+
+Focus: Python, Object-Oriented Programming
+
+Summary: Currently deepening my Python skills and mastering object-oriented programming concepts. This course is a crucial step in expanding my knowledge and preparing for future projects.
+
+2. Python OOP Problem Solving
+Completed 1st & 2nd week content.
+
+Python Basics and OOP
+ Completed
+
+Platform: HackerRank
+
+Summary: Completed a comprehensive course on Python basics and object-oriented programming, providing a solid foundation in programming fundamentals.
+
+Python Basics OOP Data Structures
+I am the only owner of this certificate. It is completely prohibited to use it for any work! You can download it only to see this!
+
+3. Machine Learning
+ Planned
+
+Platform: Coursera
+
+Instructor: Andrew Ng
+
+Summary: Planning to undertake this renowned machine learning course later this year. It will enhance my understanding of ML concepts and equip me with practical skills essential for future endeavors in AI and data science.
+
+Machine Learning AI Data Science
+Keep me in your prayers!
+
+4. Full Stack Open
+ Planned
+
+Institution: University of Helsinki, Finland
+
+Summary: The Full Stack Open course by the University of Helsinki is a free online program that teaches modern web development using JavaScript, React, Node.js, MongoDB, and GraphQL. It combines theory with practical exercises to help learners build full-stack applications. Suitable for all skill levels, it offers a hands-on approach to mastering web development.
+
+JavaScript React Redux Node.js MongoDB GraphQL TypeScript Full Stack
+Excited for this journey!
+
+##Contacts
+Email: mirzanaeem278@gmail.com
+Phone: +8801521738367
+LinkedIn: https://www.linkedin.com/in/mirza-naeem-beg/
+GitHub: https://github.com/naeembeg
+Personal Website: naeembeg.github.io
+
+Present Address:
+4/2 Prembagan, Dakhshinkhan, Uttara, Dhaka-1230, Bangladesh

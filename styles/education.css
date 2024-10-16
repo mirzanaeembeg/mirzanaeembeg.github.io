@@ -1,91 +1,76 @@
-/* General */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 body {
   line-height: 1.6;
-  background-color: #fff;
-  color: black;
+  color: #333;
   margin: 0;
   padding: 0;
-  position: relative;
   min-height: 100vh;
-  padding-bottom: 80px; /* Adjust this value based on the height of your footer */
+  display: flex;
+  flex-direction: column;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Sidebar */
-.sidebar {
-  margin: 10px;
-  margin-bottom: 30px;
-  transition: all 0.3s;
-  background-color: lightcyan;
-  border-radius: 10px;
-}
-
-.sidebar .nav-link {
-  margin-top: 10px;
-  padding: 0;
-  color: #000000;
-  font-size: x-large;
-  font-family: 'Courier New', Courier, monospace;
-  gap: 10px;
-  transition: all 0.3s;
-}
-
-.sidebar .nav-link:hover {
-  font-weight: 700;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: #d4f0ff;
-  transform: translateX(5px);
-}
-
-.sidebar img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Navbar */
+/* Navbar Styles */
 .navbar {
-  transition: all 0.3s;
+  margin: 10px;
+  background-color: ghostwhite;
+  box-shadow: 10px 5px 10px rgba(255, 0, 0, 0.1);
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-brand .name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #03045e;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand .tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8em;
+  color: #555;
+  margin-top: -5px;
 }
 
 .navbar-nav .nav-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-top: 10px;
-  padding: 0;
+  padding: 5px 10px;
   color: #000000;
   font-size: large;
-  font-family: 'Courier New', Courier, monospace;
-  transition: all 0.3s;
+  font-family: 'Courier New', Courier, monospace
 }
 
-.navbar-nav .nav-link:hover {
-  color: black;
-  font-weight: 600;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: #f5f5f5;
+.navbar-nav .nav-link i {
+  margin-right: 5px;
 }
 
-/* Section */
-section {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.navbar-nav .nav-item .nav-link:hover {
+  color: brown;
+  font-weight: bolder;
 }
 
-/* Education */
+.navbar-nav .nav-item .nav-link:hover span {
+  border: 1px dotted black;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+/* Main Content Styles */
 .intro {
-  font-family: 'Times New Roman', Times, serif;
-  color: #000000;
-  text-align: left;
-  font-size: 2.5em;
+  margin-top: .5em;
+  text-align: center;
+  margin-bottom: 1.5em;
 }
 
 .university-logo {
@@ -96,68 +81,109 @@ section {
 }
 
 .fonts {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
-/*copyright*/
-.copyright {
-  background-color: #f8f9fa;
-  padding: 15px 0;
+.name {
+  font-weight: 500;
+  font-size: 2em;
+  color: #03045e;
+  margin: 0.5em 0;
   text-align: center;
-  font-size: 12px;
-  color: gray;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  word-wrap: break-word;
+  position: relative;
+  display: inline-block;
 }
 
-.copyright p {
-  margin: 0;
-}
-/* Responsive */
-@media (max-width: 767.98px) {
-  .sidebar {
-      display: none;
-  }
-
-  .navbar {
-      display: block;
-  }
+strong {
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
-@media (min-width: 768px) {
-  .navbar {
-      display: none;
-  }
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: auto;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+}
 
-  .sidebar {
-      display: block;
+.footer p {
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.footer-link {
+    font-size: 1.2rem;
+    color: #03045e;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: gray;
+}
+
+/* Updated Responsive Styles */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: left;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+        justify-content: flex-start;
+    }
+
+    .navbar-nav .nav-link i {
+        margin-right: 10px;
+        width: 20px;
+        text-align: center;
+    }
+
+    .name {
+      font-size: 1.8em;
   }
 }
 
-/* New styles for centering icons on small screens */
-@media (max-width: 767.98px) {
-  .card-body .row {
-      flex-direction: column;
-  }
+@media (max-width: 768px) {
+    .navbar-brand .name {
+        font-size: 1.5em;
+    }
+    
+    .navbar-brand .tagline {
+        font-size: 0.7em;
+    }
+    
+    .intro {
+        font-size: 2em;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .col-md-4, .col-md-8 {
+        width: 100%;
+    }
+}
 
-  .card-body .col-md-2 {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-  }
-
-  .university-logo {
-      max-width: 120px;  /* Slightly larger for better visibility */
-  }
-
-  .card-body .col-md-10 {
-      text-align: center;
-  }
-
-  .card-body h3.card-title,
-  .card-body h4.card-subtitle,
-  .card-body p.card-text {
-      text-align: center;
-  }
+@media (max-width: 576px) {
+    .navbar-brand .name {
+        font-size: 1.3em;
+    }
+    
+    .navbar-brand .tagline {
+        display: none;
+    }
+    
+    .intro {
+        font-size: 1.8em;
+    }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,221 +12,207 @@
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <img src="assets/profile2.png" class="rounded-circle mb-3" width="150" alt="Mirza Naeem Beg">
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-                        id="menu">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-person-badge"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Prefaces</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="education.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-mortarboard"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Education</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="projects.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-folder"></i> <span class="ms-1 d-none d-sm-inline">Projects</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="skills.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-braces"></i> <span class="ms-1 d-none d-sm-inline">Skills</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="learnings.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-book"></i> <span class="ms-1 d-none d-sm-inline">Learnings</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="papers.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-file-text"></i> <span class="ms-1 d-none d-sm-inline">Papers</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-envelope-paper"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Contact</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-brand" href="index.html">
+                    <span class="name">Naeem Beg</span>
+                    <span class="tagline">Ambitious • Resilient • Realistic</span>
+                </a>
             </div>
-            <div class="col py-3">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Prefaces</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="education.html">Education</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="projects.html">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="skills.html">Skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="learnings.html">Learnings</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="papers.html">Papers</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <h1 class="intro">Skills</h1>
-                <div class="card-body">
-                    <p class="card-text text-muted font-monospace">
-                        Here's an overview of my technical abilities, developed through various projects:
-                    </p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item font-monospace">Web Development Technologies: HTML, CSS, Bootstrap and PHP.</li>
-                        <li class="list-group-item font-monospace">Programming Languages: C, C++, Java & Python.</li>
-                        <li class="list-group-item font-monospace">Databases: Microsoft SQL Server & MySQL.</li>
-                        <li class="list-group-item font-monospace">Version Control System: Git & GitHub.</li>
-                    </ul>
-                </div>
-                <section id="skills" class="py-5">
-                    <div class="container">
-                
-                        <h3 class="text-center mb-4">Technical Proficiencies</h3>
-                
-                        <!-- Programming Languages -->
-                        <div class="skill-section mb-5">
-                            <h4 class="skill-title text-center"><i class="fas fa-code me-2"></i>Programming Languages</h4>
-                            <div class="skills-container">
-                                <div class="skill-item mb-3">
-                                    <span class="skill-name">C</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 77.08%;" aria-valuenow="77.08" aria-valuemin="0" aria-valuemax="100">77.08%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item mb-3">
-                                    <span class="skill-name">C++</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 71.88%;" aria-valuenow="71.88" aria-valuemin="0" aria-valuemax="100">71.88%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item mb-3">
-                                    <span class="skill-name">Java</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 83.33%;" aria-valuenow="83.33" aria-valuemin="0" aria-valuemax="100">83.33%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item mb-3">
-                                    <span class="skill-name">Python</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">72%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item overall mt-3">
-                                    <span class="skill-name">Overall Proficiency</span>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 84.85%;" aria-valuenow="84.85" aria-valuemin="0" aria-valuemax="100">84.85%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <p class="text-center font-monospace">To download my programming language proficiency calculation, <a href="assets/lang_prof_calc.txt" download="lang_prof_calc">click here</a>.
-                            </p>
-                        </div>
-                
-                        <!-- Technologies and Tools -->
-                        <div class="tech-tools-container">
-                            <h4 class="skill-title text-center"><i class="fas fa-tools me-2"></i>Technologies and Tools</h4>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-6 mb-3">
-                                    <div class="skill-item"><i class="fab fa-git-alt me-2"></i> Git</div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 mb-3">
-                                    <div class="skill-item"><i class="fab fa-github me-2"></i> GitHub</div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 mb-3">
-                                    <div class="skill-item"><i class="fab fa-html5 me-2"></i> HTML</div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 mb-3">
-                                    <div class="skill-item"><i class="fab fa-css3-alt me-2"></i> CSS</div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 mb-3">
-                                    <div class="skill-item"><i class="fab fa-bootstrap me-2"></i> Bootstrap</div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 mb-3">
-                                    <div class="skill-item"><i class="fab fa-php me-2"></i> PHP</div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 mb-3">
-                                    <div class="skill-item"><i class="fas fa-database me-2"></i> SQL</div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 mb-3">
-                                    <div class="skill-item"><i class="fab fa-flutter me-2"></i> Flutter</div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 mb-3">
-                                    <div class="skill-item"><i class="fas fa-fire me-2"></i> Firebase</div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!-- Soft Skills -->
-                        <div class="skill-section">
-                            <h4 class="skill-title text-success text-center"><i class="fas fa-users me-2"></i>Soft Skills</h4>
-                            <div class="row">
-                                <div class="col-md-4 mb-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-warning"><i class="fas fa-puzzle-piece me-2"></i> Problem Solving</h5>
-                                            <p class="card-text text-secondary font-monospace text-justify">Ability to analyze complex problems and develop effective solutions. I solve problems on online platforms and read CP books to further enhance my problem-solving skills in my leisure time. I aim to sharpen my analytical thinking and improve my approach to solving complex issues efficiently.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-warning"><i class="fas fa-comments me-2"></i> Communication</h5>
-                                            <p class="card-text text-secondary font-monospace text-justify">Developing verbal and written communication skills to collaborate effectively with peers and mentors. Learning to explain technical concepts clearly and contribute to project discussions. Gaining experience in creating documentation and reports for better understanding and transparency.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-warning"><i class="fas fa-users me-2"></i> Teamwork</h5>
-                                            <p class="card-text text-secondary font-monospace text-justify">Building teamwork skills to effectively collaborate with classmates and project partners. Learning to contribute to group projects, share ideas, and support team members. Gaining experience in coordinating tasks and working together towards common goals.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fs-4 bi-person-badge"></i>
+                            <span>Prefaces</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-4 bi-mortarboard"></i>
+                            <span>Education</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-4 bi-folder"></i>
+                            <span>Projects</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-4 bi-braces"></i>
+                            <span>Skills</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="learnings.html"><i class="fs-4 bi-book"></i>
+                            <span>Learnings</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="papers.html"><i class="fs-4 bi-file-text"></i>
+                            <span>Papers</span></a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    </nav>
+    <main class="container-fluid">
+        <h1 class="intro display-6"><i class="fs-1 bi-braces"></i> Skills</h1>
+        <div class="card-body">
+            <p class="card-text text-muted fonts">
+                Here's an overview of my technical abilities, developed through various projects:
+            </p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item fonts">Web Development Technologies: HTML, CSS, Bootstrap and PHP.</li>
+                <li class="list-group-item fonts">Programming Languages: C, C++, Java & Python.</li>
+                <li class="list-group-item fonts">Databases: Microsoft SQL Server & MySQL.</li>
+                <li class="list-group-item fonts">Version Control System: Git & GitHub.</li>
+            </ul>
+        </div>
+        <section id="skills" class="py-5">
+            <!-- Programming Languages -->
+            <div class="skill-section mb-5">
+                <h4 class="skill-title text-center"><i class="fas fa-code me-2"></i>Programming Languages</h4>
+                <div class="skills-container">
+                    <div class="skill-item mb-3">
+                        <span class="skill-name">C</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 77.08%;" aria-valuenow="77.08"
+                                aria-valuemin="0" aria-valuemax="100">77.08%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <span class="skill-name">C++</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 71.88%;" aria-valuenow="71.88"
+                                aria-valuemin="0" aria-valuemax="100">71.88%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <span class="skill-name">Java</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 83.33%;" aria-valuenow="83.33"
+                                aria-valuemin="0" aria-valuemax="100">83.33%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <span class="skill-name">Python</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 72%;" aria-valuenow="72"
+                                aria-valuemin="0" aria-valuemax="100">72%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item overall mt-3">
+                        <span class="skill-name">Overall Proficiency</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 84.85%;"
+                                aria-valuenow="84.85" aria-valuemin="0" aria-valuemax="100">84.85%</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="text-center">To download my programming language proficiency calculation, <a
+                        href="assets/lang_prof_calc.txt" download="lang_prof_calc">click here</a>.
+                </p>
+            </div>
 
-    <footer class="copyright">
+            <!-- Technologies and Tools -->
+            <div class="tech-tools-container">
+                <h4 class="skill-title text-center"><i class="fas fa-tools me-2"></i>Technologies and Tools</h4>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="skill-item"><i class="fab fa-git-alt me-2"></i> Git</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="skill-item"><i class="fab fa-github me-2"></i> GitHub</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="skill-item"><i class="fab fa-html5 me-2"></i> HTML</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="skill-item"><i class="fab fa-css3-alt me-2"></i> CSS</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="skill-item"><i class="fab fa-bootstrap me-2"></i> Bootstrap</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="skill-item"><i class="fab fa-php me-2"></i> PHP</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="skill-item"><i class="fas fa-database me-2"></i> SQL</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="skill-item"><i class="fab fa-flutter me-2"></i> Flutter</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="skill-item"><i class="fas fa-fire me-2"></i> Firebase</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-section">
+                <h4 class="skill-title text-success text-center"><i class="fas fa-users me-2"></i>Soft Skills</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning"><i class="fas fa-puzzle-piece me-2"></i> Problem
+                                    Solving</h5>
+                                <p class="card-text text-secondary font-monospace text-justify">Ability to analyze
+                                    complex problems and develop effective solutions. I solve problems on online
+                                    platforms and read CP books to further enhance my problem-solving skills in my
+                                    leisure time. I aim to sharpen my analytical thinking and improve my approach to
+                                    solving complex issues efficiently.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning"><i class="fas fa-comments me-2"></i> Communication
+                                </h5>
+                                <p class="card-text text-secondary font-monospace text-justify">Developing verbal and
+                                    written communication skills to collaborate effectively with peers and mentors.
+                                    Learning to explain technical concepts clearly and contribute to project
+                                    discussions. Gaining experience in creating documentation and reports for better
+                                    understanding and transparency.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning"><i class="fas fa-users me-2"></i> Teamwork</h5>
+                                <p class="card-text text-secondary font-monospace text-justify">Building teamwork skills
+                                    to effectively collaborate with classmates and project partners. Learning to
+                                    contribute to group projects, share ideas, and support team members. Gaining
+                                    experience in coordinating tasks and working together towards common goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer mt-5">
         <div class="container">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script>, Mirza Naeem Beg.</p>
+            <p class="text-center mb-3">&copy;
+                <script>document.write(new Date().getFullYear())</script>, Mirza Naeem Beg.
+            </p>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
+                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Research
+                        Collaborations, Part-time Positions</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-md-end"><i class="fs-4 bi-envelope-paper"></i> <strong>Contact Me:</strong></p>
+                    <div class="contact-info text-md-end">
+                        <a href="mailto:mirzanaeem278@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/naeembeg" class="footer-link" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/mrnimblenaeem" class="footer-link" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mn_beg/" class="footer-link" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

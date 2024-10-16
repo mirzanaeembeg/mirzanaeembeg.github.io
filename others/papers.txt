@@ -1,0 +1,73 @@
+<div class="row">
+            <!-- Paper 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="paper-card h-100">
+                    <div class="paper-card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-file-alt paper-icon"></i>
+                            <h5 class="mb-0">Title of Your Research Paper</h5>
+                        </div>
+                        <p><strong>Authors:</strong> Mirza Naeem Beg, Co-author Name</p>
+                        <p><strong>Published in:</strong> Journal/Conference Name, Year</p>
+                        <p class="paper-abstract">Brief abstract or summary of the paper goes here. This gives readers a quick overview of your research.</p>
+                        <div class="mt-3 mb-3">
+                            <span class="badge badge-custom">Machine Learning</span>
+                            <span class="badge badge-custom">Data Analysis</span>
+                            <span class="badge badge-custom">Algorithm Design</span>
+                        </div>
+                        <a href="#" class="paper-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Read Full Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paper 2 (Thesis) -->
+            <div class="col-md-6 mb-4">
+                <div class="paper-card h-100">
+                    <div class="paper-card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-book paper-icon"></i>
+                            <h5 class="mb-0">Your Thesis Title</h5>
+                        </div>
+                        <p><strong>Author:</strong> Mirza Naeem Beg</p>
+                        <p><strong>Institution:</strong> University Name, Year</p>
+                        <p class="paper-abstract">Brief description of your thesis work and its significance in the field.</p>
+                        <div class="mt-3 mb-3">
+                            <span class="badge badge-custom">Artificial Intelligence</span>
+                            <span class="badge badge-custom">Neural Networks</span>
+                            <span class="badge badge-custom">Computer Vision</span>
+                        </div>
+                        <a href="#" class="paper-link" target="_blank">
+                            <i class="fas fa-download"></i> Download Thesis
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article -->
+            <div class="col-md-6 mb-4">
+                <div class="paper-card h-100">
+                    <div class="paper-card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-newspaper paper-icon"></i>
+                            <h5 class="mb-0">Title of Your Technical Article</h5>
+                        </div>
+                        <p><strong>Author:</strong> Mirza Naeem Beg</p>
+                        <p><strong>Published on:</strong> Website/Blog Name, Date</p>
+                        <p class="paper-abstract">A brief introduction to the topic covered in your article and its relevance to the field.</p>
+                        <div class="mt-3 mb-3">
+                            <span class="badge badge-custom">Web Development</span>
+                            <span class="badge badge-custom">JavaScript</span>
+                            <span class="badge badge-custom">Frontend Optimization</span>
+                        </div>
+                        <a href="#" class="paper-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Read Article
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more papers/articles as needed -->
+
+        </div>

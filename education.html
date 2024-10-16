@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,277 +10,295 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="styles/education.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar" data-aos="fade-right">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <img src="assets/profile2.png" class="rounded-circle mb-3" width="150" alt="Mirza Naeem Beg">
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-                        id="menu">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-person-badge"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Prefaces</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="education.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-mortarboard"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Education</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="projects.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-folder"></i> <span class="ms-1 d-none d-sm-inline">Projects</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="skills.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-braces"></i> <span class="ms-1 d-none d-sm-inline">Skills</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="learnings.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-book"></i> <span class="ms-1 d-none d-sm-inline">Learnings</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="papers.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-file-text"></i> <span class="ms-1 d-none d-sm-inline">Papers</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-envelope-paper"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Contact</span>
-                            </a>
-                        </li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="name">Naeem Beg</span>
+                        <span class="tagline">Ambitious • Resilient • Realistic</span>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fs-4 bi-person-badge"></i>
+                                <span>Prefaces</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="education.html"><i
+                                    class="fs-4 bi-mortarboard"></i>
+                                <span>Education</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-4 bi-folder"></i>
+                                <span>Projects</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-4 bi-braces"></i>
+                                <span>Skills</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="learnings.html"><i class="fs-4 bi-book"></i>
+                                <span>Learnings</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="papers.html"><i class="fs-4 bi-file-text"></i>
+                                <span>Papers</span></a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="col py-3">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Prefaces</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="education.html">Education</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="projects.html">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="skills.html">Skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="learnings.html">Learnings</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="papers.html">Papers</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <h1 class="intro display-6"><i class="fs-1 bi-mortarboard"></i> Education</h1>
+        <section id="education" class="py-5">
+            <div class="container">
+                <h2 class="display-4 text-center fs-1 mb-4 text-info">Undergraduate</h2>
+                <div class="card mb-5" data-aos="fade-up">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 mb-3 mb-md-0">
+                                <a href="https://aust.edu/" target="_blank">
+                                    <img src="assets/aust_logo.svg" alt="AUST Logo" class="img-fluid university-logo"
+                                        width="100" height="100">
+                                </a>
+                            </div>
+                            <div class="col-md-10">
+                                <h3 class="card-title text-black">B. Sc. in Computer Science & Engineering</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">Ahsanullah University Of Science And
+                                    Technology</h4>
+                                <p>Expected Graduation: March, 2026</p>
+                                <p>Current CGPA: 3.0+ / 4.0</p>
+                            </div>
                         </div>
                     </div>
-                </nav>
-                <h1 class="intro">Education</h1>
-                <!-- <div class="card-body" data-aos="fade-up">
-                    <p class="text-start text-info-emphasis font-monospace">I'm excited to share with you the
-                        key milestones and experiences that have shaped my
-                        educational path as a dedicated undergraduate in Computer Science & Engineering at
-                        AUST. My educational journey began in the serene city of Mymensingh, where I completed
-                        my
-                        schooling and college. These formative years ignited my passion for learning and
-                        curiosity about technology, setting the foundation for my current pursuits.</p>
-                </div> -->
-                <section id="education" class="py-5" data-aos="fade-up">
-                    <div class="container">
-                        <!-- Current Degree -->
-                        <h1 class="display-4 text-center fs-1 mb-4 text-info">Undergraduate:</h1>
-                        <div class="card mb-5" data-aos="fade-up">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-md-2 mb-3 mb-md-0">
-                                        <a href="https://aust.edu/" target="_blank"><img src="assets/aust_logo.svg" alt="AUST Logo" class="img-fluid university-logo" width="100" height="100"></a>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h3 class="card-title text-black">B. Sc. in Computer Science & Engineering</h3>
-                                        <h4 class="card-subtitle mb-2 text-muted">Ahsanullah University Of Science And Technology</h4>
-                                        <p class="card-text">Expected Graduation: March, 2026</p>
-                                        <p class="card-text text-info-emphasis font-monospace">Current CGPA: 3.0+ / 4.0</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <!-- Key Courses -->
-                        <h3 class="mb-4 text-center">Key Courses Completed</h3>
-                        <div class="row">
-                            <div class="col-md-6 mb-4" data-aos="fade-up">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold fonts fs-4">Elementary Structured Programming (CSE1101)</h5>
-                                        <p class="card-text text-start fonts">Basic programming concepts and notations; Variables, Constants, Data types; 
-                                            Input and Output Statements; Control Structures; Functions and Subroutines; 
-                                            Processing Structured data: Arrays, Strings, Pointers, Structures.</p>
-                                        <p class="card-text text-info-emphasis font-monospace">Obtained GPA: Theory: 3.0/4.0, Lab: 3.25/4.0</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4" data-aos="fade-up">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold fonts fs-4">Object Oriented Programming (CSE1205)</h5>
-                                        <p class="card-text text-start fonts">
-                                            Classes, Objects, Methods, Constructors, Destructors, Encapsulation, Object Reference, Polymorphism, Array of Objects, Class Hierarchy, Member Access, Inheritance, Overloading, Overriding, Extensive, Robust Program Design.</p>
-                                        <p class="card-text text-info-emphasis font-monospace">Obtained GPA: Theory: 3.0/4.0, Lab: 4.0/4.0</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4" data-aos="fade-up">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold fonts fs-4">Data Structures (CSE2103)</h5>
-                                        <p class="card-text text-start fonts">Data Structure Notation, Search Efficiency, Logical Values, Integers, Packed Words, Arrays, Lists (Sub-lists, Recursive Lists, Circular Lists, Orthogonal Lists), Stacks, Queues, Graphs (Binary Tree, Threaded Tree), Sorting, Searching, Hashing, Computational Problems.</p>
-                                        <p class="card-text text-info-emphasis font-monospace">Obtained GPA: Theory: 2.75/4.0, Lab: 3.25/4.0</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4" data-aos="fade-up">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold fonts fs-4">Algorithms (CSE2207)</h5>
-                                        <p class="card-text text-start fonts">Algorithmic Complexity Analysis; Methods for the design of efficient algorithms: 
-                                            Divide and Conquer, Greedy method, Dynamic programming, Backtracking, 
-                                            Branch and Bound, Polynomial evaluation, Lower bound theory, Intractable 
-                                            problems.</p>
-                                        <p class="card-text text-info-emphasis font-monospace">Obtained GPA: Theory: 3.0/4.0, Lab: 2.5/4.0</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4" data-aos="fade-up">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold fonts fs-4">Numerical Methods (CSE2201)</h5>
-                                        <p class="card-text text-start fonts">Iterative Methods, Evaluation of Polynomials, Bisection Method, False Position Method, Newton-Raphson Method, Secant Method, Fixed Point Method, Interpolation, Curve Fitting Methods, Numerical Differentiation, Numerical Integration, Systems of Linear Equations, Gaussian Elimination, Iteration Methods, Matrix Inversion Method, Gauss Elimination with Pivoting, Gauss-Jordan Method, Ordinary Differential Equations, Taylor's Series Method, Euler's Method, Predictor-Corrector Methods.</p>
-                                        <p class="card-text text-info-emphasis font-monospace">Obtained GPA: Theory: 3.0/4.0, Lab: 4.0/4.0</p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4" data-aos="fade-up">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold fonts fs-4">Software Development - I to IV</h5>
-                                        <p class="card-text text-start fonts">Teams develop software using structured programming languages like C and C++, emphasizing advanced features such as strings, files, sound, and graphics. In Java, the focus shifts to object-oriented programming for collaborative software projects. Additionally, groups engage in creating applications with Flutter, adapting to current trends in the sector. Concurrently, ongoing teamwork in web development addresses contemporary advancements, ensuring projects align with current industry standards and technologies.</p>
-                                        <p class="card-text text-info-emphasis font-monospace">Obtained GPA: 3.25, 3.5, 3.5 & N/A out of 4.0</p>
-                                    </div>
-                                </div>
-                            </div>
-                        <div class="col-md-6 mb-4" data-aos="fade-up">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold fonts fs-4">Mathematical Analysis for                  
-                                        Computer Science (CSE3101 running)</h5>
-                                    <p class="card-text text-start fonts">Recurrence Relations, Sum Calculations, Integer Functions, Binomial Coefficient, Number Theory, Probability Distributions, Expectations, Total Probability, Bayes' Rule, Discrete Distributions, Geometric Distribution, Poisson Distribution, Continuous Distributions, Exponential Distribution, Gaussian Distribution, Stochastic Processes, Random Variate Generation, Discrete-Parameter Markov Chain, Queueing Systems, M/m/1 Queuing System, M/M/m Queuing System, Algorithm, Machine Learning, Pattern Recognition, Simulation Modeling</p>
-                                    <p class="card-text text-info-emphasis font-monospace">Obtained GPA: N/A</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4" data-aos="fade-up">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold fonts fs-4">Database (CSE3103 running)</h5>
-                                    <p class="card-text text-start fonts">Data and database systems; Database design: Data models, Data dictionary, 
-                                        Functional dependency, Normal forms; Query languages: Relational algebra 
-                                        and calculus, SQL; Query processing: Interpretation, Cost estimation, 
-                                        Transaction management, Optimization; Storage and retrieval: Data 
-                                        organization, Indexing and hashing, Directory systems; Database management: 
-                                        Administration, Security, Integrity; Introduction to advanced database systems.</p>
-                                    <p class="card-text text-info-emphasis font-monospace">Obtained GPA: N/A</p>
-                                </div>
-                            </div>
-                        </div>
+                </div>
 
-                        <!-- HSC Details -->
-                        <h1 class="display-4 text-center fs-1 mb-4 text-info">Intermediate:</h1>
-                        <div class="card mb-5" data-aos="fade-up">
+                <h3 class="mb-4 text-center">Key Courses Completed</h3>
+                <div class="row">
+                    <!-- Course cards here (6-8 cards) -->
+                    <!-- Example of a course card: -->
+                    <div class="col-md-6 mb-4" data-aos="fade-up">
+                        <div class="card h-100">
                             <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-md-2 mb-3 mb-md-0">
-                                        <img src="assets/mgc_logo.jpg" alt="MGC Logo" class="img-fluid university-logo" width="100" height="100">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h3 class="card-title">Higher Secondary Certificate (HSC)</h3>
-                                        <h4 class="card-subtitle mb-2 text-muted">Mymensingh Government College</h4>
-                                        <p class="card-text">Graduation Year: 2020</p>
-                                        <p class="card-text">Group: Science</p>
-                                        <p class="card-text text-info-emphasis font-monospace">GPA: 5.0 / 5.0</p>
-                                    </div>
-                                </div>
+                                <h4 class="card-title fw-bold fonts fs-4">Elementary Structured Programming (CSE1101)
+                                </h4>
+                                <p class="card-text">Basic programming concepts and notations; Variables, Constants,
+                                    Data types; Input and Output Statements; Control Structures; Functions and
+                                    Subroutines; Processing Structured data: Arrays, Strings, Pointers, Structures.</p>
+                                <p class="card-text"><strong>Obtained GPA:</strong> Theory: 3.0/4.0, Lab: 3.25/4.0</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fonts fs-4">Object Oriented Programming (CSE1205)</h5>
+                                <p class="card-text text-start fonts">
+                                    Classes, Objects, Methods, Constructors, Destructors, Encapsulation, Object
+                                    Reference, Polymorphism, Array of Objects, Class Hierarchy, Member Access,
+                                    Inheritance, Overloading, Overriding, Extensive, Robust Program Design.</p>
+                                <p class="card-text text-info-emphasis font-monospace">Obtained GPA: Theory: 3.0/4.0,
+                                    Lab: 4.0/4.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fonts fs-4">Data Structures (CSE2103)</h5>
+                                <p class="card-text text-start fonts">Data Structure Notation, Search Efficiency,
+                                    Logical Values, Integers, Packed Words, Arrays, Lists (Sub-lists, Recursive Lists,
+                                    Circular Lists, Orthogonal Lists), Stacks, Queues, Graphs (Binary Tree, Threaded
+                                    Tree), Sorting, Searching, Hashing, Computational Problems.</p>
+                                <p class="card-text text-info-emphasis font-monospace">Obtained GPA: Theory: 2.75/4.0,
+                                    Lab: 3.25/4.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fonts fs-4">Algorithms (CSE2207)</h5>
+                                <p class="card-text text-start fonts">Algorithmic Complexity Analysis; Methods for the
+                                    design of efficient algorithms:
+                                    Divide and Conquer, Greedy method, Dynamic programming, Backtracking,
+                                    Branch and Bound, Polynomial evaluation, Lower bound theory, Intractable
+                                    problems.</p>
+                                <p class="card-text text-info-emphasis font-monospace">Obtained GPA: Theory: 3.0/4.0,
+                                    Lab: 2.5/4.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fonts fs-4">Numerical Methods (CSE2201)</h5>
+                                <p class="card-text text-start fonts">Iterative Methods, Evaluation of Polynomials,
+                                    Bisection Method, False Position Method, Newton-Raphson Method, Secant Method, Fixed
+                                    Point Method, Interpolation, Curve Fitting Methods, Numerical Differentiation,
+                                    Numerical Integration, Systems of Linear Equations, Gaussian Elimination, Iteration
+                                    Methods, Matrix Inversion Method, Gauss Elimination with Pivoting, Gauss-Jordan
+                                    Method, Ordinary Differential Equations, Taylor's Series Method, Euler's Method,
+                                    Predictor-Corrector Methods.</p>
+                                <p class="card-text text-info-emphasis font-monospace">Obtained GPA: Theory: 3.0/4.0,
+                                    Lab: 4.0/4.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fonts fs-4">Software Development - I to IV</h5>
+                                <p class="card-text text-start fonts">Teams develop software using structured
+                                    programming languages like C and C++, emphasizing advanced features such as strings,
+                                    files, sound, and graphics. In Java, the focus shifts to object-oriented programming
+                                    for collaborative software projects. Additionally, groups engage in creating
+                                    applications with Flutter, adapting to current trends in the sector. Concurrently,
+                                    ongoing teamwork in web development addresses contemporary advancements, ensuring
+                                    projects align with current industry standards and technologies.</p>
+                                <p class="card-text text-info-emphasis font-monospace">Obtained GPA: 3.25, 3.5, 3.5 &
+                                    N/A out of 4.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fonts fs-4">Mathematical Analysis for
+                                    Computer Science (CSE3101 running)</h5>
+                                <p class="card-text text-start fonts">Recurrence Relations, Sum Calculations, Integer
+                                    Functions, Binomial Coefficient, Number Theory, Probability Distributions,
+                                    Expectations, Total Probability, Bayes' Rule, Discrete Distributions, Geometric
+                                    Distribution, Poisson Distribution, Continuous Distributions, Exponential
+                                    Distribution, Gaussian Distribution, Stochastic Processes, Random Variate
+                                    Generation, Discrete-Parameter Markov Chain, Queueing Systems, M/m/1 Queuing System,
+                                    M/M/m Queuing System, Algorithm, Machine Learning, Pattern Recognition, Simulation
+                                    Modeling</p>
+                                <p class="card-text text-info-emphasis font-monospace">Obtained GPA: N/A</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fonts fs-4">Database (CSE3103 running)</h5>
+                                <p class="card-text text-start fonts">Data and database systems; Database design: Data
+                                    models, Data dictionary,
+                                    Functional dependency, Normal forms; Query languages: Relational algebra
+                                    and calculus, SQL; Query processing: Interpretation, Cost estimation,
+                                    Transaction management, Optimization; Storage and retrieval: Data
+                                    organization, Indexing and hashing, Directory systems; Database management:
+                                    Administration, Security, Integrity; Introduction to advanced database systems.</p>
+                                <p class="card-text text-info-emphasis font-monospace">Obtained GPA: N/A</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other courses -->
+                </div>
 
-                        <!-- SSC Details -->
-                        <h1 class="display-4 text-center fs-1 mb-4 text-info">Secondary:</h1>
-                        <div class="card mb-5" data-aos="fade-up">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-md-2 mb-3 mb-md-0">
-                                        <img src="assets/pms_logo.jpg" alt="PMS Logo" class="img-fluid university-logo" width="100" height="100">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h3 class="card-title">Secondary School Certificate (SSC)</h3>
-                                        <h4 class="card-subtitle mb-2 text-muted">Progressive Model School, Mymensingh</h4>
-                                        <p class="card-text">Graduation Year: 2017</p>
-                                        <p class="card-text">Group: Science</p>
-                                        <p class="card-text text-info-emphasis font-monospace">GPA: 5.0 / 5.0</p>
-                                    </div>
-                                </div>
+                <h2 class="display-4 text-center fs-1 mb-4 text-info mt-5">Intermediate</h2>
+                <div class="card mb-5" data-aos="fade-up">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 mb-3 mb-md-0">
+                                <img src="assets/mgc_logo.jpg" alt="MGC Logo" class="img-fluid university-logo"
+                                    width="100" height="100">
+                            </div>
+                            <div class="col-md-10">
+                                <h3 class="card-title">Higher Secondary Certificate (HSC)</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">Mymensingh Government College</h4>
+                                <p>Graduation Year: 2020</p>
+                                <p>Group: Science</p>
+                                <p>GPA: 5.0 / 5.0</p>
                             </div>
                         </div>
-                    
-                        <!-- Skills Progress -->
-                        <h3 class="mb-4 text-center">Skills Progress</h3>
+                    </div>
+                </div>
+
+                <h2 class="display-4 text-center fs-1 mb-4 text-info mt-5">Secondary</h2>
+                <div class="card mb-5" data-aos="fade-up">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 mb-3 mb-md-0">
+                                <img src="assets/pms_logo.jpg" alt="PMS Logo" class="img-fluid university-logo"
+                                    width="100" height="100">
+                            </div>
+                            <div class="col-md-10">
+                                <h3 class="card-title">Secondary School Certificate (SSC)</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">Progressive Model School, Mymensingh</h4>
+                                <p>Graduation Year: 2017</p>
+                                <p>Group: Science</p>
+                                <p>GPA: 5.0 / 5.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="mb-4 text-center">Skills Progress</h3>
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
                         <div class="mb-3" data-aos="fade-up">
                             <h5>Programming</h5>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">80%</div>
                             </div>
                         </div>
                         <div class="mb-3" data-aos="fade-up">
                             <h5>Data Structures</h5>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">75%</div>
                             </div>
                         </div>
                         <div class="mb-3" data-aos="fade-up">
                             <h5>Problem Solving</h5>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100">70%</div>
                             </div>
                         </div>
                         <div class="mb-3" data-aos="fade-up">
                             <h5>Algorithms</h5>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65"
+                                    aria-valuemin="0" aria-valuemax="100">65%</div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <p class="text-center mb-3">&copy;
+                <script>document.write(new Date().getFullYear())</script>, Mirza Naeem Beg.
+            </p>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
+                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Research
+                        Collaborations, Part-time Positions</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-md-end"><i class="fs-4 bi-envelope-paper"></i> <strong>Contact Me:</strong></p>
+                    <div class="contact-info text-md-end">
+                        <a href="mailto:mirzanaeem278@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/naeembeg" class="footer-link" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/mrnimblenaeem" class="footer-link" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mn_beg/" class="footer-link" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -290,11 +309,6 @@
             once: true
         });
     </script>
-
-    <footer class="copyright">
-        <div class="container">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script>, Mirza Naeem Beg.</p>
-        </div>
-    </footer>
 </body>
+
 </html>
