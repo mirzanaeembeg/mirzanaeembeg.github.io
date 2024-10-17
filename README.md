@@ -1,7 +1,7 @@
 
 ---
 
-# Portfolio Project
+# [My Portfolio](https://naeembeg.github.io/)
 
 Welcome to my portfolio project repository! This project showcases my skills, projects and achievements in the field of computer science.
 
