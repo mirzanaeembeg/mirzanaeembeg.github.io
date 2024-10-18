@@ -40,6 +40,9 @@ This is the V2.0 of my portfolio. You will find the V1.0 is zipped on the <stron
 
 #### Go to your browser and visit: [https://naeembeg.github.io/](https://naeembeg.github.io/)
 
+### View this project's video:
+Project's [ScreenCast](https://youtu.be/6o7jbOOSK1U)
+
 ## Contributing
 
 If you'd like to contribute to this project, please follow these guidelines:
