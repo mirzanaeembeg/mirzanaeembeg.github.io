@@ -55,17 +55,42 @@ body {
   margin-right: 5px;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-  color: grey;
-  font-weight: bolder;
-  text-decoration: underline;
-  text-decoration-color: gray;
-  text-decoration-thickness: 5px;
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  display: inline-block; /* This ensures the link only takes up needed space */
+  width: fit-content; /* This restricts width to content */
 }
 
-/* .navbar-nav .nav-item .nav-link:hover span {
+.navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: black;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: brown;
+  font-weight: bolder;
+  transform: translateY(-2px);
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 80%;
+}
+
+.navbar-nav .nav-item .nav-link:hover span {
   padding: 2px 5px;
-} */
+  background-color: rgba(165, 42, 42, 0.1);
+  border-radius: 4px;
+}
 
 /* Main Content Styles */
 .intro {
@@ -134,22 +159,31 @@ strong {
 
 /* Updated Responsive Styles */
 @media (max-width: 991px) {
-    .navbar-nav {
-        text-align: left;
-    }
-    
-    .navbar-nav .nav-link {
-        padding: 10px 0;
-        justify-content: flex-start;
-    }
+  .navbar-nav {
+      text-align: left;
+  }
+  
+  .navbar-nav .nav-link {
+      padding: 10px 0;
+      justify-content: flex-start;
+  }
 
-    .navbar-nav .nav-link i {
-        margin-right: 10px;
-        width: 20px;
-        text-align: center;
-    }
+  .navbar-nav .nav-link i {
+      margin-right: 10px;
+      width: 20px;
+      text-align: center;
+  }
 
-    .name {
+  .navbar-nav .nav-item {
+      width: fit-content; /* Container only as wide as content */
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+      margin: 5px 0;
+      display: inline-block;
+      width: auto;
+  }
+  .name {
       font-size: 1.8em;
   }
 }
