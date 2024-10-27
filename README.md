@@ -21,12 +21,11 @@ This portfolio project serves as a comprehensive overview of my educational back
 ## Features
 
 - **Introduction:** A brief introduction to myself and my career aspirations.
-- **Education:** Details about my academic journey, including courses completed and grades achieved.
+- **Academic:** Details about my academic journey, including courses completed and grades achieved.
 - **Projects:** Descriptions of significant group and individual projects I have completed, highlighting technologies used and skills demonstrated.
 - **Skills:** An overview of my technical skills, including programming languages, frameworks, and tools.
 - **Learnings:** Information on online courses, certifications, and workshops completed related to computer science.
 - **Papers:** Section for academic papers, if applicable.
-- **Contact:** How to reach out to me for collaborations or inquiries.
 
 ## Technologies Used
 
