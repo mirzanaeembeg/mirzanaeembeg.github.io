@@ -2,94 +2,66 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-  line-height: 1.6;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Navbar Styles */
 .navbar {
-  margin: 10px;
-  background-color: ghostwhite;
-  box-shadow: 10px 5px 10px rgba(255, 0, 0, 0.1);
-  padding: 10px 0;
-  transition: all 0.3s ease;
+    margin: 10px;
+    background-color: ghostwhite;
+    box-shadow: 10px 5px 10px rgba(255, 0, 0, 0.1);
+    padding: 10px 0;
+    transition: all 0.2s ease; /* Reduced transition duration */
 }
 
 .navbar-brand {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .navbar-brand .name {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8em;
-  font-weight: 700;
-  color: #03045e;
-  transition: color 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #03045e;
+    transition: color 0.2s ease; /* Reduced transition duration */
 }
 
 .navbar-brand .tagline {
-  font-family: 'Playfair Display', serif;
-  font-size: 0.8em;
-  color: #555;
-  margin-top: -5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8em;
+    color: #555;
+    margin-top: -5px;
 }
 
 .navbar-nav .nav-link {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  padding: 5px 10px;
-  color: #000000;
-  /* font-size: 1.1em; */
-  font-family: "IBM Plex Mono", monospace;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: #000000;
+    /* font-size: 1.1em; */
+    font-family: "IBM Plex Mono", monospace;
+    transition: color 0.2s ease; /* Reduced transition duration */
 }
 
 .navbar-nav .nav-link i {
-  margin-right: 5px;
-}
-
-.navbar-nav .nav-item .nav-link {
-    position: relative;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
-    display: inline-block; /* This ensures the link only takes up needed space */
-    width: fit-content; /* This restricts width to content */
-}
-
-.navbar-nav .nav-item .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: black;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
+    margin-right: 5px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: brown;
+    color: darkblue;
     font-weight: bolder;
-    transform: translateY(-2px);
-}
-
-.navbar-nav .nav-item .nav-link:hover::after {
-    width: 80%;
-}
-
-.navbar-nav .nav-item .nav-link:hover span {
-    padding: 2px 5px;
-    background-color: rgba(165, 42, 42, 0.1);
-    border-radius: 4px;
+    background-color: gainsboro;
+    border-radius: 20px;
+    transform: translateX(-2px);
 }
 
 /* Main Content Styles */
@@ -218,27 +190,11 @@ strong {
     .navbar-nav {
         text-align: left;
     }
-    
-    .navbar-nav .nav-link {
-        padding: 10px 0;
-        justify-content: flex-start;
-    }
-
-    .navbar-nav .nav-link i {
-        margin-right: 10px;
-        width: 20px;
-        text-align: center;
-    }
 
     .navbar-nav .nav-item {
         width: fit-content; /* Container only as wide as content */
     }
-    
-    .navbar-nav .nav-item .nav-link {
-        margin: 5px 0;
-        display: inline-block;
-        width: auto;
-    }
+
     .name {
         font-size: 1.8em;
     }
@@ -263,11 +219,7 @@ strong {
     .navbar-brand .name {
         font-size: 1.3em;
     }
-    
-    /* .navbar-brand .tagline {
-        display: none;
-    } */
-    
+
     .intro {
         font-size: 1.8em;
     }
