@@ -178,9 +178,6 @@ strong {
 }
 
 @media (max-width: 768px) {
-    .intro {
-        font-size: 2em;
-    }
 
     .card-body .row {
       flex-direction: column;
@@ -194,6 +191,13 @@ strong {
 
     .university-logo {
         max-width: 120px;  /* Slightly larger for better visibility */
+    }
+
+    .intro {
+      font-size: 2em;
+    }
+    .contact-info {
+        margin-top: 1rem;
     }
 
     .card-body .col-md-10 {

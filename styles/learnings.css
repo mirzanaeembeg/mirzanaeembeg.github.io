@@ -172,22 +172,11 @@ body {
     color: #6c757d;
 }
 
-/* .name {
-  font-weight: 500;
-  font-size: 2em;
-  color: #03045e;
-  margin: 0.5em 0;
-  text-align: center;
-  word-wrap: break-word;
-  position: relative;
-  display: inline-block;
-}
-
 strong {
   color: #03045e;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-} */
+}
 
 /* Footer Styles */
 .footer {
@@ -201,11 +190,7 @@ strong {
 .footer p {
     margin-bottom: 5px;
 }
-strong {
-    color: var(--primary-color);
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
+
 .contact-info {
     margin-top: 10px;
 }
@@ -243,7 +228,9 @@ strong {
     .intro {
         font-size: 2em;
     }
-    
+    .contact-info {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 576px) {

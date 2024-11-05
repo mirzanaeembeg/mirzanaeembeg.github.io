@@ -203,6 +203,14 @@ strong {
   }
 }
 
+@media (max-width: 768px) {
+  .intro {
+      font-size: 2em;
+  }
+  .contact-info {
+      margin-top: 1rem;
+  }
+}
 
 @media (max-width: 576px) {
   .navbar {
