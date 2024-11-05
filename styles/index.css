@@ -307,10 +307,6 @@ strong {
         width: 100%;
     }
 
-    .footer .row {
-        text-align: center;
-    }
-
     .contact-info {
         margin-top: 1rem;
     }
@@ -339,14 +335,5 @@ strong {
 
     .footer-link {
         margin: 0 5px;
-    }
-}
-
-@media (hover: none) {
-    .nav-link:hover,
-    .icon-link:hover,
-    .cv-button:hover,
-    .footer-link:hover {
-        transform: none;
     }
 }
