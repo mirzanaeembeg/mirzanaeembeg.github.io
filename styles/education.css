@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Fjalla+One&family=Gruppo&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --primary-color: #03045e;
+  --text-color: #333;
+  --bg-light: #f8f9fa;
+  --hover-color: gray;
+}
 
 body {
   line-height: 1.6;
   color: #333;
-  margin: 0;
-  padding: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,61 +20,104 @@ body {
 .navbar {
   margin: 10px;
   background-color: ghostwhite;
-  box-shadow: 10px 5px 10px rgba(255, 0, 0, 0.1);
-  padding: 10px 0;
-  transition: all 0.2s ease; /* Reduced transition duration */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar-brand {
+.nav-name {
+  font-family: "Cinzel", serif;
+  font-size: large;
+  font-weight: 100;
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+}
+.nav-name .letter {
+  display: inline-block;
+  animation: colorChange 4s var(--delay) infinite;
+  transition: transform 0.3s ease;
+}
+
+.nav-name .letter:hover {
+  transform: translateY(-2px) scale(1.1);
+}
+
+@keyframes colorChange {
+  0% {
+      color: #708090;
+  }
+  25% {
+      color: #483D8B;
+  }
+  50% {
+      color: #556B2F;
+  }
+  75% {
+      color: #03045e;
+  }
+  100% {
+      color: maroon;
+  }
+}
+
+.social-links-nav {
+  margin-top: 5px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  gap: clamp(48px, 2.8vw, 45px);
 }
 
-.navbar-brand .name {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8em;
-  font-weight: 700;
-  color: #03045e;
-  transition: color 0.2s ease; /* Reduced transition duration */
+.nav-social-icon {
+  color: #483D8B;
+  font-size: .9rem;
+  transition: color 0.2s ease;
 }
 
-.navbar-brand .tagline {
-  font-family: 'Playfair Display', serif;
-  font-size: 0.8em;
-  color: #555;
-  margin-top: -5px;
+.nav-social-icon:hover {
+  color: var(--hover-color);
+  transform: translateY(-1px);
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  outline: none;
+}
+
+/* Navigation links styles */
+.navbar-nav {
+  margin-left: auto;
+  padding: 0 15px;
 }
 
 .navbar-nav .nav-link {
   display: flex;
+  gap: 1px;
   align-items: center;
-  margin-top: 10px;
-  padding: 5px 10px;
-  color: #000000;
-  /* font-size: 1.1em; */
-  font-family: "IBM Plex Mono", monospace;
-  transition: color 0.2s ease; /* Reduced transition duration */
+  /* font-family: "IBM Plex Mono", monospace; */
+  font-weight: 400;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  transition: all 0.1s ease;
+  border-radius: 5px;
+  padding: 0;
+  
 }
 
-.navbar-nav .nav-link i {
-  margin-right: 5px;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-  color: darkblue;
-  font-weight: bolder;
+.navbar-nav .nav-link:hover {
+  font-weight: 700;
   background-color: gainsboro;
-  border-radius: 20px;
   transform: translateX(-2px);
+  
 }
 
 /* Main Content Styles */
 .intro {
-  margin-top: .5em;
   text-align: center;
-  margin-bottom: 1.5em;
+  margin: 2rem 0;
   color: #03045e;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
 .university-logo {
@@ -81,23 +129,6 @@ body {
 
 .fonts {
   font-family: "IBM Plex Mono", monospace;
-}
-
-.name {
-  font-weight: 500;
-  font-size: 2em;
-  color: #03045e;
-  margin: 0.5em 0;
-  text-align: center;
-  word-wrap: break-word;
-  position: relative;
-  display: inline-block;
-}
-
-strong {
-  color: #03045e;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
 }
 
 /* Footer Styles */
@@ -132,27 +163,17 @@ strong {
 /* Updated Responsive Styles */
 @media (max-width: 991px) {
   .navbar-nav {
-      text-align: left;
+    padding-top: 1rem;
   }
 
-  .navbar-nav .nav-item {
-      width: fit-content; /* Container only as wide as content */
-  }
-
-  .name {
-      font-size: 1.8em;
+  .navbar-nav .nav-link {
+      gap: 10px;
+      padding: 0;
+      width: fit-content;
   }
 }
 
 @media (max-width: 768px) {
-    .navbar-brand .name {
-        font-size: 1.5em;
-    }
-    
-    .navbar-brand .tagline {
-        font-size: 0.7em;
-    }
-    
     .intro {
         font-size: 2em;
     }
@@ -184,11 +205,21 @@ strong {
 }
 
 @media (max-width: 576px) {
-    .navbar-brand .name {
-        font-size: 1.3em;
+    .navbar {
+      margin: 5px;
+      padding: 10px 0;
     }
-    
+    .social-links-nav {
+      margin-top: 5px;
+      display: flex;
+      gap: clamp(48px, 2.8vw, 45px);
+  }
+
     .intro {
         font-size: 1.8em;
     }
+
+    .footer-link {
+      margin: 0 5px;
+  }
 }

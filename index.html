@@ -10,17 +10,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-brand" href="index.html">
-                    <span class="name">Naeem Beg</span>
-                    <span class="tagline">Ambitious • Resilient • Realistic</span>
-                </a>
+                <div class="name-container">
+                    <span class="nav-name">
+                        <span class="letter" style="--delay: 0s">N</span>
+                        <span class="letter" style="--delay: 0.1s">a</span>
+                        <span class="letter" style="--delay: 0.2s">e</span>
+                        <span class="letter" style="--delay: 0.3s">e</span>
+                        <span class="letter" style="--delay: 0.4s">m</span>
+                        <span class="letter" style="--delay: 0.5s">&nbsp;</span>
+                        <span class="letter" style="--delay: 0.6s">B</span>
+                        <span class="letter" style="--delay: 0.7s">e</span>
+                        <span class="letter" style="--delay: 0.8s">g</span>
+                    </span>
+                </div>
+                <div class="social-links-nav">
+                    <a href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" class="nav-social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/mn_beg" target="_blank" class="nav-social-icon">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/mrnimblenaeem" target="_blank" class="nav-social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,44 +66,55 @@
     </nav>
 
     <div class="container-fluid">
-        <h1 class="intro display-6"><i class="fs-1 bi-person-badge"></i> Prefaces</h1>
+        <h1 id="prefaces" class="intro display-6"><i class="fs-2 bi-person-badge"></i>Prefaces</h1>
+
         <div class="row">
             <div class="col-md-6 mb-4">
                 <div class="pic-sec p-2 text-center">
                     <div class="photo">
                         <img src="assets/profile2.jpeg" alt="Mirza Naeem Beg" class="img-fluid rounded-circle">
                     </div>
-                    <h2 class="name mt-3">Mirza Naeem Beg</h2>
+
+                    <h2 class="name mt-4 mb-2">Mirza Naeem Beg</h2>
+
+                    <div class="tagline-container">
+                        <span class="tagline">Ambitious • Resilient • Realistic</span>
+                    </div>
+
                     <div class="typewriter-container">
                         <span id="typewriter"></span>
                     </div>
+
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" class="icon-link"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/naeembeg" target="_blank" class="icon-link"><i
-                                class="fab fa-github"></i></a>
+                        <a href="https://github.com/naeembeg" target="_blank" class="icon-link">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
-                    <div class="cv-button-container mt-3">
+
+                    <div class="cv-button-container mt-5">
                         <a href="assets/my_cv.pdf" class="cv-button" download="m-naeem-beg-cv.pdf"><i
-                                class="fa-solid fa-lg fa-file-arrow-down"></i> Download CV</a>
+                            class="fa-solid fa-lg fa-file-arrow-down"></i>
+                            Download CV
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+
+            <div class="col-md-6 mb-4 des-sec">
                 <div class="description">
                     <p>Greetings! <span class="animated-emoji">👋</span></p>
-                    <p>I'm <strong>Mirza Naeem Beg</strong>; a Computer Science & Engineering undergrad (3<sup>rd</sup>
-                        Year 1<sup>st</sup> Semester) at Ahsanullah University of Science and Technology (AUST),
-                        Bangladesh, with a CGPA of 3.00+ out of 4.00. Currently, I am living in Dhaka, having spent much
-                        of my childhood in Mymensingh, where my love for technology flourished.</p>
+                    <p>I'm <strong>Mirza Naeem Beg</strong>; a Computer Science & Engineering undergrad (3rd Year 1st
+                        Semester) at Ahsanullah University of Science and Technology (AUST), Bangladesh, with a CGPA of
+                        3.00+ out of 4.00. Currently, I am living in Dhaka, having spent much of my childhood in
+                        Mymensingh, where my love for technology flourished.</p>
                     <p>My journey into the tech realm began during my high school and college years in Mymensingh. Just
                         as people make words out of letters to communicate successfully with each other through
-                        meaningful sentences, machines—or computers—establish communication similarly. This kind of
+                        meaningful sentences, machines---or computers---establish communication similarly. This kind of
                         analogy sparked my interest in computer science, leading me to pursue a degree in Computer
                         Science and Engineering. After my admission to CSE, I discovered my aspiration to become an
                         industry leading AI/ML expert. This ambition has driven me to explore various core branches of
-                        Computer Science, including Problem Solving, AI/ML, Full-Stack Development,
-                        Cybersecurity, Databases and Computer Networks.</p>
+                        Computer Science, including Problem Solving, AI/ML, Full-Stack Development, Cybersecurity,
+                        DevOps and Computer Networks.</p>
                     <p>With a deep-rooted interest in technology since my college days, I am committed to learning and
                         growing in this ever-evolving field. I firmly believe that one day, I will become a valuable
                         asset to the tech industry, contributing innovative solutions and advancements to upcoming
