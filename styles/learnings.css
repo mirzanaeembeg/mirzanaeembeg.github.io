@@ -201,7 +201,11 @@ strong {
 .footer p {
     margin-bottom: 5px;
 }
-
+strong {
+    color: var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
 .contact-info {
     margin-top: 10px;
 }

@@ -147,7 +147,11 @@ body {
 .contact-info {
     margin-top: 10px;
 }
-
+strong {
+  color: var(--primary-color);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
 .footer-link {
     font-size: 1.2rem;
     color: #03045e;
