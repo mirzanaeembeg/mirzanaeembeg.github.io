@@ -35,9 +35,10 @@ body {
 }
 
 .nav-name {
-    font-family: sans-serif;
-    font-size: large;
+    font-family: "Marck Script", cursive;
+    letter-spacing: -5px;
     font-weight: 100;
+    font-size: larger;
     color: var(--primary-color);
     transition: color 0.2s ease;
 }
@@ -72,7 +73,7 @@ body {
 .social-links-nav {
     margin-top: 5px;
     display: flex;
-    gap: clamp(48px, 2.8vw, 45px);
+    gap: clamp(75px, 3.5vw, 70px);
 }
 
 .nav-social-icon {
@@ -136,19 +137,13 @@ body {
     transform: scale(1.05);
 }
 
-.name {
-    font-family: "Marck Script", cursive;
-    font-weight: 500;
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    color: var(--primary-color);
-    margin: 0.5em 0;
-    text-align: center;
-    word-wrap: break-word;
+.pic-sec .photo{
+    margin-top: 25px;
+    margin-bottom: 80px;
 }
-
 .tagline-container {
     text-align: center;
-    margin: 1rem 0;
+    margin: 3rem 0;
 }
 
 .tagline {
@@ -320,7 +315,7 @@ strong {
     .social-links-nav {
         margin-top: 5px;
         display: flex;
-        gap: clamp(48px, 2.8vw, 45px);
+        gap: clamp(75px, 3.5vw, 70px);
     }
 
     .description {
@@ -328,7 +323,4 @@ strong {
         margin: 10px 0;
     }
 
-    .footer-link {
-        margin: 0 5px;
-    }
 }

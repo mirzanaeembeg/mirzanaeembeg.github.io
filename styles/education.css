@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=Jersey+10&family=Marck+Script&family=Satisfy&display=swap');
 
 :root {
   --primary-color: #03045e;
@@ -28,12 +29,14 @@ body {
 }
 
 .nav-name {
-  font-family: sans-serif;
-  font-size: large;
+  font-family: "Marck Script", cursive;
+  letter-spacing: -5px;
   font-weight: 100;
+  font-size: larger;
   color: var(--primary-color);
   transition: color 0.2s ease;
 }
+
 .nav-name .letter {
   display: inline-block;
   animation: colorChange 4s var(--delay) infinite;
@@ -65,7 +68,7 @@ body {
 .social-links-nav {
   margin-top: 5px;
   display: flex;
-  gap: clamp(48px, 2.8vw, 45px);
+  gap: clamp(75px, 3.5vw, 70px);
 }
 
 .nav-social-icon {
@@ -222,14 +225,11 @@ strong {
     .social-links-nav {
       margin-top: 5px;
       display: flex;
-      gap: clamp(48px, 2.8vw, 45px);
-  }
+      gap: clamp(75px, 3.5vw, 70px);
+    }
 
     .intro {
         font-size: 1.8em;
     }
 
-    .footer-link {
-      margin: 0 5px;
-  }
 }
