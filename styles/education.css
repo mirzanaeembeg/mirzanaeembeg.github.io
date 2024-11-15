@@ -132,12 +132,6 @@ body {
   font-family: "IBM Plex Mono", monospace;
 }
 
-strong {
-  color: var(--primary-color);
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-}
-
 /* Footer Styles */
 .footer {
   background-color: var(--bg-light);
@@ -183,16 +177,6 @@ strong {
 }
 
 @media (max-width: 768px) {
-
-    .card-body .row {
-      flex-direction: column;
-   }
-
-    .card-body .col-md-2 {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
 
     .university-logo {
         max-width: 120px;  /* Slightly larger for better visibility */
