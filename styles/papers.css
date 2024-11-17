@@ -110,8 +110,6 @@ body {
 .navbar-nav .nav-link:hover {
     font-weight: 700;
     background-color: gainsboro;
-    transform: translateX(-2px) scale(1.1);
-    padding: 0.2rem 0.5rem;
 }
 
 /* Main Content Styles */
@@ -255,7 +253,7 @@ strong {
         margin-top: 5px;
         display: flex;
         gap: clamp(75px, 3.5vw, 70px);
-    }
+    }k
     .intro {
         font-size: 1.8em;
     }
