@@ -235,15 +235,6 @@ strong {
     }
 }
 
-@media (max-width: 768px) {
-    .intro {
-        font-size: 2em;
-    }
-    .contact-info {
-        margin-top: 1rem;
-    }
-}
-
 @media (max-width: 576px) {
     .navbar {
         margin: 5px;
@@ -254,8 +245,6 @@ strong {
         margin-top: 5px;
         display: flex;
         gap: clamp(75px, 3.5vw, 70px);
-    }k
-    .intro {
-        font-size: 1.8em;
     }
+    
 }
