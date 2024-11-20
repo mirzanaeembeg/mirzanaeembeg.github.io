@@ -131,6 +131,12 @@ body {
 }
 
 /* Footer Styles */
+strong {
+  color: var(--primary-color);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
 .footer {
   background-color: var(--bg-light);
   padding: clamp(15px, 3vw, 25px) 0;
