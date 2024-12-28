@@ -199,6 +199,47 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+/* Add these styles to your index.css file */
+
+.code-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.code-block {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: darkslategrey;
+    color: #d4d4d4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    line-height: 1.5;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.code-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.code-block .keyword {
+    color: #569cd6;
+}
+
+.code-block .function {
+    color: #dcdcaa;
+}
+
+.code-block .parameter {
+    color: #9cdcfe;
+}
+
 .description {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
@@ -317,6 +358,13 @@ strong {
         gap: clamp(75px, 3.5vw, 70px);
     }
 
+    .code-container {
+        padding: 10px;
+    }
+    
+    .code-block {
+        padding: 15px;
+    }
     .description {
         padding: 12px;
         margin: 10px 0;
