@@ -24,6 +24,8 @@ body {
 
 /* Navbar Styles */
 .navbar {
+    border: #03045e 5px double;
+    border-radius: 5px;
     margin: 10px;
     background-color: ghostwhite;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
