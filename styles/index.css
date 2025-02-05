@@ -77,7 +77,7 @@ body {
 }
 
 .nav-social-icon {
-    color: #483D8B;
+    color: black;
     font-size: .9rem;
     transition: color 0.2s ease;
 }
@@ -148,7 +148,7 @@ body {
 .tagline {
     font-family: "IBM Plex Mono", monospace;
     font-size: clamp(1.1rem, 2vw, 1.3rem);
-    color: #555;
+    color: black;
 }
 
 .typewriter-container {
@@ -160,6 +160,7 @@ body {
     font-family: "IBM Plex Mono", monospace;
     font-size: clamp(1rem, 1.8vw, 1.2rem);
     color: #556B2F;
+    font-weight: 600;
 }
 
 .social-icons {
@@ -242,6 +243,7 @@ body {
 
 .description {
     font-family: "IBM Plex Mono", monospace;
+    color: black;
     font-weight: 400;
     font-style: italic;
     font-size: clamp(0.9rem, 1.8vw, 1.1rem);
@@ -251,13 +253,14 @@ body {
     background-color: var(--bg-light);
     border-radius: 5px;
     height: 100%;
-    border: 1px black dashed;
+    border: 5px brown double;
     margin: 15px;
+    box-shadow: grey 0 4px 8px;
 }
 
 strong {
     color: var(--primary-color);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
 }
 
