@@ -94,11 +94,12 @@ body {
 .navbar-nav {
   margin-left: auto;
   padding: 0 15px;
+  gap: 10px;
 }
 
 .navbar-nav .nav-link {
+  border: 1px dashed yellowgreen;
   display: flex;
-  gap: 1px;
   align-items: center;
   font-weight: 400;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
