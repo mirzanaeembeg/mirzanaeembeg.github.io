@@ -225,9 +225,9 @@ strong {
     }
 
     .navbar-nav .nav-link {
-        gap: 10px;
-        padding: 0;
+        padding: 1px;
         width: fit-content;
+        align-items: center;
     }
 
     .navbar-nav .nav-item {

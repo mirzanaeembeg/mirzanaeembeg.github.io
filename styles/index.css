@@ -256,7 +256,7 @@ body {
     background-color: var(--bg-light);
     border-radius: 5px;
     height: 100%;
-    border: 5px brown double;
+    border: 3px black double;
     margin: 15px;
     box-shadow: grey 0 4px 8px;
 }
@@ -324,9 +324,9 @@ strong {
     }
 
     .navbar-nav .nav-link {
-        gap: 10px;
-        padding: 0;
+        padding: 1px;
         width: fit-content;
+        align-items: center;
     }
 
     .description {
