@@ -216,6 +216,20 @@
             once: true
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+    
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50 && navbarCollapse.classList.contains('show')) {
+                    var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

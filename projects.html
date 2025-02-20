@@ -110,7 +110,7 @@
                     <div class="row">
                         <!-- Project 1 -->
                         <div class="row align-items-start mb-5">
-                            <div class="card h-100">
+                            <div class="card border-info h-100">
                                 <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -138,7 +138,7 @@
                                     </button>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold fonts">BechaKena.Com (Built in Auction)</h5>
+                                    <h5 class="card-title text-info fw-bold fonts">BechaKena.Com (Built in Auction)</h5>
                                     <p class="card-text text-start fonts">The e-commerce platform with an auction
                                         feature is a web-based project developed as part of my university coursework. It
                                         enables users to browse, bid on, and purchase products through a responsive
@@ -167,7 +167,7 @@
 
                         <!-- Project 2 -->
                         <div class="row align-items-start">
-                            <div class="card h-100">
+                            <div class="card border-info h-100">
                                 <div id="project2Carousel" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -195,7 +195,7 @@
                                     </button>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold fonts">My-Portfolio</h5>
+                                    <h5 class="card-title text-info fw-bold fonts">My-Portfolio</h5>
                                     <p class="card-text text-start fonts">My portfolio project is a personal website
                                         designed to showcase my skills, projects, and experiences as a CSE
                                         undergraduate. Developed using HTML, CSS, Bootstrap, and some JavaScript, the
@@ -229,7 +229,7 @@
                     <div class="row">
                         <!-- Group Project 1 -->
                         <div class="row align-items-start mb-5">
-                            <div class="card h-100">
+                            <div class="card border-info h-100">
                                 <div id="groupProject1Carousel" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -257,7 +257,7 @@
                                     </button>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold fonts">DoomExploder (An Action Game)</h5>
+                                    <h5 class="card-title text-info fw-bold fonts">DoomExploder (An Action Game)</h5>
                                     <p class="card-text text-start fonts">The action game project, developed
                                         collaboratively in a university software development course CSE1200, utilizes C
                                         and C++ with the iGraphics framework. This project emphasizes advanced features
@@ -289,7 +289,7 @@
 
                         <!-- Group Project 2 -->
                         <div class="row align-items-start mb-5">
-                            <div class="card h-100">
+                            <div class="card border-info h-100">
                                 <div id="groupProject2Carousel" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -313,7 +313,7 @@
                                     </button>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold fonts">TrendWave (inspired by tiktok)</h5>
+                                    <h5 class="card-title text-info fw-bold fonts">TrendWave (inspired by tiktok)</h5>
                                     <p class="card-text text-start fonts">The TikTok clone project, developed
                                         collaboratively in a university software development course CSE2200, utilizes
                                         the Flutter framework, Dart language, and Firebase. This project aimed to create
@@ -345,9 +345,9 @@
                             </div>
                         </div>
                         <div class="row align-items-start mb-5">
-                            <div class="card h-100">
+                            <div class="card border-info h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold fonts">RailWay Ticket Management System</h5>
+                                    <h5 class="card-title text-info fw-bold fonts">RailWay Ticket Management System</h5>
                                     <p class="card-text fonts">I have another group project which is JavaSwing-based
                                         focused on developing a railway ticket management system as part of our
                                         university software development course CSE2100. Leveraging JavaSwing for the
@@ -415,6 +415,20 @@
         });</script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+    
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50 && navbarCollapse.classList.contains('show')) {
+                    var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
