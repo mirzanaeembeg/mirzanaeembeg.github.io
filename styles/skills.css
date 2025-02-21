@@ -124,13 +124,6 @@ body {
     font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
-.university-logo {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 .fonts {
   font-family: "IBM Plex Mono", monospace;
   color: #03045e;
@@ -153,43 +146,57 @@ strong {
   font-weight: bold;
 }
 
+/* Updated CSS for the new sections */
 #skills {
     background-color: #f8f9fa;
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .skill-section {
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
     margin-bottom: 30px;
+}
+
+.skill-category h5 {
+    color: #03045e;
+    margin-bottom: 15px;
     font-family: "IBM Plex Mono", monospace;
 }
 
-.skill-title {
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #343a40;
+.skill-tag {
+    background-color: #e3f2fd;
+    color: #03045e;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-family: "IBM Plex Mono", monospace;
+    transition: all 0.3s ease;
+    margin: 5px;
+    white-space: nowrap;
 }
 
-/* Progress bars */
-.skill-item {
-    margin-bottom: 15px;
+.skill-tag:hover {
+    background-color: #03045e;
+    color: white;
+    transform: scale(1.05);
 }
-
-.skill-name {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
+.skills-container:hover {
+    padding: 10px 15px;
+    border-radius: 15px;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .progress {
-    height: 40px;
+    height: 25px;
     background-color: #e9ecef;
-    border-radius: 20px;
+    border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
+    margin-bottom: 15px;
 }
 
 .progress:hover {
@@ -204,67 +211,129 @@ strong {
     padding-left: 15px;
     font-weight: bold;
     color: white;
-    background-color: dodgerblue;
+    background-color: #03045e;
     transition: width 0.6s ease;
 }
 
-.progress-bar::before {
-    content: "\f121"; /* This is the Font Awesome code for the 'code' icon */
-    font-family: "Font Awesome 5 Free";
-    margin-right: 10px;
-}
-
-.overall .progress-bar {
-    color: #ffffff;
-    background-color: #03045e;
-}
-
-.overall .progress-bar::before {
-    content: "\f201"; /* This is the Font Awesome code for the 'chart' icon */
-}
-
-/* Technologies and Tools */
-.tech-tools-container .skill-item {
-    font-family: "IBM Plex Mono", monospace;
-    background-color: #e9ecef;
-    border-radius: 20px;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #495057;
+.math-skill-card,
+.ai-skill-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
     transition: all 0.3s ease;
 }
 
-.tech-tools-container .skill-item:hover {
-    background-color: #007bff;
-    color: #ffffff;
-    transform: translateX(5px);
-}
-
-.tech-tools-container .skill-item i {
-    margin-right: 10px;
-}
-
-/* Soft Skills cards */
-.card {
+.math-skill-card h6,
+.ai-skill-card h6 {
+    color: #03045e;
+    margin-bottom: 12px;
     font-family: "IBM Plex Mono", monospace;
-    height: 100%;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.text-justify {
+    text-align: justify;
+}
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.soft-skill-card {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
-.card:hover {
+.soft-skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card-title{
-    font-weight: bold;
+.soft-skill-card i {
+    font-size: 2rem;
+    color: #03045e;
+    margin-bottom: 15px;
 }
 
+.soft-skill-card h5 {
+    color: #03045e;
+    margin-bottom: 10px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.soft-skill-card p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-family: "IBM Plex Mono", monospace;
+}
+/* Fixed grid layouts */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+/* Improved skill category containment */
+.skill-category {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Better tag wrapping */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: -5px;
+    padding: 5px;
+}
+
+
+/* Improved progress bar containment */
+.progress {
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 25px;
+    background-color: #e9ecef;
+    border-radius: 12px;
+}
+
+/* Fixed nested grid layouts */
+.math-skills-grid,
+.ai-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Fixed container padding */
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Improved card shadows */
+.skill-category:hover,
+.math-skill-card:hover,
+.ai-skill-card:hover,
+.soft-skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
 
 /* Footer Styles */
 .footer {
@@ -307,6 +376,35 @@ strong {
         padding: 1px;
         width: fit-content;
         align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .progress {
+        height: 20px;
+    }
+    .skills-grid,
+    .soft-skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-category,
+    .soft-skill-card {
+        padding: 15px;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .math-skills-grid,
+    .ai-skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-tag {
+        font-size: 0.8rem;
+        padding: 5px 10px;
     }
 }
 
