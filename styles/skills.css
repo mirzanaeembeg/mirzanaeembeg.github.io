@@ -274,7 +274,10 @@ strong {
 /* Fixed grid layouts */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-areas: "box-1 box-2 box-3"
+                         "box-4 box-2 box-3"
+                         "box-5 box-2 box-3"
+                         "box-6 box-2 box-3";
     gap: 25px;
     padding: 20px 0;
     margin: 0;
@@ -384,7 +387,6 @@ strong {
     .progress {
         height: 20px;
     }
-    .skills-grid,
     .soft-skills-grid {
         grid-template-columns: 1fr;
     }
@@ -394,9 +396,14 @@ strong {
         padding: 15px;
     }
     .skills-grid {
+        grid-template-areas: "box-1"
+                            "box-2"
+                            "box-3"
+                            "box-4"
+                            "box-5"
+                            "box-6";
         grid-template-columns: 1fr;
     }
-    
     .math-skills-grid,
     .ai-skills-grid {
         grid-template-columns: 1fr;
