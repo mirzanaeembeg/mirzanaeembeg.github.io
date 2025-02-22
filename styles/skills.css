@@ -186,7 +186,8 @@ strong {
 .skills-container:hover {
     padding: 10px 15px;
     border-radius: 15px;
-    transform: translateY(-2px);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
