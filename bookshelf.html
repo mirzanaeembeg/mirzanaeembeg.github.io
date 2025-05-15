@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookshelf</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes="600x600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="styles/bookshelf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="navbar-brand">
+                <div class="name-container">
+                    <span class="nav-name">
+                        <span class="letter" style="--delay: 0s">M</span>
+                        <span class="letter" style="--delay: 0.1s">i</span>
+                        <span class="letter" style="--delay: 0.2s">r</span>
+                        <span class="letter" style="--delay: 0.3s">z</span>
+                        <span class="letter" style="--delay: 0.4s">a</span>
+                        <span class="letter" style="--delay: 0.5s">&nbsp;</span>
+                        <span class="letter" style="--delay: 0.6s">N</span>
+                        <span class="letter" style="--delay: 0.7s">a</span>
+                        <span class="letter" style="--delay: 0.8s">e</span>
+                        <span class="letter" style="--delay: 0.9s">e</span>
+                        <span class="letter" style="--delay: 1.0s">m</span>
+                        <span class="letter" style="--delay: 1.1s">&nbsp;</span>
+                        <span class="letter" style="--delay: 1.2s">B</span>
+                        <span class="letter" style="--delay: 1.3s">e</span>
+                        <span class="letter" style="--delay: 1.4s">g</span>
+                    </span>
+                </div>
+                <div class="social-links-nav">
+                    <a href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" class="nav-social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/mn_beg" target="_blank" class="nav-social-icon">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/mrnimblenaeem" target="_blank" class="nav-social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fs-6 bi-person-badge"></i>
+                            <span>Prefaces</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-6 bi-mortarboard"></i>
+                            <span>Academic</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-6 bi-folder"></i>
+                            <span>Projects</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-6 bi-braces"></i>
+                            <span>Skills</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="learnings.html"><i class="fs-6 bi-book"></i>
+                            <span>Learnings</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="bookshelf.html"><i class="fs-6 bi-bookshelf"></i>
+                            <span>Bookshelf</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="papers.html"><i class="fs-6 bi-file-text"></i>
+                            <span>Papers</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <h1 class="intro display-6"><i class="fs-2 bi-bookshelf"></i> My Bookshelf</h1>
+        
+        <div class="inspirational-quote">
+            <p>"In Sha Allah one day I will finish reading all of these books and use the knowledge to contribute to the world!"</p>
+        </div>
+        
+        <div class="disclaimer">
+            <p><i class="fas fa-info-circle"></i> All books are collected from the internet for personal learning purposes.</p>
+        </div>
+
+        <section class="category-selection">
+            <div class="container">
+                <div class="category-tabs">
+                    <div class="tabs-container">
+                        <button class="category-tab active" data-category="problem-solving">Problem Solving</button>
+                        <button class="category-tab" data-category="ai-ml">AI & ML</button>
+                        <button class="category-tab" data-category="blockchain">Blockchain</button>
+                        <button class="category-tab" data-category="cse">CSE Fundamentals</button>
+                        <button class="category-tab" data-category="cybersecurity">Cybersecurity</button>
+                        <button class="category-tab" data-category="data-science">Data Science</button>
+                        <button class="category-tab" data-category="devops">DevOps</button>
+                        <button class="category-tab" data-category="full-stack">Full-Stack</button>
+                        <button class="category-tab" data-category="git">Git & GitHub</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="books-section">
+            <div class="container">
+                <!-- Problem Solving Category -->
+                <div class="category-content active" id="problem-solving">
+                    <h2 class="category-title">Problem Solving</h2>
+                    
+                    <div class="level-container">
+                        <h3 class="level-title beginner">Beginner <i class="fas fa-seedling"></i></h3>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Think Like a Programmer</h4>
+                                        <p class="author">by V. Anton Spraul</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Problem Solving 101</h4>
+                                        <p class="author">by Ken Watanabe</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>How to Solve It</h4>
+                                        <p class="author">by George Pólya</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Programming Pearls</h4>
+                                        <p class="author">by Jon Bentley</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Grokking Algorithms</h4>
+                                        <p class="author">by Aditya Bhargava</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="level-container">
+                        <h3 class="level-title intermediate">Intermediate <i class="fas fa-tree"></i></h3>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Cracking the Coding Interview</h4>
+                                        <p class="author">by Gayle Laakmann McDowell</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Introduction to Algorithms</h4>
+                                        <p class="author">by Thomas H. Cormen et al.</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Elements of Programming Interviews</h4>
+                                        <p class="author">by Adnan Aziz et al.</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Data Structures and Algorithms Made Easy</h4>
+                                        <p class="author">by Narasimha Karumanchi</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Dynamic Programming for Coding Interviews</h4>
+                                        <p class="author">by Meenakshi & Kamal Rawat</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="level-container">
+                        <h3 class="level-title advanced">Advanced <i class="fas fa-mountain"></i></h3>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Algorithm Design Manual</h4>
+                                        <p class="author">by Steven S. Skiena</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Competitive Programming 3</h4>
+                                        <p class="author">by Steven Halim & Felix Halim</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Algorithms on Strings, Trees, and Sequences</h4>
+                                        <p class="author">by Dan Gusfield</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Pearls of Functional Algorithm Design</h4>
+                                        <p class="author">by Richard Bird</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Algorithmic Problem Solving</h4>
+                                        <p class="author">by Roland Backhouse</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & ML Category -->
+                <div class="category-content" id="ai-ml">
+                    <h2 class="category-title">AI & Machine Learning</h2>
+                    
+                    <div class="level-container">
+                        <h3 class="level-title beginner">Beginner <i class="fas fa-seedling"></i></h3>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Hands-On Machine Learning with Scikit-Learn and TensorFlow</h4>
+                                        <p class="author">by Aurélien Géron</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Machine Learning For Absolute Beginners</h4>
+                                        <p class="author">by Oliver Theobald</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Python Machine Learning</h4>
+                                        <p class="author">by Sebastian Raschka</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>AI Crash Course</h4>
+                                        <p class="author">by Hadelin de Ponteves</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Machine Learning For Dummies</h4>
+                                        <p class="author">by John Paul Mueller & Luca Massaron</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Other levels for AI & ML would go here -->
+                    <div class="level-container">
+                        <h3 class="level-title intermediate">Intermediate <i class="fas fa-tree"></i></h3>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <!-- More book cards would go here -->
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Deep Learning</h4>
+                                        <p class="author">by Ian Goodfellow et al.</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Pattern Recognition and Machine Learning</h4>
+                                        <p class="author">by Christopher Bishop</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Natural Language Processing with PyTorch</h4>
+                                        <p class="author">by Delip Rao & Brian McMahan</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Applied Machine Learning</h4>
+                                        <p class="author">by David Forsyth</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Interpretable Machine Learning</h4>
+                                        <p class="author">by Christoph Molnar</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="level-container">
+                        <h3 class="level-title advanced">Advanced <i class="fas fa-mountain"></i></h3>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <!-- Additional book cards would go here -->
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Reinforcement Learning: An Introduction</h4>
+                                        <p class="author">by Richard S. Sutton & Andrew G. Barto</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Elements of Statistical Learning</h4>
+                                        <p class="author">by Trevor Hastie et al.</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Probabilistic Graphical Models</h4>
+                                        <p class="author">by Daphne Koller & Nir Friedman</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Bayesian Reasoning and Machine Learning</h4>
+                                        <p class="author">by David Barber</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="book-details">
+                                        <h4>Artificial Intelligence: A Modern Approach</h4>
+                                        <p class="author">by Stuart Russell & Peter Norvig</p>
+                                        <a href="#" class="download-link"><i class="fas fa-download"></i> Download PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder for other categories (you would repeat the structure for each category) -->
+                <div class="category-content" id="blockchain">
+                    <!-- Content for Blockchain category -->
+                    <h2 class="category-title">Blockchain</h2>
+                    <p class="coming-soon">Books coming soon! Check back later.</p>
+                </div>
+
+                <div class="category-content" id="cse">
+                    <!-- Content for CSE Fundamentals category -->
+                    <h2 class="category-title">CSE Fundamentals</h2>
+                    <p class="coming-soon">Books coming soon! Check back later.</p>
+                </div>
+
+                <div class="category-content" id="cybersecurity">
+                    <!-- Content for Cybersecurity category -->
+                    <h2 class="category-title">Cybersecurity</h2>
+                    <p class="coming-soon">Books coming soon! Check back later.</p>
+                </div>
+
+                <div class="category-content" id="data-science">
+                    <!-- Content for Data Science category -->
+                    <h2 class="category-title">Data Science</h2>
+                    <p class="coming-soon">Books coming soon! Check back later.</p>
+                </div>
+
+                <div class="category-content" id="devops">
+                    <!-- Content for DevOps category -->
+                    <h2 class="category-title">DevOps</h2>
+                    <p class="coming-soon">Books coming soon! Check back later.</p>
+                </div>
+
+                <div class="category-content" id="full-stack">
+                    <!-- Content for Full-Stack category -->
+                    <h2 class="category-title">Full-Stack</h2>
+                    <p class="coming-soon">Books coming soon! Check back later.</p>
+                </div>
+
+                <div class="category-content" id="git">
+                    <!-- Content for Git & GitHub category -->
+                    <h2 class="category-title">Git & GitHub</h2>
+                    <p class="coming-soon">Books coming soon! Check back later.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <p class="text-center mb-3">&copy;
+                <script>document.write(new Date().getFullYear())</script>, Mirza Naeem Beg.
+            </p>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
+                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Research
+                        Collaborations, Part-time Positions.</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-md-end"><i class="fas bi-envelope-paper"></i> <strong>Let's Connect.</strong></p>
+                    <div class="contact-info text-md-end">
+                        <a href="mailto:mirzanaeem278@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/naeembeg" class="footer-link" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/mrnimblenaeem" class="footer-link" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mn_beg/" class="footer-link" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Navbar collapse on scroll
+            var navbarCollapse = document.querySelector('.navbar-collapse');
+    
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50 && navbarCollapse.classList.contains('show')) {
+                    var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            });
+
+            // Category tabs functionality
+            const categoryTabs = document.querySelectorAll('.category-tab');
+            const categoryContents = document.querySelectorAll('.category-content');
+            
+            categoryTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+                    
+                    // Hide all content sections
+                    categoryContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Show the content section related to the clicked tab
+                    const category = tab.getAttribute('data-category');
+                    document.getElementById(category).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
