@@ -61,19 +61,19 @@ body {
 
 @keyframes colorChange {
     0% {
-        color: #708090;
+        color: #e95057;
     }
     25% {
-        color: #483D8B;
+        color: #ab3e8f;
     }
     50% {
-        color: #556B2F;
-    }
-    75% {
         color: #03045e;
     }
+    75% {
+        color: #00a989;
+    }
     100% {
-        color: maroon;
+        color: #dfdd19;
     }
 }
 
@@ -124,12 +124,6 @@ body {
     transform: scale(1.1);
 }
 
-.navbar-nav .nav-link.active {
-    font-weight: 700;
-    background-color: #e6f7ff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-}
-
 /* Main Content Styles */
 .intro {
     text-align: center;
@@ -137,6 +131,12 @@ body {
     color: #03045e;
     font-family: "IBM Plex Mono", monospace;
     font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+strong {
+  color: #03045e;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 .inspirational-quote {
@@ -166,13 +166,14 @@ body {
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .tabs-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0.5rem;
+    justify-content: center;
     padding-bottom: 0.5rem;
 }
 
@@ -186,6 +187,8 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     white-space: nowrap;
+    margin-bottom: 0.5rem;
+    flex: 0 1 auto;
 }
 
 .category-tab:hover {
@@ -203,6 +206,14 @@ body {
 /* Books Section */
 .books-section {
     margin-top: 2rem;
+}
+
+.book-cover {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    padding-top: 20px;
+    gap: 1px;
+    justify-content: center;
 }
 
 .category-content {
@@ -252,14 +263,20 @@ body {
 }
 
 .level-title.beginner {
+    align-items: center;
+    justify-content: center;
     color: var(--color-beginner);
 }
 
 .level-title.intermediate {
+    align-items: center;
+    justify-content: center;
     color: var(--color-intermediate);
 }
 
 .level-title.advanced {
+    align-items: center;
+    justify-content: center;
     color: var(--color-advanced);
 }
 
@@ -321,7 +338,7 @@ body {
     margin-top: auto;
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: teal;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -331,17 +348,10 @@ body {
 }
 
 .download-link:hover {
-    background-color: #0056b3;
+    background-color: cadetblue;
     color: white;
 }
 
-.coming-soon {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #666;
-    margin: 3rem 0;
-    font-style: italic;
-}
 
 /* Footer Styles */
 .footer {
@@ -363,7 +373,7 @@ body {
 
 .footer-link {
     font-size: clamp(1rem, 2vw, 1.2rem);
-    color: var(--primary-color);
+    color: #03045e;
     margin: 0 10px;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -395,41 +405,76 @@ body {
     }
 }
 
+
+/* Mobile Specific Styles */
 @media (max-width: 768px) {
-    .intro {
-        font-size: 1.8em;
+    .tabs-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
     }
     
-    .inspirational-quote {
-        font-size: 1.5rem;
+    .category-tab {
+        text-align: center;
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.5rem;
+        white-space: normal;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
     }
     
-    .contact-info {
-        margin-top: 1rem;
+    .book-cover {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 9px;
+    padding-top: 20px;
+    gap: 1px;
+    justify-content: center;
     }
     
-    .level-container {
-        padding: 1rem;
+    .book-details h4 {
+        font-size: 0.9rem;
+    }
+    
+    .author {
+        font-size: 0.8rem;
+    }
+    
+    .download-link {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
     }
 }
 
 @media (max-width: 576px) {
-    .navbar {
-        margin: 5px;
-        padding: 10px 0;
+    .tabs-container {
+        grid-template-columns: repeat(2, 1fr);
     }
     
-    .social-links-nav {
-        margin-top: 5px;
-        display: flex;
-        gap: clamp(75px, 3.5vw, 70px);
-    }
-
-    .intro {
-        font-size: 1.5em;
+    .category-tab {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.4rem;
+        height: 35px;
     }
     
-    .book-card {
-        margin-bottom: 1rem;
+    .book-cover {
+        height: 100px;
+    }
+    
+    .book-details {
+        padding: 0.8rem;
+    }
+    
+    .book-details h4 {
+        font-size: 0.85rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .author {
+        font-size: 0.75rem;
+        margin-bottom: 0.8rem;
     }
 }
