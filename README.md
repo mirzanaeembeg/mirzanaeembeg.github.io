@@ -1,7 +1,7 @@
 
 ---
 
-# [My Portfolio](https://naeembeg.github.io/)
+# [My Portfolio](https://mirzanaeembeg.github.io/)
 
 Welcome to my portfolio project repository! This project showcases my skills, projects and achievements in the field of computer science.
 
@@ -31,13 +31,14 @@ This portfolio project serves as a comprehensive overview of my educational back
 
 - HTML5
 - CSS3 (Bootstrap framework)
+- JavaScript
 - Git/GitHub for version control & deployment
 
 ### Usage
 
 This is the V2.0 of my portfolio. You will find the V1.0 is zipped on the <strong>others</strong> folder of this repository.
 
-#### Go to your browser and visit: [https://naeembeg.github.io/](https://naeembeg.github.io/)
+#### Go to your browser and visit: [https://mirzanaeembeg.github.io/](https://mirzanaeembeg.github.io/)
 
 ### View this project's video:
 Project's [ScreenCast](https://youtu.be/6o7jbOOSK1U)
