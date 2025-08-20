@@ -117,7 +117,7 @@ body {
 }
 
 /* Main Content Styles */
-.bookshelf{
+/* .bookshelf{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +140,7 @@ body {
     background-color: #b3e0ff;
     transform: scale(1.05);
     transition: all 0.3s ease;
-}
+} */
 .intro {
     text-align: center;
     margin: 2rem 0;
