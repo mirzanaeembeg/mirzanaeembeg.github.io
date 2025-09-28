@@ -15,22 +15,24 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
 }
 
-/* Navbar Styles */
+/* Modified Navbar Styles - Remove top margin and adjust */
 .navbar {
     border: #03045e 1px solid;
     border-radius: 5px;
-    margin: 10px;
+    margin: 0 10px 10px 10px; /* Remove top margin, keep left/right/bottom */
     background-color: ghostwhite;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
     transition: all 0.3s ease;
     position: sticky;
-    top: 0;
+    top: 10px; /* Match the body padding-top */
     z-index: 1000;
 }
 
