@@ -18,25 +18,27 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 10px; /* Move the top margin from navbar to body padding */
+    padding-top: 100px; 
 }
 
 .navbar {
-    border: #03045e 1px solid;
-    border-radius: 5px;
-    margin: 10px; /* Keep original margin for consistent spacing */
+    border-bottom: #03045e 2px dashed;
+    margin: 0;
     background-color: ghostwhite;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
     transition: all 0.3s ease;
-    position: relative; /* Changed from sticky to relative */
-    /* Remove top and z-index properties */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;               
+    z-index: 1000; 
 }
 
-/* Optional: Add smooth scroll behavior for better UX */
 html {
     scroll-behavior: smooth;
 }
+
 
 .nav-name {
     font-family: "Marck Script", cursive;
