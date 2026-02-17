@@ -39,7 +39,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .nav-name {
     font-family: "Marck Script", cursive;
     letter-spacing: -5px;
@@ -48,6 +47,7 @@ html {
     color: var(--primary-color);
     transition: color 0.2s ease;
 }
+
 .nav-name .letter {
     display: inline-block;
     animation: colorChange 4s var(--delay) infinite;
@@ -59,21 +59,11 @@ html {
 }
 
 @keyframes colorChange {
-    0% {
-        color: #e95057;
-    }
-    25% {
-        color: #ab3e8f;
-    }
-    50% {
-        color: #03045e;
-    }
-    75% {
-        color: #00a989;
-    }
-    100% {
-        color: #dfdd19;
-    }
+    0% { color: #e95057; }
+    25% { color: #ab3e8f; }
+    50% { color: #03045e; }
+    75% { color: #00a989; }
+    100% { color: #dfdd19; }
 }
 
 .social-links-nav {
@@ -99,7 +89,6 @@ html {
     outline: none;
 }
 
-/* Navigation links styles */
 .navbar-nav {
     margin-left: auto;
     padding: 0 15px;
@@ -115,7 +104,6 @@ html {
     transition: all 0.1s ease;
     border-radius: 10px;
     padding: 0;
-    
 }
 
 .navbar-nav .nav-link:hover {
@@ -124,7 +112,6 @@ html {
     transform: scale(1.1);
 }
 
-/* Main Content Styles */
 .intro {
     text-align: center;
     margin: 2rem 0;
@@ -143,10 +130,11 @@ html {
     transform: scale(1.05);
 }
 
-.pic-sec .photo{
+.pic-sec .photo {
     margin-top: 25px;
     margin-bottom: 80px;
 }
+
 .tagline-container {
     text-align: center;
     margin: 3rem 0;
@@ -209,8 +197,6 @@ html {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Add these styles to your index.css file */
-
 .code-container {
     display: flex;
     justify-content: center;
@@ -238,17 +224,9 @@ html {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.code-block .keyword {
-    color: #569cd6;
-}
-
-.code-block .function {
-    color: #dcdcaa;
-}
-
-.code-block .parameter {
-    color: #9cdcfe;
-}
+.code-block .keyword { color: #569cd6; }
+.code-block .function { color: #dcdcaa; }
+.code-block .parameter { color: #9cdcfe; }
 
 .description {
     font-family: "IBM Plex Mono", monospace;
@@ -285,7 +263,6 @@ strong {
     75% { transform: rotate(-15deg); }
 }
 
-/* Footer Styles */
 .footer {
     background-color: var(--bg-light);
     padding: clamp(15px, 3vw, 25px) 0;
@@ -324,7 +301,6 @@ strong {
 }
 
 @media (max-width: 991.98px) {
-
     .navbar-nav {
         padding-top: 1rem;
     }
@@ -344,7 +320,7 @@ strong {
     .row {
         flex-direction: column;
     }
-    
+
     .col-md-4, .col-md-8 {
         width: 100%;
     }
@@ -356,11 +332,15 @@ strong {
 
 @media (max-width: 576px) {
     .navbar {
-        margin: 5px;
+        margin: 0;         
         padding: 10px 0;
     }
 
-    .tagline{
+    body {
+        padding-top: 80px; 
+    }
+
+    .tagline {
         font-size: .9em;
     }
 
@@ -374,16 +354,17 @@ strong {
         margin-top: auto;
         margin-bottom: auto;
     }
+
     .code-container {
         padding: 10px;
     }
-    
+
     .code-block {
         padding: 15px;
     }
+
     .description {
         padding: 12px;
         margin: 10px 0;
     }
-
 }

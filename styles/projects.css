@@ -226,15 +226,19 @@ strong {
 
 @media (max-width: 576px) {
   .navbar {
-    margin: 5px;
-    padding: 10px 0;
-  }
+        margin: 0;         
+        padding: 10px 0;
+    }
+
+    body {
+        padding-top: 80px; 
+    }
   
   .social-links-nav {
     margin-top: 5px;
     display: flex;
     gap: clamp(75px, 3.5vw, 70px);
-}
+  }
 
   .intro {
       font-size: 1.8em;
