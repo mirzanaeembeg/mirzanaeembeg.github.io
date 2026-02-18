@@ -1,9 +1,6 @@
+# [Mirza Naeem Beg — Portfolio](https://mirzanaeembeg.github.io/)
 
----
-
-# [My Portfolio](https://mirzanaeembeg.github.io/)
-
-Welcome to my portfolio project repository! This project showcases my skills, projects and achievements in the field of computer science.
+Welcome to my portfolio repository! This project showcases my academic background, skills, projects, and achievements in computer science.
 
 ## Table of Contents
 
@@ -14,46 +11,66 @@ Welcome to my portfolio project repository! This project showcases my skills, pr
 - [Contributing](#contributing)
 - [License](#license)
 
+---
+
 ## About
 
-This portfolio project serves as a comprehensive overview of my educational background, skills, and practical experience in various programming languages and technologies. It includes sections detailing my education, projects, skills, learnings and more.
+This portfolio serves as a comprehensive overview of my educational background, technical skills, and practical experience across various programming languages and technologies. It covers my academic journey, individual and group projects, online learnings, and more.
 
 ## Features
 
-- **Introduction:** A brief introduction to myself and my career aspirations.
-- **Academic:** Details about my academic journey, including courses completed and grades achieved.
-- **Projects:** Descriptions of significant group and individual projects I have completed, highlighting technologies used and skills demonstrated.
-- **Skills:** An overview of my technical skills, including programming languages, frameworks, and tools.
-- **Learnings:** Information on online courses, certifications, and workshops completed related to computer science.
-- **Papers:** Section for academic papers, if applicable.
+- **Prefaces:** A brief introduction to who I am and my career aspirations.
+- **Academic:** Details about my educational background, institutions attended, and grades achieved.
+- **Projects:** Descriptions of significant individual and group projects, highlighting technologies used and skills demonstrated.
+- **Skills:** An overview of my technical and soft skills, including programming languages, AI/ML tools, frameworks, and databases.
+- **Learnings:** Online courses, certifications, and workshops I have completed or am pursuing.
+- **Papers:** Section for academic research papers related to my thesis work.
 
 ## Technologies Used
 
-- HTML5
-- CSS3 (Bootstrap framework)
-- JavaScript
-- Git/GitHub for version control & deployment
+- **HTML5** & **CSS3**
+- **Bootstrap 5** — responsive layout and components
+- **Bootstrap Icons** — iconography throughout the UI
+- **Font Awesome 6** — additional social and UI icons
+- **AOS (Animate on Scroll)** — scroll-triggered animations
+- **Typed.js** — typewriter effect on the home page
+- **JavaScript (vanilla)**
+- **Git & GitHub** — version control and deployment via GitHub Pages
 
-### Usage
+## Setup and Usage
 
-This is the V2.0 of my portfolio. You will find the V1.0 is zipped on the <strong>others</strong> folder of this repository.
+This is a static site — no build tools or dependencies to install.
 
-#### Go to your browser and visit: [https://mirzanaeembeg.github.io/](https://mirzanaeembeg.github.io/)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mirzanaeembeg/mirzanaeembeg.github.io.git
+   ```
+2. Open `index.html` in your browser, or use a local server:
+   ```bash
+   # Using Python
+   python -m http.server 8000
+   ```
+3. Visit `http://localhost:8000` in your browser.
 
-### View this project's video:
-Project's [ScreenCast](https://youtu.be/6o7jbOOSK1U)
+> Or simply visit the live site: [https://mirzanaeembeg.github.io/](https://mirzanaeembeg.github.io/)
+
+### Project Screencast
+Watch a walkthrough of the portfolio: [ScreenCast on YouTube](https://youtu.be/6o7jbOOSK1U)
+
+> **Note:** The V1.0 of this portfolio is archived in the **others** folder of this repository.
 
 ## Contributing
 
-If you'd like to contribute to this project, please follow these guidelines:
-- Fork the repository
-- Create your feature branch (`git checkout -b feature/YourFeature`)
-- Commit your changes (`git commit -am 'Add some feature'`)
-- Push to the branch (`git push origin feature/YourFeature`)
-- Create a new Pull Request
+If you'd like to contribute, please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/YourFeature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin feature/YourFeature`
+5. Open a Pull Request
 
 ## License
 
-This project is licensed under the [MIT License](link-to-license).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
