@@ -8,11 +8,15 @@
     --hover-color: gray;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 100px; 
+    padding-top: 100px;
 }
 
 .navbar {
@@ -22,15 +26,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
     transition: all 0.3s ease;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;               
-    z-index: 1000; 
-}
-
-html {
-    scroll-behavior: smooth;
+    right: 0;
+    z-index: 1000;
 }
 
 .nav-name {
@@ -41,6 +41,7 @@ html {
     color: var(--primary-color);
     transition: color 0.2s ease;
 }
+
 .nav-name .letter {
     display: inline-block;
     animation: colorChange 4s var(--delay) infinite;
@@ -52,21 +53,11 @@ html {
 }
 
 @keyframes colorChange {
-    0% {
-        color: #e95057;
-    }
-    25% {
-        color: #ab3e8f;
-    }
-    50% {
-        color: #03045e;
-    }
-    75% {
-        color: #00a989;
-    }
-    100% {
-        color: #dfdd19;
-    }
+    0%   { color: #e95057; }
+    25%  { color: #ab3e8f; }
+    50%  { color: #03045e; }
+    75%  { color: #00a989; }
+    100% { color: #dfdd19; }
 }
 
 .social-links-nav {
@@ -92,7 +83,6 @@ html {
     outline: none;
 }
 
-/* Navigation links styles */
 .navbar-nav {
     margin-left: auto;
     padding: 0 15px;
@@ -108,7 +98,6 @@ html {
     transition: all 0.1s ease;
     border-radius: 10px;
     padding: 0;
-    
 }
 
 .navbar-nav .nav-link:hover {
@@ -117,7 +106,6 @@ html {
     transform: scale(1.1);
 }
 
-/* Main Content Styles */
 .intro {
     text-align: center;
     margin: 2rem 0;
@@ -126,28 +114,16 @@ html {
 }
 
 .fonts {
-  font-family: "IBM Plex Mono", monospace;
-  color: #03045e;
-}
-
-.name {
-  font-weight: 500;
-  font-size: 2em;
-  color: #03045e;
-  margin: 0.5em 0;
-  text-align: center;
-  word-wrap: break-word;
-  position: relative;
-  display: inline-block;
+    font-family: "IBM Plex Mono", monospace;
+    color: #03045e;
 }
 
 strong {
-  color: #03045e;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
+    color: #03045e;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
-/* Updated CSS for the new sections */
 #skills {
     background-color: #f8f9fa;
     padding: 40px 0;
@@ -184,108 +160,15 @@ strong {
     color: white;
     transform: scale(1.05);
 }
-.skills-container:hover {
-    padding: 10px 15px;
-    border-radius: 15px;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
 
-.progress {
-    height: 25px;
-    background-color: #e9ecef;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    margin-bottom: 15px;
-}
-
-.progress:hover {
-    transform: translateX(5px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.progress-bar {
+.skill-tags {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 15px;
-    font-weight: bold;
-    color: white;
-    background-color: #03045e;
-    transition: width 0.6s ease;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: -5px;
+    padding: 5px;
 }
 
-.math-skill-card,
-.ai-skill-card {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    padding: 15px;
-    transition: all 0.3s ease;
-}
-
-.math-skill-card h6,
-.ai-skill-card h6 {
-    color: #03045e;
-    margin-bottom: 12px;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-}
-
-.text-justify {
-    text-align: justify;
-}
-.soft-skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    padding: 20px 0;
-}
-
-.soft-skill-card {
-    background-color: #f8f9fa;
-    border-radius: 12px;
-    padding: 25px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.soft-skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.soft-skill-card i {
-    font-size: 2rem;
-    color: #03045e;
-    margin-bottom: 15px;
-}
-
-.soft-skill-card h5 {
-    color: #03045e;
-    margin-bottom: 10px;
-    font-family: "IBM Plex Mono", monospace;
-}
-
-.soft-skill-card p {
-    color: #6c757d;
-    font-size: 0.9rem;
-    font-family: "IBM Plex Mono", monospace;
-}
-/* Fixed grid layouts */
-.skills-grid {
-    display: grid;
-    grid-template-areas: "box-1 box-2 box-3"
-                         "box-4 box-2 box-3"
-                         "box-5 box-2 box-3"
-                         "box-6 box-2 box-3";
-    gap: 25px;
-    padding: 20px 0;
-    margin: 0;
-}
-
-/* Improved skill category containment */
 .skill-category {
     background-color: #f8f9fa;
     border-radius: 12px;
@@ -295,35 +178,12 @@ strong {
     overflow: hidden;
 }
 
-/* Better tag wrapping */
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: -5px;
-    padding: 5px;
+.skill-category:hover,
+.soft-skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-
-/* Improved progress bar containment */
-.progress {
-    margin-bottom: 15px;
-    overflow: hidden;
-    height: 25px;
-    background-color: #e9ecef;
-    border-radius: 12px;
-}
-
-/* Fixed nested grid layouts */
-.math-skills-grid,
-.ai-skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 15px;
-}
-
-/* Fixed container padding */
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
@@ -331,16 +191,6 @@ strong {
     margin: 0 auto;
 }
 
-/* Improved card shadows */
-.skill-category:hover,
-.math-skill-card:hover,
-.ai-skill-card:hover,
-.soft-skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
-
-/* Footer Styles */
 .footer {
     background-color: var(--bg-light);
     padding: clamp(15px, 3vw, 25px) 0;
@@ -371,7 +221,6 @@ strong {
     transform: translateY(-2px);
 }
 
-/* Updated Responsive Styles */
 @media (max-width: 991px) {
     .navbar-nav {
         padding-top: 1rem;
@@ -385,32 +234,11 @@ strong {
 }
 
 @media (max-width: 768px) {
-
-    .progress {
-        height: 20px;
-    }
-    .soft-skills-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .skill-category,
     .soft-skill-card {
         padding: 15px;
     }
-    .skills-grid {
-        grid-template-areas: "box-1"
-                            "box-2"
-                            "box-3"
-                            "box-4"
-                            "box-5"
-                            "box-6";
-        grid-template-columns: 1fr;
-    }
-    .math-skills-grid,
-    .ai-skills-grid {
-        grid-template-columns: 1fr;
-    }
-    
+
     .skill-tag {
         font-size: 0.8rem;
         padding: 5px 10px;
@@ -419,12 +247,12 @@ strong {
 
 @media (max-width: 576px) {
     .navbar {
-        margin: 0;         
+        margin: 0;
         padding: 10px 0;
     }
 
     body {
-        padding-top: 80px; 
+        padding-top: 80px;
     }
 
     .social-links-nav {
@@ -436,5 +264,4 @@ strong {
     .footer-link {
         margin: 0 5px;
     }
-
 }

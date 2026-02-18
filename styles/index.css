@@ -14,11 +14,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 100px; 
+    padding-top: 100px;
 }
 
 .navbar {
@@ -28,15 +32,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
     transition: all 0.3s ease;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;               
-    z-index: 1000; 
-}
-
-html {
-    scroll-behavior: smooth;
+    right: 0;
+    z-index: 1000;
 }
 
 .nav-name {
@@ -293,7 +293,6 @@ strong {
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .container {
         max-width: 95%;
@@ -332,12 +331,12 @@ strong {
 
 @media (max-width: 576px) {
     .navbar {
-        margin: 0;         
+        margin: 0;
         padding: 10px 0;
     }
 
     body {
-        padding-top: 80px; 
+        padding-top: 80px;
     }
 
     .tagline {
