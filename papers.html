@@ -95,7 +95,7 @@
                             <span>Skills</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="learnings.html"><i class="fs-6 bi-book"></i>
                             <span>Learnings</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="papers.html"><i class="fs-6 bi-file-text"></i>
+                    <li class="nav-item"><a class="nav-link active" href="papers.html"><i class="fs-6 bi-file-text"></i>
                             <span>Papers</span></a></li>
                 </ul>
             </div>
@@ -120,8 +120,7 @@
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
-                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Research
-                        Collaborations, Part-time Positions.</p>
+                        <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Full-time Positions, Research Collaborations.</p>
                 </div>
                 <div class="col-md-6">
                     <p class="text-md-end"><i class="fas bi-envelope-paper"></i> <strong>Let's Connect.</strong></p>
@@ -142,6 +141,12 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        });
+    </script>
 </body>
 
 </html>

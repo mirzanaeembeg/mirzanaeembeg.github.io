@@ -88,7 +88,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fs-6 bi-person-badge"></i>
                             <span>Prefaces</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-6 bi-mortarboard"></i>
+                    <li class="nav-item"><a class="nav-link active" href="education.html"><i class="fs-6 bi-mortarboard"></i>
                             <span>Academic</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-6 bi-folder"></i>
                             <span>Projects</span></a></li>
@@ -214,8 +214,7 @@
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
-                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Research
-                        Collaborations, Part-time Positions.</p>
+                        <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Full-time Positions, Research Collaborations.</p>
                 </div>
                 <div class="col-md-6">
                     <p class="text-md-end"><i class="fas bi-envelope-paper"></i> <strong>Let's Connect.</strong></p>
@@ -242,6 +241,12 @@
             duration: 800,
             easing: 'ease-in-out-sine',
             once: true
+        });
+    </script>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
         });
     </script>
 </body>

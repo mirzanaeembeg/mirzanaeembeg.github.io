@@ -89,7 +89,7 @@
                             <span>Prefaces</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-6 bi-mortarboard"></i>
                             <span>Academic</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-6 bi-folder"></i>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html"><i class="fs-6 bi-folder"></i>
                             <span>Projects</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-6 bi-braces"></i>
                             <span>Skills</span></a></li>
@@ -104,9 +104,6 @@
     <main class="container-fluid">
         <h1 class="intro display-6"><i class="fs-2 bi-folder"></i>Projects</h1>
         <div class="card-body">
-            <p class="card-text text-muted fonts">
-                Here's an overview of my diverse project portfolio:
-            </p>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item fonts">Designed & Developed an e-commerce platform with an auction feature
                     using HTML, CSS, Bootstrap, MySQL and PHP</li>
@@ -344,8 +341,7 @@
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
-                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Research
-                        Collaborations, Part-time Positions.</p>
+                        <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Full-time Positions, Research Collaborations.</p>
                 </div>
                 <div class="col-md-6">
                     <p class="text-md-end"><i class="fas bi-envelope-paper"></i> <strong>Let's Connect.</strong></p>
@@ -382,6 +378,12 @@
                 individualContent.style.display = 'none';
                 groupContent.style.display = 'block';
             });
+        });
+    </script>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
         });
     </script>
 </body>
