@@ -6,24 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Skills | Mirza Naeem Beg</title>
-    <meta name="description" content="Technical and soft skills of Mirza Naeem Beg — Python, C/C++, Java, SQL, AI/ML (CNNs, BiLSTM, Transformers), data processing, computer vision, NLP, web development, and databases.">
-    <meta name="keywords" content="Mirza Naeem Beg, Skills, Python, AI, Machine Learning, Deep Learning, Web Development, AUST, Bangladesh">
-    <meta name="author" content="Mirza Naeem Beg">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://mirzanaeembeg.github.io/skills.html">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mirzanaeembeg.github.io/skills.html">
-    <meta property="og:title" content="Skills | Mirza Naeem Beg">
-    <meta property="og:description" content="Technical and soft skills of Mirza Naeem Beg — AI/ML, web development, databases, and more.">
-    <meta property="og:image" content="https://mirzanaeembeg.github.io/assets/profile1.jpg">
-    <meta property="og:site_name" content="Mirza Naeem Beg Portfolio">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@mn_beg">
-    <meta name="twitter:title" content="Skills | Mirza Naeem Beg">
-    <meta name="twitter:description" content="Technical and soft skills of Mirza Naeem Beg — AI/ML, web development, databases, and more.">
-    <meta name="twitter:image" content="https://mirzanaeembeg.github.io/assets/profile1.jpg">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNP698G1H1"></script>
     <script>
@@ -38,6 +20,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -476,6 +459,13 @@
         const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 40);
+            
+            // Close navbar on scroll for small screens
+            const navbarCollapse = document.getElementById('navbarNav');
+            if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse);
+                bsCollapse.hide();
+            }
         });
     </script>
 </body>

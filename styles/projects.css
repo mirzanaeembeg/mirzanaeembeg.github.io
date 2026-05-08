@@ -168,6 +168,16 @@ strong {
     font-weight: bold;
 }
 
+.card-title {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.card-body {
+    font-family: "IBM Plex Mono", monospace;
+}
+
 .footer {
     background-color: var(--bg-light);
     padding: clamp(15px, 3vw, 25px) 0;
@@ -207,6 +217,10 @@ strong {
         padding: 1px;
         width: fit-content;
         align-items: center;
+    }
+
+    p, li {
+        text-align: justify;
     }
 }
 
@@ -269,4 +283,10 @@ h4, h5, h6 {
     font-family: 'Times New Roman', serif;
     font-weight: 500;
     line-height: 1.4;
+}
+
+/* Project Box Typography */
+.card h5.card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }

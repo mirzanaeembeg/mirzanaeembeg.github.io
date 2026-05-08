@@ -5,28 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- PRIMARY SEO META TAGS -->
     <title>Learnings | Mirza Naeem Beg</title>
-    <meta name="description" content="Courses and certifications of Mirza Naeem Beg — Stanford Code in Place 2024, HackerRank Python & OOP, Andrew Ng's ML Specialization (Coursera), and Full Stack Open (University of Helsinki).">
-    <meta name="keywords" content="Mirza Naeem Beg, Learnings, Courses, Stanford, Coursera, Andrew Ng, Machine Learning, Python, HackerRank, Full Stack Open">
-    <meta name="author" content="Mirza Naeem Beg">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://mirzanaeembeg.github.io/learnings.html">
-
-    <!-- OPEN GRAPH -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mirzanaeembeg.github.io/learnings.html">
-    <meta property="og:title" content="Learnings | Mirza Naeem Beg">
-    <meta property="og:description" content="Courses and certifications of Mirza Naeem Beg — Stanford, Coursera, HackerRank, and more.">
-    <meta property="og:image" content="https://mirzanaeembeg.github.io/assets/profile1.jpg">
-    <meta property="og:site_name" content="Mirza Naeem Beg Portfolio">
-
-    <!-- TWITTER CARD -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@mn_beg">
-    <meta name="twitter:title" content="Learnings | Mirza Naeem Beg">
-    <meta name="twitter:description" content="Courses and certifications of Mirza Naeem Beg — Stanford, Coursera, HackerRank, and more.">
-    <meta name="twitter:image" content="https://mirzanaeembeg.github.io/assets/profile1.jpg">
 
     <!-- GOOGLE ANALYTICS 4 — Replace G-XXXXXXXXXX with your Measurement ID -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNP698G1H1"></script>
@@ -42,6 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/learnings.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -257,6 +237,13 @@
         const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 40);
+            
+            // Close navbar on scroll for small screens
+            const navbarCollapse = document.getElementById('navbarNav');
+            if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse);
+                bsCollapse.hide();
+            }
         });
     </script>
 </body>
