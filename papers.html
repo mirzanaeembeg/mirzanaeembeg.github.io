@@ -11,7 +11,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNP698G1H1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-ZNP698G1H1');
     </script>
@@ -85,9 +85,64 @@
         <h1 class="intro display-6"><i class="fs-2 bi-file-text"></i>Papers</h1>
         <section id="papers" class="py-5">
             <div class="container">
-                <h1 class="display-5 text-center">Unveiling Insights and Innovations through Research!</h1><br><br>
-                <p class="fonts text-info fw-bold text-center">I am looking forward to working on a paper and strongly
-                    committed to do a good job on my thesis!</p>
+                <div class="paper-hero text-center mx-auto mb-5 p-4">
+                    <div class="paper-hero-icon mb-3"><i class="fas fa-book-open fa-2x"></i></div>
+                    <h1 class="display-5">Coming Soon</h1>
+                    <p class="fonts text-info fw-bold mt-3 mb-0">My thesis is upcoming:</p>
+                    <p class="fonts mb-0"><strong>BanglaGuard: A Multimodal Deep Learning Framework for Audio-Visual
+                            Detection of Inappropriate Content in Bangla Children's Cartoon Videos.</strong></p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card paper-card p-4 mb-5">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-info fw-bold fonts">CSE4138 Soft Computing Lab Term
+                                    Assignment</h5>
+                                <p class="card-text fonts mb-3">This assignment paper is titled "<strong>Digital
+                                        Preservation of Culinary Heritage: A System for Classifying Bangladeshi Desserts
+                                        and Generating Traditional Recipes.</strong>"</p>
+                                <div class="text-start fonts mb-3">
+                                    <p><strong>Abstract:</strong> The paper presents a deep learning pipeline for
+                                        preserving Bangladeshi dessert heritage by classifying 4,118 dessert images
+                                        across 27 categories and generating recipes from a parallel corpus of 81
+                                        authentic traditional recipes.</p>
+                                    <p><strong>Approach:</strong> It uses EfficientNet-B0 and ResNet-18 for dessert
+                                        image classification, and GPT-2 plus T5 for recipe generation, highlighting
+                                        GPT-2’s superior performance with a BLEU score of 0.0129 and a perplexity of
+                                        1.01.</p>
+                                    <p><strong>Dataset:</strong> A curated dessert dataset of 4,118 images across 27
+                                        classes and 81 recipe entries supports both classification and generation. The
+                                        dataset is publicly available at <a
+                                            href="https://data.mendeley.com/datasets/j2pnx2mwwk/1"
+                                            target="_blank">here</a>.</p>
+                                    <p><strong>Contributions:</strong></p>
+                                    <ul class="text-start">
+                                        <li>Multi-modal dataset combining dessert images and authentic recipes.</li>
+                                        <li>Detailed comparison of EfficientNet-B0 and ResNet-18 for Bangladeshi dessert
+                                            classification.</li>
+                                        <li>Use of GPT-2 and T5 for generating culturally relevant recipes from dessert
+                                            class input.</li>
+                                        <li>Framework for digital preservation of culinary heritage through machine
+                                            learning.</li>
+                                        <li>Build a recipe text dataset in excel-sheet for future culinary informatics
+                                            research.</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-center gap-2 project-buttons">
+                                    <a href="#" target="_blank" class="btn btn-outline-dark">
+                                        <i class="fab fa-github me-2"></i>GitHub
+                                    </a>
+                                    <a href="assets/cse4138_soft_com_lab_term_assignment.pdf"
+                                        download="cse4138_soft_com_lab_term_assignment.pdf"
+                                        class="btn btn-outline-primary">
+                                        <i class="fas fa-download me-2"></i>Download Paper
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -100,7 +155,8 @@
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
-                        <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Full-time Positions, Research Collaborations.</p>
+                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Full-time
+                        Positions, Research Collaborations.</p>
                 </div>
                 <div class="col-md-6">
                     <p class="text-md-end"><i class="fas bi-envelope-paper"></i> <strong>Let's Connect.</strong></p>
@@ -125,7 +181,7 @@
         const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 40);
-            
+
             // Close navbar on scroll for small screens
             const navbarCollapse = document.getElementById('navbarNav');
             if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
