@@ -180,6 +180,8 @@ strong {
 }
 
 .card {
+    border-radius: 20px;
+    padding: clamp(20px, 3vw, 36px);
     background-color: var(--box-bg);
     border-color: var(--box-border);
     box-shadow: var(--box-shadow);
