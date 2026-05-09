@@ -34,6 +34,18 @@ body {
     line-height: 1.6;
 }
 
+/* ============================================================
+   PAGE WRAPPER — controls left/right breathing room
+   ============================================================ */
+.page-container {
+    max-width: 1320px;
+    padding-left: clamp(12px, 1.5vw, 20px);
+    padding-right: clamp(12px, 1.5vw, 20px);
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
 .navbar {
     background: rgba(238, 244, 248, 0.55);
     backdrop-filter: blur(14px);
@@ -75,10 +87,10 @@ body {
 }
 
 @keyframes colorChange {
-    0% { color: #e95057; }
-    25% { color: #ab3e8f; }
-    50% { color: #03045e; }
-    75% { color: #00a989; }
+    0%   { color: #e95057; }
+    25%  { color: #ab3e8f; }
+    50%  { color: #03045e; }
+    75%  { color: #00a989; }
     100% { color: #dfdd19; }
 }
 
@@ -135,6 +147,9 @@ body {
     transform: scale(1.1);
 }
 
+/* ============================================================
+   PAGE HEADING
+   ============================================================ */
 .intro {
     text-align: center;
     margin: 2rem 0;
@@ -142,8 +157,11 @@ body {
     font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
+/* ============================================================
+   PROFILE / PHOTO SECTION
+   ============================================================ */
 .pic-sec .photo .img-fluid {
-    max-width: min(350px, 90vw);
+    max-width: min(300px, 75vw);
     border: 2px dashed var(--primary-color);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease-in-out;
@@ -155,17 +173,17 @@ body {
 
 .pic-sec .photo {
     margin-top: 25px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .tagline-container {
     text-align: center;
-    margin: 3rem 0;
+    margin: 2rem 0 1rem;
 }
 
 .tagline {
     font-family: "IBM Plex Mono", monospace;
-    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    font-size: clamp(0.95rem, 2vw, 1.3rem);
     color: black;
 }
 
@@ -176,7 +194,7 @@ body {
 
 #typewriter {
     font-family: "IBM Plex Mono", monospace;
-    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-size: clamp(0.95rem, 1.8vw, 1.2rem);
     color: #556B2F;
     font-weight: 600;
 }
@@ -200,9 +218,9 @@ body {
 
 .cv-button {
     display: inline-block;
-    padding: 10px;
+    padding: 10px 20px;
     margin-top: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
@@ -220,52 +238,42 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.code-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-.code-block {
-    font-family: "IBM Plex Mono", monospace;
-    background-color: darkslategrey;
-    color: #d4d4d4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 0;
-    font-size: clamp(0.8rem, 1.5vw, 1rem);
-    line-height: 1.5;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.code-block:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.code-block .keyword { color: #569cd6; }
-.code-block .function { color: #dcdcaa; }
-.code-block .parameter { color: #9cdcfe; }
-
+/* ============================================================
+   DESCRIPTION CARD
+   ============================================================ */
 .description {
     font-family: "IBM Plex Mono", monospace;
     color: black;
     font-weight: 400;
     font-style: italic;
-    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
-    line-height: 1.8;
+    font-size: clamp(0.88rem, 1.6vw, 1.05rem);
+    line-height: 1.85;
     text-align: justify;
-    padding: clamp(15px, 3vw, 25px);
+
+    /* Breathing room inside */
+    padding: clamp(20px, 4vw, 36px) clamp(20px, 5vw, 44px);
+
     background-color: var(--box-bg);
-    border-radius: 5px;
-    height: 100%;
+    border-radius: 12px;
     border: 1px solid var(--box-border);
-    margin: 15px;
     box-shadow: var(--box-shadow);
+
+    /* Vertical spacing from photo section */
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.description p {
+    margin-bottom: 1rem;
+}
+
+.description ul {
+    margin-bottom: 1rem;
+    padding-left: 1.4rem;
+}
+
+.description li {
+    margin-bottom: 0.4rem;
 }
 
 strong {
@@ -282,10 +290,13 @@ strong {
 
 @keyframes wave {
     0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(20deg); }
-    75% { transform: rotate(-15deg); }
+    25%       { transform: rotate(20deg); }
+    75%       { transform: rotate(-15deg); }
 }
 
+/* ============================================================
+   FOOTER
+   ============================================================ */
 .footer {
     background-color: var(--bg-footer);
     padding: clamp(15px, 3vw, 25px) 0;
@@ -317,12 +328,9 @@ strong {
     transform: translateY(-2px);
 }
 
-@media (max-width: 1200px) {
-    .container {
-        max-width: 95%;
-    }
-}
-
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
 @media (max-width: 991.98px) {
     .navbar-nav {
         padding-top: 1rem;
@@ -332,24 +340,6 @@ strong {
         padding: 1px;
         width: fit-content;
         align-items: center;
-    }
-
-    .description {
-        margin: 15px 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-    }
-
-    .col-md-4, .col-md-8 {
-        width: 100%;
-    }
-
-    .contact-info {
-        margin-top: 1rem;
     }
 }
 
@@ -364,7 +354,7 @@ strong {
     }
 
     .tagline {
-        font-size: .9em;
+        font-size: 0.85rem;
     }
 
     .social-links-nav {
@@ -374,21 +364,13 @@ strong {
     }
 
     .cv-button {
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-    .code-container {
-        padding: 10px;
-    }
-
-    .code-block {
-        padding: 15px;
+        margin-top: 12px;
+        margin-bottom: 30px;
     }
 
     .description {
-        padding: 12px;
-        margin: 10px 0;
+        text-align: left; /* justify can look odd on very narrow screens */
+        border-radius: 8px;
     }
 }
 
