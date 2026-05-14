@@ -282,6 +282,16 @@ strong {
     font-weight: bold;
 }
 
+.desc-link {
+    color: #0077b6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.desc-link:hover {
+    color: #023e8a;
+}
+
 .animated-emoji {
     display: inline-block;
     animation: wave 2s infinite;
