@@ -209,6 +209,7 @@ strong {
 #skills {
     background-color: transparent;
     padding: 40px 0;
+    padding-bottom: 0;
 }
 
 .skill-section {
