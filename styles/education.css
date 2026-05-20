@@ -6,22 +6,10 @@
     --primary-color: #03045e;
     --bg-page:    #eef2f7;
     --bg-footer:  #eef2f7;
-    --box-bg:     #f7f9fc;
-    --box-border: rgba(3, 4, 94, 0.12);
-    --box-shadow: 0 18px 35px rgba(3, 4, 94, 0.08);
+    --box-bg:     #eef2f7;
     --hover-color: gray;
 }
 
-/* Force Bootstrap card variables to match skills page */
-.card {
-    --bs-card-bg: #f7f9fc !important;
-    --bs-card-border-color: rgba(3, 4, 94, 0.12) !important;
-    background-color: #f7f9fc !important;
-    border: 1px solid rgba(3, 4, 94, 0.12) !important;
-    border-radius: 15px !important;
-    box-shadow: 0 18px 35px rgba(3, 4, 94, 0.08) !important;
-    overflow: hidden;
-}
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -122,11 +110,11 @@ body {
 }
 
 /* ── CARDS ── */
+.row{ margin-right: 5px; }
 .card {
     background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.125) !important;
-    border-radius: 15px !important;
-    box-shadow: none;
+    border: 1px dashed;
+    border-radius: 3px;
     overflow: hidden;
 }
 
@@ -207,7 +195,7 @@ strong {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 300;
     font-size: clamp(0.8rem, 1.5vw, 1rem);
-    border-top: 1px solid var(--box-border);
+    border-top: 1px solid rgba(3, 4, 94, 0.12);
 }
 
 .footer p { margin-bottom: 5px; }
@@ -232,7 +220,7 @@ strong {
 @media (max-width: 768px) {
     .university-logo { max-width: 120px; }
     .contact-info { margin-top: 1rem; }
-    .syllabus-card .col-md-5 { border-top: 1px dashed var(--box-border); padding-top: 1.5rem; }
+    .syllabus-card .col-md-5 { border-top: 2px dashed rgba(3, 4, 94, 0.12); padding-top: 1.5rem; }
 }
 
 @media (max-width: 576px) {
