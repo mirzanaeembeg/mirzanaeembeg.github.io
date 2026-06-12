@@ -15,12 +15,11 @@
         gtag('config', 'G-ZNP698G1H1');
     </script>
 
-    <link rel="icon" type="image/png" href="assets/favicon.png" sizes="600x600">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -65,15 +64,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html"><i
-                                class="fs-6 bi-person-badge"></i>
+                                class="fs-6 fa-solid fa-id-badge"></i>
                             <span>Prefaces</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-6 bi-mortarboard"></i>
+                    <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-6 fa-solid fa-graduation-cap"></i>
                             <span>Academic</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-6 bi-braces"></i>
+                    <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-6 fa-solid fa-code"></i>
                             <span>Skills</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-6 bi-folder"></i>
+                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-6 fa-solid fa-folder"></i>
                             <span>Projects</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="papers.html"><i class="fs-6 bi-file-text"></i>
+                    <li class="nav-item"><a class="nav-link" href="papers.html"><i class="fs-6 fa-solid fa-file-lines"></i>
                             <span>Papers</span></a></li>
                 </ul>
             </div>
@@ -82,7 +81,7 @@
 
     <main>
         <div class="container page-container">
-            <h1 id="prefaces" class="intro display-6"><i class="fs-2 bi-person-badge"></i>Prefaces</h1>
+            <h1 id="prefaces" class="intro display-6"><i class="fs-2 fa-solid fa-id-badge"></i>Prefaces</h1>
 
             <!-- Profile / photo section -->
             <div class="row justify-content-center">
@@ -149,7 +148,7 @@
     <footer class="footer mt-5">
         <div class="container">
             <p class="text-center mb-3">&copy;
-                <script>document.write(new Date().getFullYear())</script>, Mirza Naeem Beg.
+                <span id="year"></span>, Mirza Naeem Beg.
             </p>
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
@@ -158,7 +157,7 @@
                         Positions, Research Collaborations.</p>
                 </div>
                 <div class="col-md-6">
-                    <p class="text-md-end"><i class="fas bi-envelope-paper"></i> <strong>Let's Connect.</strong></p>
+                    <p class="text-md-end"><i class="fa-solid fa-envelope-open-text"></i> <strong>Let's Connect.</strong></p>
                     <div class="contact-info text-md-end">
                         <a href="mailto:mirzanaeem278@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
                         <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank"><i
@@ -171,7 +170,7 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -184,6 +183,7 @@
         });
     </script>
     <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
         const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 40);
