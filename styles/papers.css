@@ -17,3 +17,11 @@ main { flex: 1 0 auto; padding-bottom: 2rem; }
 }
 
 .project-buttons .btn { min-width: 170px; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 991.98px) {
+    .paper-card p,
+    .paper-card li {
+        text-align: justify;
+    }
+}

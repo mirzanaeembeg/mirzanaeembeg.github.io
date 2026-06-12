@@ -136,6 +136,13 @@ strong { font-family: Cambria, Georgia, 'Times New Roman', serif; }
 }
 
 /* ── RESPONSIVE ── */
+@media (max-width: 991.98px) {
+    .thesis-card p,
+    .thesis-card li {
+        text-align: justify;
+    }
+}
+
 @media (max-width: 576px) {
     .tagline { font-size: 0.85rem; }
     .cv-button { margin-top: 12px; margin-bottom: 30px; }
