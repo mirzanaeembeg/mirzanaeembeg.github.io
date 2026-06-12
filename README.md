@@ -44,17 +44,14 @@ This portfolio serves as a comprehensive overview of my educational background, 
 ├── skills.html           # Skills, courses & certifications
 ├── projects.html         # Solo and team projects
 ├── papers.html           # Thesis and research papers
-├── include.js            # Injects shared navbar/footer, sets active link & year
-├── partials/
-│   ├── nav.html          # Shared navbar (single source of truth)
-│   └── footer.html       # Shared footer (single source of truth)
+├── include.js            # Shared navbar/footer templates + active link & year
 ├── styles/
 │   ├── common.css        # Shared styles (navbar, footer, chips, typography…)
 │   └── *.css             # Page-specific styles
 └── assets/               # Images, logos, CV, certificates, paper PDFs
 ```
 
-The navbar and footer live once in `partials/` and are fetched into every page by `include.js` — edit them in one place and the change applies site-wide.
+The navbar and footer live once in `include.js` and are injected into every page — edit them in one place and the change applies site-wide.
 
 ## Setup and Usage
 
@@ -64,8 +61,7 @@ This is a static site — no build tools or dependencies to install.
    ```bash
    git clone https://github.com/mirzanaeembeg/mirzanaeembeg.github.io.git
    ```
-2. Serve the site with a local server (required — the shared navbar/footer are loaded
-   with `fetch`, which doesn't work when opening files directly via `file://`):
+2. Open `index.html` in your browser, or use a local server:
    ```bash
    # Using Python
    python -m http.server 8000
