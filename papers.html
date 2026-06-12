@@ -24,81 +24,44 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <div class="navbar-brand">
-                <div class="name-container">
-                    <span class="nav-name">
-                        <span class="letter" style="--delay: 0s">M</span>
-                        <span class="letter" style="--delay: 0.2s">i</span>
-                        <span class="letter" style="--delay: 0.4s">r</span>
-                        <span class="letter" style="--delay: 0.6s">z</span>
-                        <span class="letter" style="--delay: 0.8s">a</span>
-                        <span class="letter" style="--delay: 1.0s">&nbsp;</span>
-                        <span class="letter" style="--delay: 1.2s">N</span>
-                        <span class="letter" style="--delay: 1.4s">a</span>
-                        <span class="letter" style="--delay: 1.6s">e</span>
-                        <span class="letter" style="--delay: 1.8s">e</span>
-                        <span class="letter" style="--delay: 2.0s">m</span>
-                        <span class="letter" style="--delay: 2.2s">&nbsp;</span>
-                        <span class="letter" style="--delay: 2.4s">B</span>
-                        <span class="letter" style="--delay: 2.6s">e</span>
-                        <span class="letter" style="--delay: 2.8s">g</span>
-                    </span>
-                </div>
-                <div class="social-links-nav">
-                    <a href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" class="nav-social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://x.com/mn_beg" target="_blank" class="nav-social-icon">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="mailto:mirzanaeem278@gmail.com" target="_blank" class="nav-social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fs-6 fa-solid fa-id-badge"></i>
-                            <span>Prefaces</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-6 fa-solid fa-graduation-cap"></i>
-                            <span>Academic</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-6 fa-solid fa-code"></i>
-                            <span>Skills</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-6 fa-solid fa-folder"></i>
-                            <span>Projects</span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="papers.html"><i class="fs-6 fa-solid fa-file-lines"></i>
-                            <span>Papers</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="site-nav"></div>
     <main class="container-fluid">
         <h1 class="intro display-6"><i class="fs-2 fa-solid fa-file-lines"></i>Papers</h1>
         <section id="papers" class="pt-5">
             <div class="container">
-                <div class="paper-hero text-center mx-auto mb-5 p-4">
-                    <div class="paper-hero-icon mb-3"><i class="fas fa-book-open fa-2x"></i></div>
-                    <h1 class="display-5">Coming Soon</h1>
-                    <p class="fonts text-info fw-bold mt-3 mb-0">My thesis is upcoming:</p>
-                    <p class="fonts mb-0"><strong>BanglaGuard: A Multimodal Deep Learning Framework for Audio-Visual
-                            Detection of Inappropriate Content in Bangla Children's Cartoon Videos.</strong></p>
+
+                <!-- Thesis (in progress) -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-8">
+                        <div class="card paper-card p-4">
+                            <div class="card-body text-center">
+                                <span class="status-badge">Thesis · In Progress</span>
+                                <h5 class="card-title text-info fw-bold fonts mt-3">BanglaGuard: A Multimodal Deep
+                                    Learning Framework for Audio-Visual Detection of Inappropriate Content in Bangla
+                                    Children's Cartoon Videos</h5>
+                                <div class="text-start fonts mb-0">
+                                    <p><strong>Overview:</strong> The framework integrates EfficientNet-based CNNs for
+                                        visual features, BiLSTM for temporal modeling, and OpenAI's Whisper for Bangla
+                                        speech processing. Evaluated on 339 Bangla clips, it currently achieves up to
+                                        72.6% accuracy; dataset expansion and model fine-tuning are ongoing.</p>
+                                    <p class="mb-0"><strong>Supervisor:</strong> <a
+                                            href="https://scholar.google.com/citations?user=pBArY-sAAAAJ&hl=en&authuser=1"
+                                            target="_blank">Prof. Dr. Md. Shahriar Mahbub</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Course paper -->
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="card paper-card p-4">
                             <div class="card-body text-center">
-                                <h5 class="card-title text-info fw-bold fonts">CSE4138 Soft Computing Lab Term
-                                    Assignment</h5>
-                                <p class="card-text fonts mb-3">This assignment paper is titled "<strong>Digital
-                                        Preservation of Culinary Heritage: A System for Classifying Bangladeshi Desserts
-                                        and Generating Traditional Recipes.</strong>"</p>
+                                <span class="status-badge">Course Paper · CSE4138</span>
+                                <h5 class="card-title text-info fw-bold fonts mt-3">Digital Preservation of Culinary
+                                    Heritage: A System for Classifying Bangladeshi Desserts and Generating Traditional
+                                    Recipes</h5>
                                 <div class="text-start fonts mb-3">
                                     <p><strong>Abstract:</strong> The paper presents a deep learning pipeline for
                                         preserving Bangladeshi dessert heritage by classifying 4,118 dessert images
@@ -127,9 +90,10 @@
                                     </ul>
                                 </div>
                                 <div class="d-flex justify-content-center gap-2 project-buttons">
-                                    <a href="https://github.com/mirzanaeembeg" target="_blank" class="btn btn-outline-dark">
+                                    <!-- TODO: add a GitHub button here once the paper's code repository is public:
+                                    <a href="REPO_URL" target="_blank" class="btn btn-outline-dark">
                                         <i class="fab fa-github me-2"></i>GitHub
-                                    </a>
+                                    </a> -->
                                     <a href="assets/cse4138_soft_com_lab_term_assignment.pdf"
                                         download="cse4138_soft_com_lab_term_assignment.pdf"
                                         class="btn btn-outline-primary">
@@ -140,50 +104,15 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     </main>
 
-    <footer class="footer mt-5">
-        <div class="container">
-            <p class="text-center mb-3">&copy;
-                <span id="year"></span>, Mirza Naeem Beg.
-            </p>
-            <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
-                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Full-time
-                        Positions, Research Collaborations.</p>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-md-end"><i class="fa-solid fa-envelope-open-text"></i> <strong>Let's Connect.</strong></p>
-                    <div class="contact-info text-md-end">
-                        <a href="mailto:mirzanaeem278@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/mirzanaeembeg" class="footer-link" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 40);
-
-            // Close navbar on scroll for small screens
-            const navbarCollapse = document.getElementById('navbarNav');
-            if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
-                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse);
-                bsCollapse.hide();
-            }
-        });
-    </script>
+    <script src="include.js"></script>
 </body>
 
 </html>

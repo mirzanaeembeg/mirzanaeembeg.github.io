@@ -4,25 +4,7 @@ html { min-height: 100%; }
 
 main { flex: 1 0 auto; padding-bottom: 2rem; }
 
-/* ── PAPER HERO & CARDS ── */
-.paper-hero {
-    max-width: 720px;
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 3px;
-}
-
-.paper-hero-icon {
-    width: 90px;
-    height: 90px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: rgba(3, 4, 94, 0.08);
-    color: var(--primary-color);
-}
-
+/* ── PAPER CARDS ── */
 .paper-card {
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.125);

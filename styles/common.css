@@ -119,6 +119,56 @@ strong {
     font-weight: bold;
 }
 
+/* ── SKILL / COURSEWORK CHIPS — two tiers:
+   .chip.core (solid navy) = applied / completed,
+   .chip (light)           = familiar / learning  ── */
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 5px 0;
+}
+
+.chip {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #03045e;
+    background-color: #eef4ff;
+    border: 1px solid #c8daff;
+    border-radius: 10px;
+    padding: 5px 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+}
+
+.chip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(3, 4, 94, 0.15);
+}
+
+.chip.core {
+    background-color: #03045e;
+    border-color: #03045e;
+    color: #ffffff;
+}
+
+/* ── BADGES — Solo/Team and paper status ── */
+.badge-type,
+.status-badge {
+    display: inline-block;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 3px 12px;
+    white-space: nowrap;
+}
+
 /* ── FOOTER ── */
 .footer {
     background-color: var(--bg-footer);
@@ -158,4 +208,9 @@ h4, h5, h6 { font-family: 'Times New Roman', serif; font-weight: 500; line-heigh
 @media (max-width: 576px) {
     .navbar { padding: 10px 0; }
     body { padding-top: 80px; }
+
+    .chip {
+        font-size: 0.8rem;
+        padding: 4px 12px;
+    }
 }

@@ -8,67 +8,35 @@
 }
 
 /* ============================================================
-   LEGEND BAR
+   CARDS — same transparent dashed style as the other pages
    ============================================================ */
-.legend-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 0 0 10px;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.8rem;
-    color: #444;
+.card {
+    background-color: transparent;
+    border: 1px dashed;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
-.legend-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
+.card-body { background-color: transparent; }
 
-.legend-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block;
-    flex-shrink: 0;
-}
+.card-title { font-weight: 700; }
 
-.legend-dot.intermediate { background-color: var(--intermediate); }
-.legend-dot.familiar     { background-color: var(--familiar); }
-.legend-dot.learning     { background-color: var(--learning); }
-
-/* ============================================================
-   SKILL SECTION WRAPPER
-   ============================================================ */
 .fonts { color: #03045e; }
 
-/* Technical Skills Section - Use Open Sans */
-#skills .skill-section:first-of-type .fonts {
+/* Technical Skills section uses Open Sans */
+#tech-skills .fonts {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
-#skills .skill-section:first-of-type strong {
+#tech-skills .card-body {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-}
-
-#skills .skill-section:first-of-type .card-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: transparent;
 }
 
 #skills {
     background-color: transparent;
     padding: 40px 0;
     padding-bottom: 0;
-}
-
-.skill-section {
-    padding: 30px;
-    margin-bottom: 30px;
 }
 
 /* ============================================================
@@ -212,9 +180,5 @@
 
     .skill-tags {
         grid-template-columns: 1fr;
-    }
-
-    .legend-bar {
-        gap: 12px;
     }
 }

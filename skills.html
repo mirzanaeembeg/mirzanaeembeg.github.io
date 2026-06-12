@@ -23,376 +23,148 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <div class="navbar-brand">
-                <div class="name-container">
-                    <span class="nav-name">
-                        <span class="letter" style="--delay: 0s">M</span>
-                        <span class="letter" style="--delay: 0.2s">i</span>
-                        <span class="letter" style="--delay: 0.4s">r</span>
-                        <span class="letter" style="--delay: 0.6s">z</span>
-                        <span class="letter" style="--delay: 0.8s">a</span>
-                        <span class="letter" style="--delay: 1.0s">&nbsp;</span>
-                        <span class="letter" style="--delay: 1.2s">N</span>
-                        <span class="letter" style="--delay: 1.4s">a</span>
-                        <span class="letter" style="--delay: 1.6s">e</span>
-                        <span class="letter" style="--delay: 1.8s">e</span>
-                        <span class="letter" style="--delay: 2.0s">m</span>
-                        <span class="letter" style="--delay: 2.2s">&nbsp;</span>
-                        <span class="letter" style="--delay: 2.4s">B</span>
-                        <span class="letter" style="--delay: 2.6s">e</span>
-                        <span class="letter" style="--delay: 2.8s">g</span>
-                    </span>
-                </div>
-                <div class="social-links-nav">
-                    <a href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" class="nav-social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://x.com/mn_beg" target="_blank" class="nav-social-icon">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="mailto:mirzanaeem278@gmail.com" target="_blank" class="nav-social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fs-6 fa-solid fa-id-badge"></i>
-                            <span>Prefaces</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-6 fa-solid fa-graduation-cap"></i>
-                            <span>Academic</span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="skills.html"><i class="fs-6 fa-solid fa-code"></i>
-                            <span>Skills</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-6 fa-solid fa-folder"></i>
-                            <span>Projects</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="papers.html"><i class="fs-6 fa-solid fa-file-lines"></i>
-                            <span>Papers</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="site-nav"></div>
 
     <main class="container-fluid">
         <h1 class="intro display-6"><i class="fs-2 fa-solid fa-code"></i>Skills</h1>
 
-        <!-- Legend -->
-        <div class="legend-bar">
-            <span class="legend-item"><span class="legend-dot intermediate"></span>Intermediate</span>
-            <span class="legend-item"><span class="legend-dot familiar"></span>Familiar</span>
-            <span class="legend-item"><span class="legend-dot learning"></span>Learning</span>
-        </div>
-
         <section id="skills" class="pt-5">
-            <div class="skill-section mb-4">
-                <h4 class="text-center fonts"><i class="fas fa-laptop-code me-2"></i>Technical Skills</h4>
+            <div class="container">
 
-                <div class="row mt-4">
-                    <!-- Programming Languages -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-code me-2"></i>Programming Languages</h5>
-                                <div class="skill-tags mt-3">
+                <!-- ── Technical Skills ── -->
+                <h2 class="display-5 text-center fs-1 mb-4 text-success">Technical Skills:</h2>
 
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Python</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Courses: Intro to AI  ● Pattern Recognition &amp; ML ● Soft Computing (DL) ● Thesis (BanglaGuard) ● Stanford Code in Place 2024</span>
+                <div id="tech-skills">
+                    <div class="row">
+                        <!-- Programming Languages -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-info h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-code me-2"></i>Programming Languages</h5>
+                                    <div class="chips mt-3">
+                                        <span class="chip core">Python</span>
+                                        <span class="chip core">C / C++</span>
+                                        <span class="chip core">SQL</span>
+                                        <span class="chip">Java</span>
                                     </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">C / C++</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Courses: Elementary Structured Programming ● Software Dev I (iGraphics Lib) ● Data Structures &amp; Algorithms</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">SQL</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Courses: Database ● CS50’s Intro to Databases with SQL ● Datacamp’s SQL Fundamentals</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Java</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Courses: Object Oriented Programming ● Software Dev II (Java Swing Lib)</span>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Model Development -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-robot me-2"></i>Model Development</h5>
-                                <div class="skill-tags mt-3">
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">RNNs</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Pattern Recognition &amp; ML, Soft Computing (DL) — coursework paper ● Thesis — BiLSTM temporal modeling in BanglaGuard</span>
+                        <!-- Model Development -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-info h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-robot me-2"></i>Model Development</h5>
+                                    <div class="chips mt-3">
+                                        <span class="chip core">RNNs</span>
+                                        <span class="chip core">Training CNNs</span>
+                                        <span class="chip core">Real-world use cases</span>
+                                        <span class="chip">Transformers</span>
                                     </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Training CNNs</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Pattern Recognition &amp; ML ● Soft Computing (DL) ● Thesis — EfficientNet in BanglaGuard</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Transformers</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">Soft Computing(DL)'s Transformers &amp; NLP Part</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Real-world use cases</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Thesis Work (BanglaGuard) — content safety system</span>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="row mt-3">
-                    <!-- Computer Vision -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-image me-2"></i>Computer Vision</h5>
-                                <div class="skill-tags mt-3">
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Object detection</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">Pattern Recognition &amp; ML ● Soft Computing (DL) ● Digital Image Processing — coursework exploration</span>
+                        <!-- Computer Vision -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-info h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-image me-2"></i>Computer Vision</h5>
+                                    <div class="chips mt-3">
+                                        <span class="chip core">Image classification</span>
+                                        <span class="chip core">Video analysis</span>
+                                        <span class="chip core">Object detection</span>
                                     </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Image classification</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Soft Computing (DL) Project ● Thesis — EfficientNet CNN in BanglaGuard</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Video analysis</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Thesis Work (BanglaGuard) — 3-second segment analysis</span>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- NLP -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-language me-2"></i>Natural Language Processing</h5>
-                                <div class="skill-tags mt-3">
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Text classification</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">Pattern Recognition &amp; ML ● Soft Computing (DL) ● Thesis — Bangla unsafe content detection</span>
+                        <!-- NLP -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-info h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-language me-2"></i>Natural Language Processing</h5>
+                                    <div class="chips mt-3">
+                                        <span class="chip core">Model fine-tuning</span>
+                                        <span class="chip core">Text classification</span>
+                                        <span class="chip">Sentiment analysis</span>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Sentiment analysis</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">Pattern Recognition &amp; ML ● Soft Computing (DL)’s NLP — coursework ● Thesis — Audio to Text in BanglaGuard</span>
+                        <!-- AI/ML Tools -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-info h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-tools me-2"></i>AI/ML Tools</h5>
+                                    <div class="chips mt-3">
+                                        <span class="chip core">Jupyter Notebook</span>
+                                        <span class="chip core">Google Colab</span>
+                                        <span class="chip core">VS Code</span>
+                                        <span class="chip core">Kaggle</span>
+                                        <span class="chip">MATLAB</span>
+                                        <span class="chip">Miniconda</span>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Model fine-tuning</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Pattern Recognition &amp; ML, Soft Computing (DL)’s NLP — coursework paper ● Thesis (BanglaGuard) — actively exploring</span>
+                        <!-- Web Technologies -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-info h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-globe me-2"></i>Web Technologies</h5>
+                                    <div class="chips mt-3">
+                                        <span class="chip core">HTML</span>
+                                        <span class="chip core">CSS</span>
+                                        <span class="chip core">Bootstrap</span>
+                                        <span class="chip core">JavaScript</span>
+                                        <span class="chip core">TailwindCSS</span>
+                                        <span class="chip">ReactJS</span>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Databases -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-info h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-server me-2"></i>Databases</h5>
+                                    <div class="chips mt-3">
+                                        <span class="chip core">MySQL</span>
+                                        <span class="chip core">SQLite</span>
+                                        <span class="chip">Microsoft SQL Server</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Version Control -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="card border-info h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-code-branch me-2"></i>Version Control</h5>
+                                    <div class="chips mt-3">
+                                        <span class="chip core">Git</span>
+                                        <span class="chip core">GitHub</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row mt-3">
-                    <!-- AI/ML Tools -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-tools me-2"></i>AI/ML Tools</h5>
-                                <div class="skill-tags mt-3">
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Jupyter Notebook</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Pattern Recognition &amp; ML, Soft Computing (DL)’s Paper Project ● Thesis work &amp; daily research</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Google Colab</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Pattern Recognition &amp; ML, Soft Computing (DL)’s Paper Project</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Kaggle</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">Thesis work — primary BanglaGuard training environment</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">MATLAB</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">Digital Image Processing Lab — coursework</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">VS Code</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">All development projects — primary IDE</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Miniconda</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">Self-study — environment management for Python projects</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Web Technologies -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-globe me-2"></i>Web Technologies</h5>
-                                <div class="skill-tags mt-3">
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">HTML</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Software Development IV</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">CSS</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Software Development IV</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Bootstrap</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">Software Development IV</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">JavaScript</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">Software Development ● Self-study — learning phase</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">TailwindCSS</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">Self-study — learning phase</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">ReactJS</span>
-                                        <span class="skill-level"><span class="level learning">● Learning</span></span>
-                                        <span class="skill-context">Full Stack Open (University of Helsinki) — planned</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-3">
-                    <!-- Databases -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-server me-2"></i>Databases</h5>
-                                <div class="skill-tags mt-3">
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">MySQL</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">DBMS coursework ● SD II-IV</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Microsoft SQL Server</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">DBMS coursework</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">SQLite</span>
-                                        <span class="skill-level"><span class="level familiar">● Familiar</span></span>
-                                        <span class="skill-context">Self-study — CS50’s SQL course</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Version Control -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-code-branch me-2"></i>Version Control</h5>
-                                <div class="skill-tags mt-3">
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">Git</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">All projects tracked and managed with Git</span>
-                                    </div>
-
-                                    <div class="skill-tag">
-                                        <span class="skill-name">GitHub</span>
-                                        <span class="skill-level"><span class="level intermediate">● Intermediate</span></span>
-                                        <span class="skill-context">All repositories hosted</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Courses & Certifications -->
-            <div class="skill-section mb-4">
-                <h4 class="text-center fonts"><i class="fas fa-book me-2"></i>Courses &amp; Certifications</h4>
-                <div class="row mt-4">
+                <!-- ── Courses & Certifications ── -->
+                <h2 class="display-5 text-center fs-1 mb-4 text-success mt-3">Courses &amp; Certifications:</h2>
+                <div class="row">
 
                     <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
+                        <div class="card border-info h-100">
                             <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-check-circle me-2 text-success"></i>Completed</h5>
+                                <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-check-circle me-2 text-success"></i>Completed</h5>
                                 <div class="skill-tags mt-3">
 
                                     <div class="skill-tag">
@@ -421,9 +193,9 @@
                     </div>
 
                     <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
+                        <div class="card border-info h-100">
                             <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-spinner me-2 text-warning"></i>In Progress &amp; Planned</h5>
+                                <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-spinner me-2 text-warning"></i>In Progress &amp; Planned</h5>
                                 <div class="skill-tags mt-3">
                                     <div class="skill-tag">
                                         <a href="https://app.datacamp.com/learn/skill-tracks/sql-fundamentals" target="_blank" class="skill-name course-link">SQL Fundamentals</a>
@@ -449,88 +221,52 @@
                     </div>
 
                 </div>
-            </div>
 
-            <!-- Soft Skills -->
-            <div class="skill-section mb-4">
-                <h4 class="text-center fonts"><i class="fas fa-users me-2"></i>Soft Skills</h4>
-                <div class="row mt-4">
+                <!-- ── Soft Skills ── -->
+                <h2 class="display-5 text-center fs-1 mb-4 text-success mt-3">Soft Skills:</h2>
+                <div class="row">
                     <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
+                        <div class="card border-info h-100">
                             <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-handshake me-2"></i>Collaboration</h5>
+                                <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-handshake me-2"></i>Collaboration</h5>
                                 <p class="card-text fonts">Cross-functional teamwork, code reviews, mentoring. Applied across Thesis Work,Pattern Recognition &amp; ML, Soft Computing (DL)’s research paper, DoomExploder (SD-I), TrendWave (SD-III), and the railway ticket system (SD-II) group projects.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
+                        <div class="card border-info h-100">
                             <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-comments me-2"></i>Communication</h5>
+                                <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-comments me-2"></i>Communication</h5>
                                 <p class="card-text fonts">Technical writing, presentations, clear issue reporting. Demonstrated through thesis documentation and academic project reports.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row mt-3">
                     <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
+                        <div class="card border-info h-100">
                             <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-puzzle-piece me-2"></i>Problem Solving</h5>
+                                <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-puzzle-piece me-2"></i>Problem Solving</h5>
                                 <p class="card-text fonts">Debugging, root-cause analysis, algorithmic thinking. Core focus of competitive programming practice and BanglaGuard model optimization.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
+                        <div class="card border-info h-100">
                             <div class="card-body">
-                                <h5 class="card-title fonts"><i class="fas fa-microscope me-2"></i>Research Mindset</h5>
+                                <h5 class="card-title text-info fw-bold fonts"><i class="fas fa-microscope me-2"></i>Research Mindset</h5>
                                 <p class="card-text fonts">Continuous learning, reading papers, experimenting with models. Actively applied during BanglaGuard thesis development and ML specialization coursework.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     </main>
 
-    <footer class="footer mt-4">
-        <div class="container">
-            <p class="text-center mb-3">&copy;
-                <span id="year"></span>, Mirza Naeem Beg.
-            </p>
-            <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
-                        <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Full-time Positions, Research Collaborations.</p>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-md-end"><i class="fa-solid fa-envelope-open-text"></i> <strong>Let's Connect.</strong></p>
-                    <div class="contact-info text-md-end">
-                        <a href="mailto:mirzanaeem278@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/mirzanaeembeg" class="footer-link" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 40);
-            
-            // Close navbar on scroll for small screens
-            const navbarCollapse = document.getElementById('navbarNav');
-            if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
-                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse);
-                bsCollapse.hide();
-            }
-        });
-    </script>
+    <script src="include.js"></script>
 </body>
 
 </html>

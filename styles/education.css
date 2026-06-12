@@ -26,22 +26,10 @@ main { padding-bottom: 2rem; }
     color: var(--primary-color);
 }
 
-.skill-name {
+.coursework-title {
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.85rem;
-    color: #444;
-    display: block;
-    margin-bottom: 4px;
-}
-
-.progress { height: 22px; border-radius: 6px; background-color: #dce6f5; }
-
-.progress-bar {
-    background-color: var(--primary-color);
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.78rem;
-    font-weight: 600;
-    border-radius: 6px;
+    font-size: 0.95rem;
+    color: var(--primary-color);
 }
 
 /* ── CREDIT BADGE ── */

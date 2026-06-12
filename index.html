@@ -23,65 +23,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <div class="navbar-brand">
-                <div class="name-container">
-                    <span class="nav-name">
-                        <span class="letter" style="--delay: 0s">M</span>
-                        <span class="letter" style="--delay: 0.2s">i</span>
-                        <span class="letter" style="--delay: 0.4s">r</span>
-                        <span class="letter" style="--delay: 0.6s">z</span>
-                        <span class="letter" style="--delay: 0.8s">a</span>
-                        <span class="letter" style="--delay: 1.0s">&nbsp;</span>
-                        <span class="letter" style="--delay: 1.2s">N</span>
-                        <span class="letter" style="--delay: 1.4s">a</span>
-                        <span class="letter" style="--delay: 1.6s">e</span>
-                        <span class="letter" style="--delay: 1.8s">e</span>
-                        <span class="letter" style="--delay: 2.0s">m</span>
-                        <span class="letter" style="--delay: 2.2s">&nbsp;</span>
-                        <span class="letter" style="--delay: 2.4s">B</span>
-                        <span class="letter" style="--delay: 2.6s">e</span>
-                        <span class="letter" style="--delay: 2.8s">g</span>
-                    </span>
-                </div>
-                <div class="social-links-nav">
-                    <a href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" class="nav-social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://x.com/mn_beg" target="_blank" class="nav-social-icon">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="mailto:mirzanaeem278@gmail.com" target="_blank" class="nav-social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html"><i
-                                class="fs-6 fa-solid fa-id-badge"></i>
-                            <span>Prefaces</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-6 fa-solid fa-graduation-cap"></i>
-                            <span>Academic</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-6 fa-solid fa-code"></i>
-                            <span>Skills</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-6 fa-solid fa-folder"></i>
-                            <span>Projects</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="papers.html"><i class="fs-6 fa-solid fa-file-lines"></i>
-                            <span>Papers</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="site-nav"></div>
 
     <main>
         <div class="container page-container">
-            <h1 id="prefaces" class="intro display-6"><i class="fs-2 fa-solid fa-id-badge"></i>Prefaces</h1>
+            <h1 id="about" class="intro display-6"><i class="fs-2 fa-solid fa-id-badge"></i>About</h1>
 
             <!-- Profile / photo section -->
             <div class="row justify-content-center">
@@ -96,8 +42,17 @@
                         <span id="typewriter"></span>
                     </div>
                     <div class="social-icons">
-                        <a href="https://github.com/mirzanaeembeg" target="_blank" class="icon-link">
+                        <a href="https://github.com/mirzanaeembeg" target="_blank" class="icon-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" class="icon-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/mn_beg" target="_blank" class="icon-link" aria-label="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="mailto:mirzanaeem278@gmail.com" class="icon-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                     <div class="cv-button-container mt-5">
@@ -129,48 +84,39 @@
                             currently building strong research and engineering capabilities through professional
                             coursework while actively preparing for industry roles.
                         </p>
-                        <p>My undergraduate thesis, <strong>BanglaGuard</strong>, is a Multimodal Deep Learning
-                            Framework for Audio-Visual Detection of Inappropriate Content in Bangla Children's Cartoon
-                            Videos, supervised by <a
-                                href="https://scholar.google.com/citations?user=pBArY-sAAAAJ&hl=en&authuser=1"
-                                target="_blank" class="desc-link">Prof. Dr. Md. Shahriar Mahbub</a>. The framework
-                            integrates EfficientNet-based CNNs for visual features, BiLSTM for temporal modeling, and
-                            OpenAI's Whisper for Bangla speech processing. Tested on 339 Bangla clips, it currently
-                            achieves up to 72.6% accuracy. I am also currently working on enlarging the dataset and
-                            fine-tuning the model to improve this further.</p>
                         <p>I am actively seeking full-time fresher-level <strong>Data</strong> or <strong>AI</strong> opportunities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thesis spotlight card -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-11 col-xl-10">
+                    <div class="card border-info thesis-card mb-5">
+                        <div class="card-body fonts">
+                            <h5 class="card-title text-info fw-bold">Undergraduate Thesis: BanglaGuard</h5>
+                            <p>A <strong>Multimodal Deep Learning Framework</strong> for Audio-Visual Detection of
+                                Inappropriate Content in Bangla Children's Cartoon Videos, supervised by <a
+                                    href="https://scholar.google.com/citations?user=pBArY-sAAAAJ&hl=en&authuser=1"
+                                    target="_blank" class="desc-link">Prof. Dr. Md. Shahriar Mahbub</a>.</p>
+                            <ul>
+                                <li>EfficientNet-based CNNs for visual feature extraction.</li>
+                                <li>BiLSTM for temporal modeling.</li>
+                                <li>OpenAI's Whisper for Bangla speech processing.</li>
+                                <li>Achieves up to <strong>72.6% accuracy</strong> on 339 Bangla clips; dataset
+                                    expansion and fine-tuning ongoing.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="footer mt-5">
-        <div class="container">
-            <p class="text-center mb-3">&copy;
-                <span id="year"></span>, Mirza Naeem Beg.
-            </p>
-            <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
-                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Full-time
-                        Positions, Research Collaborations.</p>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-md-end"><i class="fa-solid fa-envelope-open-text"></i> <strong>Let's Connect.</strong></p>
-                    <div class="contact-info text-md-end">
-                        <a href="mailto:mirzanaeem278@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/mirzanaeembeg" class="footer-link" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="include.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -180,18 +126,6 @@
                 backSpeed: 30,
                 loop: true
             });
-        });
-    </script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 40);
-            const navbarCollapse = document.getElementById('navbarNav');
-            if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
-                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse);
-                bsCollapse.hide();
-            }
         });
     </script>
 </body>

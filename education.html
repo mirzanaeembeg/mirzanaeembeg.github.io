@@ -24,61 +24,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <div class="navbar-brand">
-                <div class="name-container">
-                    <span class="nav-name">
-                        <span class="letter" style="--delay: 0s">M</span>
-                        <span class="letter" style="--delay: 0.2s">i</span>
-                        <span class="letter" style="--delay: 0.4s">r</span>
-                        <span class="letter" style="--delay: 0.6s">z</span>
-                        <span class="letter" style="--delay: 0.8s">a</span>
-                        <span class="letter" style="--delay: 1.0s">&nbsp;</span>
-                        <span class="letter" style="--delay: 1.2s">N</span>
-                        <span class="letter" style="--delay: 1.4s">a</span>
-                        <span class="letter" style="--delay: 1.6s">e</span>
-                        <span class="letter" style="--delay: 1.8s">e</span>
-                        <span class="letter" style="--delay: 2.0s">m</span>
-                        <span class="letter" style="--delay: 2.2s">&nbsp;</span>
-                        <span class="letter" style="--delay: 2.4s">B</span>
-                        <span class="letter" style="--delay: 2.6s">e</span>
-                        <span class="letter" style="--delay: 2.8s">g</span>
-                    </span>
-                </div>
-                <div class="social-links-nav">
-                    <a href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" class="nav-social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://x.com/mn_beg" target="_blank" class="nav-social-icon">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="mailto:mirzanaeem278@gmail.com" target="_blank" class="nav-social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fs-6 fa-solid fa-id-badge"></i>
-                            <span>Prefaces</span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="education.html"><i
-                                class="fs-6 fa-solid fa-graduation-cap"></i>
-                            <span>Academic</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-6 fa-solid fa-code"></i>
-                            <span>Skills</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fs-6 fa-solid fa-folder"></i>
-                            <span>Projects</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="papers.html"><i class="fs-6 fa-solid fa-file-lines"></i>
-                            <span>Papers</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="site-nav"></div>
 
     <main class="container-fluid">
         <h1 class="intro display-6"><i class="fs-1 fa-solid fa-graduation-cap"></i>Academic</h1>
@@ -128,35 +74,16 @@
                                     </a>
                                 </p>
 
-                                <div class="skills-container">
-                                    <div class="mb-3" data-aos="fade-up">
-                                        <span class="skill-name">Programming</span>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 80%;"
-                                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3" data-aos="fade-up">
-                                        <span class="skill-name">Problem Solving</span>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 75%;"
-                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3" data-aos="fade-up">
-                                        <span class="skill-name">Data Structures</span>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 70%;"
-                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3" data-aos="fade-up">
-                                        <span class="skill-name">Algorithms</span>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 65%;"
-                                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-                                        </div>
-                                    </div>
+                                <h4 class="coursework-title mb-2">Relevant Coursework</h4>
+                                <div class="chips">
+                                    <span class="chip core">Data Structures &amp; Algorithms</span>
+                                    <span class="chip core">Object Oriented Programming</span>
+                                    <span class="chip core">Database Management Systems</span>
+                                    <span class="chip core">Pattern Recognition &amp; ML</span>
+                                    <span class="chip core">Soft Computing (Deep Learning)</span>
+                                    <span class="chip core">Software Development I–IV</span>
+                                    <span class="chip">Introduction to AI</span>
+                                    <span class="chip">Digital Image Processing</span>
                                 </div>
                             </div>
 
@@ -184,39 +111,42 @@
                     </div>
                 </div>
 
-                <!-- ── Higher Secondary ── -->
-                <h2 class="display-5 text-center fs-1 mb-4 text-success mt-3" data-aos="fade-up">Higher Secondary:</h2>
-                <div class="card border-info mb-5" data-aos="fade-up">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col-md-2 mb-3 mb-md-0 text-center">
-                                <img src="assets/mgc_logo.jpg" alt="MGC Logo" class="img-fluid university-logo"
-                                    width="100" height="100">
-                            </div>
-                            <div class="col-md-10 fonts">
-                                <h3 class="card-title text-info">Higher Secondary Certificate (HSC)</h3>
-                                <h4 class="card-subtitle mb-2 text-muted">Mymensingh Government College</h4>
-                                <p>Graduation Year: 2020 | Group: Science</p>
-                                <p>GPA: 5.0 / 5.0</p>
+                <!-- ── School ── -->
+                <h2 class="display-5 text-center fs-1 mb-4 text-success mt-3" data-aos="fade-up">School:</h2>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card border-info h-100" data-aos="fade-up">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 mb-3 mb-md-0 text-center">
+                                        <img src="assets/mgc_logo.jpg" alt="MGC Logo" class="img-fluid university-logo"
+                                            width="100" height="100">
+                                    </div>
+                                    <div class="col-md-9 fonts">
+                                        <h3 class="card-title text-info">Higher Secondary Certificate (HSC)</h3>
+                                        <h4 class="card-subtitle mb-2 text-muted">Mymensingh Government College</h4>
+                                        <p>Graduation Year: 2020 | Group: Science</p>
+                                        <p>GPA: 5.0 / 5.0</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- ── Secondary ── -->
-                <h2 class="display-5 text-center fs-1 mb-4 text-success" data-aos="fade-up">Secondary:</h2>
-                <div class="card border-info mb-2" data-aos="fade-up">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col-md-2 mb-3 mb-md-0 text-center">
-                                <img src="assets/pms_logo.jpg" alt="PMS Logo" class="img-fluid university-logo"
-                                    width="100" height="100">
-                            </div>
-                            <div class="col-md-10 fonts">
-                                <h3 class="card-title text-info">Secondary School Certificate (SSC)</h3>
-                                <h4 class="card-subtitle mb-2 text-muted">Progressive Model School, Mymensingh</h4>
-                                <p>Graduation Year: 2017 | Group: Science</p>
-                                <p>GPA: 5.0 / 5.0</p>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card border-info h-100" data-aos="fade-up">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 mb-3 mb-md-0 text-center">
+                                        <img src="assets/pms_logo.jpg" alt="PMS Logo" class="img-fluid university-logo"
+                                            width="100" height="100">
+                                    </div>
+                                    <div class="col-md-9 fonts">
+                                        <h3 class="card-title text-info">Secondary School Certificate (SSC)</h3>
+                                        <h4 class="card-subtitle mb-2 text-muted">Progressive Model School, Mymensingh</h4>
+                                        <p>Graduation Year: 2017 | Group: Science</p>
+                                        <p>GPA: 5.0 / 5.0</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -226,47 +156,13 @@
         </section>
     </main>
 
-    <footer class="footer mt-5">
-        <div class="container">
-            <p class="text-center mb-3">&copy;
-                <span id="year"></span>, Mirza Naeem Beg.
-            </p>
-            <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Dhaka, Bangladesh</p>
-                    <p><i class="fas fa-briefcase"></i> <strong>Open to Opportunities:</strong> Internships, Full-time
-                        Positions, Research Collaborations.</p>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-md-end"><i class="fa-solid fa-envelope-open-text"></i> <strong>Let's Connect.</strong></p>
-                    <div class="contact-info text-md-end">
-                        <a href="mailto:mirzanaeem278@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/mirzanaeembeg" class="footer-link" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="include.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 800, easing: 'ease-in-out-sine', once: true });
-    </script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 40);
-            const navbarCollapse = document.getElementById('navbarNav');
-            if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
-                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse);
-                bsCollapse.hide();
-            }
-        });
     </script>
 </body>
 

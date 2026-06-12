@@ -83,6 +83,22 @@ strong { font-family: Cambria, Georgia, 'Times New Roman', serif; }
 
 .row{ margin-right: 1px; }
 
+.icon-link { margin: 0 8px; }
+
+/* ── THESIS CARD ── */
+.card {
+    background-color: transparent;
+    border: 1px dashed;
+    border-radius: 3px;
+}
+
+.card-body { background-color: transparent; }
+
+.thesis-card .card-body { padding: clamp(20px, 3vw, 30px); }
+.thesis-card .card-title { text-align: center; margin-bottom: 1rem; }
+.thesis-card ul { padding-left: 1.4rem; margin-bottom: 0; }
+.thesis-card li { margin-bottom: 0.4rem; }
+
 /* ── DESCRIPTION CARD ── */
 .description {
     font-family: "IBM Plex Mono", monospace;
