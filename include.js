@@ -26,13 +26,13 @@
                 </span>
             </div>
             <div class="social-links-nav">
-                <a href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" class="nav-social-icon">
+                <a href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" rel="noopener" class="nav-social-icon" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://x.com/mn_beg" target="_blank" class="nav-social-icon">
+                <a href="https://x.com/mn_beg" target="_blank" rel="noopener" class="nav-social-icon" aria-label="X (Twitter)">
                     <i class="fab fa-x-twitter"></i>
                 </a>
-                <a href="mailto:mirzanaeem278@gmail.com" target="_blank" class="nav-social-icon">
+                <a href="mailto:mirzanaeem278@gmail.com" class="nav-social-icon" aria-label="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -73,10 +73,10 @@
             <div class="col-md-6">
                 <p class="text-md-end"><i class="fa-solid fa-envelope-open-text"></i> <strong>Let's Connect.</strong></p>
                 <div class="contact-info text-md-end">
-                    <a href="mailto:mirzanaeem278@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank"><i
+                    <a href="mailto:mirzanaeem278@gmail.com" class="footer-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/mirza-naeem-beg/" class="footer-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i
                             class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/mirzanaeembeg" class="footer-link" target="_blank"><i
+                    <a href="https://github.com/mirzanaeembeg" class="footer-link" target="_blank" rel="noopener" aria-label="GitHub"><i
                             class="fab fa-github"></i></a>
                 </div>
             </div>
