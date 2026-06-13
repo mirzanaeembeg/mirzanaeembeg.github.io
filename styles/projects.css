@@ -19,6 +19,7 @@
     background-color: var(--box-bg);
     border: 1px solid;
     overflow: hidden;
+    height: 100%;
 }
 
 .card-body {
@@ -55,5 +56,5 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 991.98px) {
-    p, li { text-align: justify; }
+    .card-body, .card-body p, .card-body li { text-align: left; }
 }
