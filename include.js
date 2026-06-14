@@ -59,7 +59,7 @@
 </nav>`;
 
     const FOOTER_HTML = `
-<footer class="footer mt-5">
+<footer class="footer">
     <div class="container">
         <p class="text-center mb-3">&copy;
             <span id="year"></span>, Mirza Naeem Beg.

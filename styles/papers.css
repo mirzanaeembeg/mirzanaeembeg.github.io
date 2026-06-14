@@ -1,9 +1,5 @@
 /* Page-specific styles for papers.html — shared rules live in common.css */
 
-html { min-height: 100%; }
-
-main { flex: 1 0 auto; padding-bottom: 2rem; }
-
 /* ── PAPER CARDS ── */
 .paper-card {
     background-color: transparent;

@@ -173,7 +173,9 @@ strong {
 .footer {
     background-color: var(--bg-footer);
     padding: clamp(15px, 3vw, 25px) 0;
-    margin-top: auto;
+    /* Fixed gap above the footer so it's identical on every page
+       (auto would vary the gap with page height). */
+    margin-top: 3rem;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 300;
     font-size: clamp(0.8rem, 1.5vw, 1rem);
