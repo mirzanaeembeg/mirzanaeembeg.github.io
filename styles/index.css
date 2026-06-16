@@ -123,6 +123,74 @@ strong { font-family: Cambria, Georgia, 'Times New Roman', serif; }
 .desc-link { color: #0077b6; text-decoration: none; transition: color 0.2s ease; }
 .desc-link:hover { color: #023e8a; }
 
+/* ── MESSAGE-TO-VISITORS QUOTE (modern light card) ── */
+.visitor-quote {
+    position: relative;
+    margin-top: 1.5rem;
+    padding: clamp(16px, 3vw, 24px) clamp(24px, 5vw, 44px);
+    text-align: center;
+    color: var(--primary-color);
+    background:
+        linear-gradient(90deg, #03045e, #0077b6) bottom / 100% 4px no-repeat,
+        var(--box-bg);
+    border: none;
+    border-radius: 20px;
+    box-shadow: none;
+    overflow: hidden;
+}
+
+/* gradient accent bar across the top */
+.visitor-quote::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #03045e, #0077b6);
+}
+
+/* large faded decorative quotation glyph */
+.visitor-quote::before {
+    content: "\201C";
+    position: absolute;
+    top: clamp(-18px, -2vw, -4px);
+    left: clamp(14px, 3vw, 30px);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(5rem, 12vw, 8rem);
+    line-height: 1;
+    color: rgba(3, 4, 94, 0.07);
+    pointer-events: none;
+}
+
+/* icon in a gradient circle */
+.visitor-quote i {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: #ffffff;
+    background: linear-gradient(135deg, #03045e, #0077b6);
+    border-radius: 50%;
+    box-shadow: 0 6px 16px rgba(3, 4, 94, 0.25);
+}
+
+.visitor-quote p {
+    position: relative;
+    margin: 0 auto;
+    max-width: 640px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+}
+
 .animated-emoji {
     display: inline-block;
     animation: wave 2s infinite;
