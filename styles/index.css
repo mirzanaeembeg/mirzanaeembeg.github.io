@@ -204,6 +204,16 @@ strong { font-family: Cambria, Georgia, 'Times New Roman', serif; }
     color: var(--primary-color);
 }
 
+.visitor-quote .quote-date {
+    display: block;
+    margin-top: 0.1rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-size: clamp(0.7rem, 1.4vw, 0.82rem);
+    letter-spacing: 0.4px;
+    color: #6b7280;
+}
+
 .animated-emoji {
     display: inline-block;
     animation: wave 2s infinite;
