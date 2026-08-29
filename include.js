@@ -44,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html"><i class="fs-6 fa-solid fa-id-badge"></i>
-                        <span>About</span></a></li>
+                        <span>Preface</span></a></li>
                 <li class="nav-item"><a class="nav-link" href="education.html"><i class="fs-6 fa-solid fa-graduation-cap"></i>
                         <span>Academic</span></a></li>
                 <li class="nav-item"><a class="nav-link" href="skills.html"><i class="fs-6 fa-solid fa-code"></i>
