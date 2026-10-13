@@ -84,5 +84,23 @@
         });
     }
 
+    /* project screenshots: auto-advancing carousel (manual swipe still works; no autoplay for reduced motion) */
+    if (!reduce.matches) document.querySelectorAll('.shots').forEach((box) => {
+        let paused = false, visible = false, resume;
+        new IntersectionObserver((en) => { visible = en[0].isIntersecting; }).observe(box);
+        const stop = () => { paused = true; clearTimeout(resume); };
+        const go = (delay) => { clearTimeout(resume); resume = setTimeout(() => { paused = false; }, delay); };
+        box.addEventListener('pointerenter', stop); box.addEventListener('pointerleave', () => go(300));
+        box.addEventListener('focusin', stop); box.addEventListener('focusout', () => go(300));
+        box.addEventListener('touchstart', stop, { passive: true }); box.addEventListener('touchend', () => go(4000));
+        setInterval(() => {
+            if (paused || !visible || box.children.length < 2) return;
+            const gap = parseFloat(getComputedStyle(box).columnGap) || 0;
+            const end = box.scrollWidth - box.clientWidth - 4;
+            if (box.scrollLeft >= end) box.scrollTo({ left: 0, behavior: 'smooth' });
+            else box.scrollBy({ left: box.children[0].offsetWidth + gap, behavior: 'smooth' });
+        }, 3500);
+    });
+
     window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach((d) => d.setAttribute('open', '')));
 })();
