@@ -57,6 +57,8 @@ portfolio-v3/
 - Modern single-page portfolio layout
 - Responsive navigation and mobile-friendly menu
 - Dark/light theme switch
+- AOS-style reveal-on-scroll animations across page content; project cards mount near the viewport and retain live search and Solo/Team filters
+- Animated profile statistics and a scroll progress indicator
 - Academic timeline and coursework overview
 - Research section highlighting thesis and studies
 - Project cards with technical stack and screenshots
@@ -109,4 +111,3 @@ This project is intended for personal portfolio use. Please respect copyright an
 ---
 
 Built to reflect a professional portfolio presence for academic, research, and early-career opportunities in software, data, and AI roles.
-
