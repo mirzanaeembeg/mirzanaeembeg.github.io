@@ -1,74 +1,112 @@
-# [Mirza Naeem Beg — Portfolio](https://mirzanaeembeg.github.io/)
+# Mirza Naeem Beg | Portfolio
 
-Welcome to my portfolio repository! This project showcases my academic background, skills, projects, and achievements in computer science.
+A personal portfolio website for Mirza Naeem Beg, showcasing academic achievements, research interests, technical skills, projects, and professional background as an aspiring AI engineer.
 
-## Table of Contents
+Visit the live site: https://mirzanaeembeg.github.io/
 
-- [About](#about)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Setup and Usage](#setup-and-usage)
-- [Contributing](#contributing)
-- [License](#license)
+## Overview
 
----
+This portfolio presents a focused narrative around:
 
-## About
+- AI, NLP, computer vision, and deep learning
+- Academic work and research in Bangla language processing
+- Practical software, data, and AI project experience
+- Career interest in junior-level software, data, and AI roles
 
-This portfolio serves as a comprehensive overview of my educational background, technical skills, and practical experience across various programming languages and technologies. It covers my academic journey, individual and group projects, online learnings, and more.
+The site is designed as a clean, modern single-page portfolio with a responsive layout, dark mode support, and an editorial-style presentation.
+
+## Highlights
+
+- Academic profile from Ahsanullah University of Science and Technology (AUST)
+- Research and thesis work in Bangla multimodal AI and low-resource language technology
+- Technical toolbox covering Python, SQL, C/C++, Java, deep learning, computer vision, NLP, and web development
+- Project showcase including academic and team-built software applications
+- Personal contact links for email, GitHub, LinkedIn, and X
+- Downloadable resume and professional profile resources
+
+## Tech Stack
+
+This project is built with:
+
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- Static asset delivery with local design files
+
+## Project Structure
+
+```text
+portfolio-v3/
+├── index.html
+├── script.js
+├── README.md
+├── assets/
+│   ├── profile1.png
+│   ├── favicon.png
+│   ├── *.pdf
+│   ├── *.png
+│   └── *.webp
+├── styles/
+│   └── main.css
+└── .git/
+```
 
 ## Features
 
-- **About:** A brief introduction to who I am, my career aspirations, and a spotlight on my undergraduate thesis (BanglaGuard).
-- **Academic:** My educational background, institutions attended, grades achieved, and relevant coursework.
-- **Skills:** Technical skills shown as two-tier chips (core vs. familiar), plus courses, certifications, and soft skills.
-- **Projects:** Solo and team projects with screenshots, tech stacks, and my contributions.
-- **Papers:** My thesis (in progress) and course research papers.
+- Modern single-page portfolio layout
+- Responsive navigation and mobile-friendly menu
+- Dark/light theme switch
+- Academic timeline and coursework overview
+- Research section highlighting thesis and studies
+- Project cards with technical stack and screenshots
+- Footer with social links and resume access
 
-## Structure
+## Local Development
 
+This is a static portfolio site and does not require a build pipeline.
+
+### Option 1: Open directly
+
+Open `index.html` in a browser.
+
+### Option 2: Run a local server
+
+```bash
+python -m http.server 8000
 ```
-├── index.html       # The whole portfolio: hello, research, projects, toolbox, academic, memory
-├── script.js        # Theme toggle, section highlighting, print helper
-├── styles/main.css  # Hand-written stylesheet (no framework)
-└── assets/          # Images, logos, CV, certificates, paper PDFs
+
+Then open:
+
+```text
+http://localhost:8000
 ```
 
-Built with plain HTML, CSS and a little JavaScript. Fonts: Fraunces, Instrument Sans, DM Mono, Caveat (Google Fonts).
+## Customization
 
-## Setup and Usage
+To adapt this portfolio for your own use:
 
-This is a static site — no build tools or dependencies to install.
+1. Update the personal information in `index.html`
+2. Replace asset files in the `assets/` folder
+3. Edit the theme and layout in `styles/main.css`
+4. Update contact links, resume filename, and social profiles as needed
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mirzanaeembeg/mirzanaeembeg.github.io.git
-   ```
-2. Open `index.html` in your browser, or use a local server:
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   ```
-3. Visit `http://localhost:8000` in your browser.
+## Author
 
-> Or simply visit the live site: [https://mirzanaeembeg.github.io/](https://mirzanaeembeg.github.io/)
+Mirza Naeem Beg
 
-### Project Screencast
-Watch a walkthrough of the portfolio: [ScreenCast on YouTube](https://youtu.be/6o7jbOOSK1U)
-
-## Contributing
-
-If you'd like to contribute, please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/YourFeature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin feature/YourFeature`
-5. Open a Pull Request
+- Role: Aspiring AI Engineer
+- Location: Dhaka, Bangladesh
+- Email: mirzanaeem278@gmail.com
+- GitHub: https://github.com/mirzanaeembeg
+- LinkedIn: https://www.linkedin.com/in/mirza-naeem-beg/
+- X: https://x.com/mn_beg
 
 ## License
 
-This project is licensed under the MIT License.
+This project is intended for personal portfolio use. Please respect copyright and usage rights for assets, content, and media included in the repository.
 
 ---
+
+Built to reflect a professional portfolio presence for academic, research, and early-career opportunities in software, data, and AI roles.
+
