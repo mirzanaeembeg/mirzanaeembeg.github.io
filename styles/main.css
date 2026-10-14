@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap");
-/* Jamdani: indigo warp, marigold weft, cool white ground. Mobile-first. */
 :root{--bg:#f5f6fa;--paper:#fff;--tint:#eceefa;--ink:#141a3a;--soft:#4a5175;--faint:#5b6286;--line:#d9dcec;--accent:#3340c8;--on-accent:#fff;--gold:#f5b700;--mk:#f5b700;--panel:#141a3a;--on-panel:#fff;
 --display:'Bricolage Grotesque','Onest',system-ui,sans-serif;--text:'Onest','Segoe UI',Arial,sans-serif;--pad:clamp(1.25rem,5vw,3rem);color-scheme:light}
 [data-theme="dark"]{--bg:#0d1020;--paper:#151a33;--tint:#1c2242;--ink:#eceefa;--soft:#a9b0d4;--faint:#8e96bf;--line:#2a3160;--accent:#9aa4ff;--on-accent:#0d1020;--gold:#ffc933;--mk:rgba(255,201,51,.32);--panel:#1c2242;--on-panel:#eceefa;color-scheme:dark}

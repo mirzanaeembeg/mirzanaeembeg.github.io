@@ -1,4 +1,3 @@
-// Small helpers: theme toggle, year, menu, section highlighting, fade-up on scroll, print-friendly project list.
 (function () {
     const root = document.documentElement;
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
