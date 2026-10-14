@@ -43,7 +43,8 @@ p{margin:0 0 1.1rem;text-wrap:pretty}
 .who-links{grid-area:links;margin-top:.5rem}
 
 /* navigation: sticky bar, dropdown on small screens */
-.rail nav{position:sticky;top:0;z-index:20;background:var(--bg);box-shadow:0 0 0 100vmax var(--bg);clip-path:inset(0 -100vmax)}
+.rail nav{position:sticky;top:0;z-index:20}
+.rail nav::before{content:"";position:absolute;z-index:-1;inset:0 -100vmax;background:var(--bg)}
 .menu-btn{display:flex;align-items:center;gap:.7rem;width:100%;min-height:3.25rem;padding:0;background:none;border:0;border-block:1.5px solid var(--ink);color:var(--ink);font:600 1rem var(--text);cursor:pointer}
 .menu-btn .cur{margin-left:auto;color:var(--accent)}
 .menu-btn .ic-close,.rail nav.open .menu-btn .ic-menu{display:none}.rail nav.open .menu-btn .ic-close{display:block}
@@ -103,7 +104,7 @@ h2 small{order:-1;margin-bottom:.35rem;font:600 1rem var(--text);color:var(--acc
 .chips li{min-height:2rem;padding:.2rem .7rem;border-radius:8px;background:var(--tint);font-size:.95rem;line-height:1.5}
 .chips li.also{background:transparent;border:1.5px dashed var(--faint);color:var(--soft)}
 
-/* research */
+/* papers */
 .paper{padding:1.75rem 0;border-top:1.5px solid var(--line)}.paper:last-of-type{border-bottom:1.5px solid var(--line)}
 .paper .meta{margin:0 0 .8rem;font-size:.9rem;color:var(--faint)}
 .paper .meta b{display:inline-block;margin:0 .5rem .25rem 0;padding:.1rem .7rem;border-radius:999px;background:var(--gold);color:#141a3a;font-size:.82rem}
@@ -187,7 +188,8 @@ footer.site .top{display:inline-flex;align-items:center;gap:.5rem;min-height:2.7
   .role{font-size:1rem}
   .theme-mobile,.who-links,.menu-btn{display:none}
   .theme-desktop{display:inline-grid}
-  .rail nav{position:static;z-index:auto;background:none;box-shadow:none;clip-path:none}
+  .rail nav{position:static;z-index:auto}
+  .rail nav::before{display:none}
   .rail nav ol{display:block;position:static;margin:0;padding:0;background:none;border:0;border-radius:0;box-shadow:none;max-height:none;overflow:visible;counter-reset:n}
   .rail nav a{counter-increment:n;min-height:2.6rem;padding:.3rem .7rem;border-radius:10px}
   .rail nav a::before{content:counter(n,decimal-leading-zero);min-width:1.5rem;font:600 .8rem var(--display);color:var(--faint)}
@@ -228,10 +230,10 @@ footer.site .top{display:inline-flex;align-items:center;gap:.5rem;min-height:2.7
 .join{padding:.5rem .9rem;text-align:center}
 @media (min-width:40rem){.flow{grid-template-columns:auto 1rem auto}.join{margin-left:.6rem}.join::before{left:-.6rem;width:.6rem}}
 @media (max-width:39.99rem){.lane span{padding:.3rem .4rem}}
-/* research: links back to the original plain text style */
-#research .links{gap:.25rem 1.4rem;font:.85rem var(--mono)}
-#research .links a{padding:0;border:0;border-radius:0;background:none;font-weight:400;text-decoration:underline;text-decoration-color:var(--line)}
-#research .links a:hover{text-decoration-color:var(--accent)}
+/* papers: links back to the original plain text style */
+#papers .links{gap:.25rem 1.4rem;font:.85rem var(--mono)}
+#papers .links a{padding:0;border:0;border-radius:0;background:none;font-weight:400;text-decoration:underline;text-decoration-color:var(--line)}
+#papers .links a:hover{text-decoration-color:var(--accent)}
 /* all running text is justified; short labels stay left */
 main p,.paper li,.body li,.paper h3,.timeline h3,.hello h1,.memory-fig figcaption{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
 .paper h3,.timeline h3,.hello h1{text-wrap:wrap;hyphens:manual;-webkit-hyphens:manual}
