@@ -1,22 +1,23 @@
-// Small helpers: theme toggle, year, menu, section highlighting, tool logos, fade-up on scroll, print-friendly project list.
+// Small helpers: theme toggle, year, menu, section highlighting, fade-up on scroll, print-friendly project list.
 (function () {
     const root = document.documentElement;
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     /* theme: light by default, choice saved in localStorage */
-    const themeBtn = document.querySelector('.theme');
+    const themeBtns = document.querySelectorAll('.theme');
     const syncTheme = () => {
-        if (!themeBtn) return;
         const label = root.getAttribute('data-theme') === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
-        themeBtn.setAttribute('aria-label', label);
-        themeBtn.setAttribute('title', label);
+        themeBtns.forEach((button) => {
+            button.setAttribute('aria-label', label);
+            button.setAttribute('title', label);
+        });
     };
-    if (themeBtn) themeBtn.addEventListener('click', () => {
+    themeBtns.forEach((button) => button.addEventListener('click', () => {
         const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         root.setAttribute('data-theme', next);
         try { localStorage.setItem('theme', next); } catch (e) {}
         syncTheme();
-    });
+    }));
     syncTheme();
 
     const year = document.getElementById('year');
@@ -51,19 +52,6 @@
         });
     }, { rootMargin: '-20% 0px -65% 0px' });
     document.querySelectorAll('main section[id]').forEach((s) => io.observe(s));
-
-    /* tool logos (Simple Icons, pinned version); a missing logo is simply dropped */
-    const iconBase = 'https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/';
-    document.querySelectorAll('[data-i]').forEach((el) => {
-        const img = new Image(16, 16);
-        img.className = 'ti';
-        img.alt = '';
-        img.loading = 'lazy';
-        img.decoding = 'async';
-        img.onerror = () => img.remove();
-        img.src = iconBase + el.dataset.i + '.svg';
-        el.prepend(img);
-    });
 
     /* fade-up on scroll, skipped entirely when the visitor prefers reduced motion */
     if (!reduce.matches && 'IntersectionObserver' in window) {
