@@ -70,7 +70,7 @@ h2 small{order:-1;margin-bottom:.35rem;font:600 1rem var(--text);color:var(--acc
 /* hello */
 .eyebrow{margin:0 0 .4rem;font-weight:600;color:var(--accent)}
 .lead{margin:0 0 1.25rem;font:500 clamp(1.1rem,2.6vw,1.35rem)/1.45 var(--text);color:var(--soft)}.lead strong{color:var(--ink);font-weight:600}
-.hello .badge{margin:0}
+.hello .badge{display:flex;align-items:center;justify-content:center;width:fit-content;max-width:100%;margin:0 auto;text-align:center}
 .hello h1{margin:1.5rem 0;font:600 clamp(1.15rem,3.6vw,1.6rem)/1.35 var(--display);letter-spacing:-.01em}
 .hello p{color:var(--soft)}.hello strong{color:var(--ink)}
 .postit{margin:2rem 0 0;padding:1.25rem 1.4rem;background:var(--tint);border-left:6px solid var(--gold);border-radius:6px 18px 18px 6px}
