@@ -39,6 +39,7 @@ p{margin:0 0 1.1rem;text-wrap:pretty}
 .name{grid-area:name;align-self:end;margin:0;font:700 clamp(1rem,calc((100vw - 2*var(--pad) - clamp(6.25rem,18vw,8.5rem) - clamp(1rem,3vw,2rem) - .2rem) / 8.3),3.25rem)/1.05 var(--display);font-family:'Fraunces',serif;letter-spacing:-.02em;white-space:nowrap}
 .role-row{grid-area:role;display:flex;align-items:center;flex-wrap:wrap;gap:.5rem .9rem}
 .role{margin:0;color:var(--soft);font-size:clamp(.95rem,2.2vw,1.15rem);line-height:1.45}.role strong{color:var(--ink)}
+.role-email{display:none}
 .theme-desktop,.rail-foot{display:none}
 .who-links{grid-area:links;margin-top:.5rem}
 
@@ -202,8 +203,10 @@ footer.site .top{display:inline-flex;align-items:center;gap:.5rem;min-height:2.7
   .who{display:block;padding:0}
   .polaroid{width:9.5rem;margin:.6rem 0 1.5rem .2rem}
   .name{font-size:1.8rem}
-  .role-row{margin-top:.6rem}
+  .role-row{align-items:flex-start;gap:.6rem .7rem;margin-top:.6rem}
   .role{font-size:1rem}
+  .role-email{display:inline-flex;align-items:center;justify-content:center;margin-top:-.08rem;color:var(--soft);font:600 .9rem/1.4 var(--mono);letter-spacing:.01em;text-decoration:none;overflow-wrap:anywhere;transition:color .2s ease, transform .2s ease, text-shadow .2s ease}
+  .role-email:hover{color:var(--accent);transform:translateY(-1px);text-shadow:0 0 10px color-mix(in srgb, var(--accent) 35%, transparent)}
   .theme-mobile,.who-links,.menu-btn{display:none}
   .theme-desktop{display:inline-grid}
   .rail nav{position:static;z-index:auto}
