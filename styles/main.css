@@ -69,6 +69,8 @@ h2 small{order:-1;margin-bottom:.35rem;font:600 1rem var(--text);color:var(--acc
 .btn{flex:1 1 9rem;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3rem;padding:.6rem 1.4rem;border:2px solid var(--ink);border-radius:12px;background:transparent;color:var(--ink);font:600 .95rem var(--text);text-decoration:none;transition:background-color .2s,color .2s,border-color .2s}
 .btn:hover{background:var(--tint);color:var(--ink)}.btn:active{transform:scale(.98)}
 .btn.solid{border-color:var(--accent);background:var(--accent);color:var(--on-accent)}.btn.solid:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn.whatsapp{border-color:#25d366;background:#25d366;color:#063b20}
+.btn.whatsapp:hover{border-color:#1ebe5d;background:#1ebe5d;color:#063b20}
 
 /* hello */
 .eyebrow{margin:0 0 .4rem;font-weight:600;color:var(--accent)}
