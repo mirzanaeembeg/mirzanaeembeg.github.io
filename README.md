@@ -42,8 +42,8 @@ portfolio-v3/
 ├── script.js
 ├── README.md
 ├── assets/
+│   ├── avatar.png
 │   ├── profile1.png
-│   ├── favicon.png
 │   ├── *.pdf
 │   ├── *.png
 │   └── *.webp
@@ -63,26 +63,6 @@ portfolio-v3/
 - Research section highlighting thesis and studies
 - Project cards with technical stack and screenshots
 - Footer with social links and resume access
-
-## Local Development
-
-This is a static portfolio site and does not require a build pipeline.
-
-### Option 1: Open directly
-
-Open `index.html` in a browser.
-
-### Option 2: Run a local server
-
-```bash
-python -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
 
 ## Customization
 

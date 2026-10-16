@@ -169,9 +169,6 @@
         search.addEventListener('input', filterProjects);
         explorer.hidden = false;
         filterProjects();
-        if (!('IntersectionObserver' in window)) {
-            projectItems.slice(1).forEach(mountProject);
-        }
     }
 
     /* count-up stats once they enter view; reduced-motion users see the final values */
@@ -208,6 +205,67 @@
         }
     }
 
+    /* idea scene: avatar, comic bubble and branching code diagram, scrubbed by scroll position */
+    const scene = document.getElementById('idea-scene');
+    if (scene && !reduce.matches) {
+        root.classList.add('idea-anim');
+        const stage = scene.querySelector('.idea-stage');
+        const clamp = (v) => Math.min(1, Math.max(0, v));
+        const seg = (p, a, b) => clamp((p - a) / (b - a));
+        const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+        const back = (t) => 1 + 2.70158 * Math.pow(t - 1, 3) + 1.70158 * Math.pow(t - 1, 2);
+        const lenC = scene.querySelector('.chip').textContent.length;
+        const lenA = scene.querySelector('.br-a .code').textContent.length;
+        const lenB = scene.querySelector('.br-b .code').textContent.length;
+        const typed = (t, len) => Math.round(t * len) / len;
+        let forced = false, completed = false, frame = 0;
+
+        const render = () => {
+            frame = 0;
+            let p = 1;
+            if (!forced && !completed) {
+                const vh = window.innerHeight;
+                const top = scene.getBoundingClientRect().top;
+                const stickTop = parseFloat(getComputedStyle(stage).top) || 0;
+                const start = vh * 0.6;                                   /* avatar begins as the scene scrolls into view */
+                const end = stickTop - (scene.offsetHeight - stage.offsetHeight);
+                p = clamp((start - top) / (start - end));
+            }
+            const q = p * 0.78;                                          /* phases finish near p = .92, then a short pause */
+            const v = {
+                av: easeOut(seg(q, 0.00, 0.08)),
+                bub: back(seg(q, 0.10, 0.18)),
+                ct: typed(seg(q, 0.20, 0.32), lenC),
+                st: seg(q, 0.32, 0.38),
+                vb: seg(q, 0.38, 0.44),
+                la: seg(q, 0.44, 0.49),
+                lb: seg(q, 0.44, 0.49),
+                ta: typed(seg(q, 0.49, 0.57), lenA),
+                tb: typed(seg(q, 0.53, 0.61), lenB),
+                ara: seg(q, 0.57, 0.63),
+                arb: seg(q, 0.61, 0.67),
+                ia: back(seg(q, 0.63, 0.68)),
+                ib: back(seg(q, 0.67, 0.72))
+            };
+            if (!forced && v.ib >= 1) completed = true;
+            for (const key in v) scene.style.setProperty('--' + key, v[key].toFixed(4));
+            scene.classList.toggle('ready-a', v.ia > 0.9);
+            scene.classList.toggle('ready-b', v.ib > 0.9);
+            scene.classList.toggle('typing-c', v.ct > 0 && v.ct < 1);
+            scene.classList.toggle('typing-a', v.ta > 0 && v.ta < 1);
+            scene.classList.toggle('typing-b', v.tb > 0 && v.tb < 1);
+        };
+        const schedule = () => { if (!frame) frame = requestAnimationFrame(render); };
+        window.addEventListener('scroll', schedule, { passive: true });
+        window.addEventListener('resize', schedule);
+        /* keyboard users tabbing into the diagram, and printing, see the finished state */
+        scene.addEventListener('focusin', () => { forced = true; schedule(); });
+        scene.addEventListener('focusout', () => { forced = false; schedule(); });
+        window.addEventListener('beforeprint', () => { forced = true; render(); });
+        window.addEventListener('afterprint', () => { forced = false; render(); });
+        render();
+    }
+
     /* mobile menu */
     const nav = document.querySelector('.rail nav');
     const menuBtn = nav.querySelector('.menu-btn');
@@ -240,7 +298,7 @@
 
     /* AOS-style reveals for section content and repeated content groups */
     revealOnScroll(document.querySelectorAll([
-        'main section > :not(.projects)',
+        'main section > :not(.projects):not(.idea-scene)',
         '.timeline > li',
         '.tools-grid > *',
         '.traits > *',
