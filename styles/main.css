@@ -39,6 +39,7 @@ p{margin:0 0 1.1rem;text-wrap:pretty}
 .role{margin:0;color:var(--soft);font-size:clamp(.95rem,2.2vw,1.15rem);line-height:1.45}.role strong{color:var(--ink)}
 .role-email{display:none}
 .theme-desktop,.rail-foot{display:none}
+.resume-desktop,.resume-mobile{display:none}
 .who-links{grid-area:links;margin-top:.5rem}
 @media (max-width:61.99rem){
   .who{column-gap:clamp(.65rem,3vw,2rem);row-gap:clamp(.2rem,1vw,.35rem)}
@@ -48,9 +49,10 @@ p{margin:0 0 1.1rem;text-wrap:pretty}
   .role{flex:1 1 auto;min-width:0;font-size:clamp(.8rem,3.6vw,1.15rem)}
   .theme-mobile{flex:0 0 clamp(2.5rem,11.3vw,2.75rem);width:clamp(2.5rem,11.3vw,2.75rem);height:clamp(2.5rem,11.3vw,2.75rem)}
   .theme-mobile .ic{width:clamp(1.1rem,4.5vw,1.25rem);height:clamp(1.1rem,4.5vw,1.25rem)}
-  .who-links{gap:clamp(.25rem,1.5vw,.5rem)}
-  .who-links .ib{width:clamp(2.25rem,11.3vw,2.75rem);height:clamp(2.25rem,11.3vw,2.75rem)}
+  .who-links{gap:clamp(.2rem,1vw,.4rem)}
+  .who-links .ib{width:clamp(2rem,9vw,2.5rem);height:clamp(2rem,9vw,2.5rem)}
   .who-links .ib .ic{width:clamp(1rem,4vw,1.125rem);height:clamp(1rem,4vw,1.125rem)}
+  .who-links .resume-mobile{display:inline-grid}
 }
 
 /* navigation: sticky bar, dropdown on small screens */
@@ -210,8 +212,11 @@ footer.site .top{display:inline-flex;align-items:center;gap:.5rem;min-height:2.7
   .who{display:block;padding:0}
   .polaroid{width:9.5rem;margin:.6rem 0 1.5rem .2rem;transform:rotate(-3deg)}
   .name{font-size:1.8rem}
-  .role-row{align-items:flex-start;gap:.6rem .7rem;margin-top:.6rem}
-  .role{font-size:1rem}
+  .role-row{position:relative;align-items:flex-start;gap:.6rem .7rem;margin-top:.6rem}
+  .role{padding-right:1.75rem;font-size:1rem}
+  .resume-desktop{position:absolute;top:1.35rem;right:0;display:inline-flex;align-items:center;justify-content:center;width:1.8rem;height:1.8rem;border:1.5px dotted var(--faint);border-radius:5px;background:var(--bg);color:var(--ink);text-decoration:none}
+  .resume-desktop:hover{color:var(--accent)}
+  .resume-desktop .ic{width:1.2rem;height:1.2rem}
   .role-email{display:inline-flex;align-items:center;justify-content:center;margin-top:-.08rem;color:var(--soft);font:600 .9rem/1.4 var(--mono);letter-spacing:.01em;text-decoration:none;overflow-wrap:anywhere;transition:color .2s ease, transform .2s ease, text-shadow .2s ease}
   .role-email:hover{color:var(--accent);transform:translateY(-1px);text-shadow:0 0 10px color-mix(in srgb, var(--accent) 35%, transparent)}
   .theme-mobile,.who-links,.menu-btn{display:none}
@@ -221,7 +226,6 @@ footer.site .top{display:inline-flex;align-items:center;gap:.5rem;min-height:2.7
   .rail nav a{counter-increment:n;min-height:2.6rem;padding:.3rem .7rem;border-radius:10px}
   .rail nav a::before{content:counter(n,decimal-leading-zero);min-width:1.5rem;font:600 .8rem var(--display);color:var(--faint)}
   .rail nav a.on::before{color:var(--accent)}
-  .rail nav a.resume::before{content:none}
   .rail-foot{display:grid;gap:.8rem;justify-items:start;margin-top:auto;font-size:.9rem;color:var(--soft)}
   .rail-foot a{overflow-wrap:anywhere}
   .shell,footer.site{max-width:72rem}
@@ -295,10 +299,8 @@ main .eyebrow,main .badge,main .meta,main .pmeta{text-align:left;hyphens:manual;
 .hello .university-link{text-decoration:none}
 .hello .university-link:hover{color:var(--accent);text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:.22em}
 
-/* sidebar: number column and the resume icon share one fixed-width slot, so every label starts at the same x */
+/* Sidebar navigation number column */
 .rail nav a::before{min-width:1.35rem}
-.rail nav a.resume .ic{width:1.35rem;height:1.35rem;padding-right:.2rem;box-sizing:border-box;margin:0}
-.rail nav a.resume .ic{flex:none}
 
 /* ===== Idea scene: avatar, comic bubble and a branching code diagram, scrubbed by scroll =====
    Everything is sized in em of .idea-board, and the board's font-size follows its container width,
