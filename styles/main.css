@@ -214,8 +214,8 @@ footer.site .top{display:inline-flex;align-items:center;gap:.5rem;min-height:2.7
   .name{font-size:1.8rem}
   .role-row{position:relative;align-items:flex-start;gap:.6rem .7rem;margin-top:.6rem}
   .role{padding-right:1.75rem;font-size:1rem}
-  .resume-desktop{position:absolute;top:1.35rem;right:0;display:inline-flex;align-items:center;justify-content:center;width:1.8rem;height:1.8rem;border:1.5px dotted var(--faint);border-radius:5px;background:var(--bg);color:var(--ink);text-decoration:none}
-  .resume-desktop:hover{color:var(--accent)}
+  .resume-desktop{position:absolute;top:1.35rem;right:0;display:inline-flex;align-items:center;justify-content:center;width:1.8rem;height:1.8rem;border:1.5px dotted var(--faint);border-radius:5px;background:var(--bg);color:var(--ink);text-decoration:none;transition:color .2s,border-color .2s,background-color .2s,box-shadow .2s,transform .2s}
+  .resume-desktop:hover,.resume-desktop:focus-visible{transform:translateY(-2px);border-style:solid;border-color:var(--accent);background:var(--tint);color:var(--accent);box-shadow:0 4px 10px color-mix(in srgb,var(--accent) 18%,transparent)}
   .resume-desktop .ic{width:1.2rem;height:1.2rem}
   .role-email{display:inline-flex;align-items:center;justify-content:center;margin-top:-.08rem;color:var(--soft);font:600 .9rem/1.4 var(--mono);letter-spacing:.01em;text-decoration:none;overflow-wrap:anywhere;transition:color .2s ease, transform .2s ease, text-shadow .2s ease}
   .role-email:hover{color:var(--accent);transform:translateY(-1px);text-shadow:0 0 10px color-mix(in srgb, var(--accent) 35%, transparent)}
@@ -224,6 +224,7 @@ footer.site .top{display:inline-flex;align-items:center;gap:.5rem;min-height:2.7
   .rail nav{position:static;z-index:auto}
   .rail nav ol{display:block;position:static;margin:0;padding:0;background:none;border:0;border-radius:0;box-shadow:none;max-height:none;overflow:visible;counter-reset:n}
   .rail nav a{counter-increment:n;min-height:2.6rem;padding:.3rem .7rem;border-radius:10px}
+  .rail nav a span{font-family:'Bricolage Grotesque',sans-serif}
   .rail nav a::before{content:counter(n,decimal-leading-zero);min-width:1.5rem;font:600 .8rem var(--display);color:var(--faint)}
   .rail nav a.on::before{color:var(--accent)}
   .rail-foot{display:grid;gap:.8rem;justify-items:start;margin-top:auto;font-size:.9rem;color:var(--soft)}
