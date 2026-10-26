@@ -46,8 +46,8 @@ p{margin:0 0 1.1rem;text-wrap:pretty}
   .name{font-size:clamp(.95rem,calc((100vw - 2*var(--pad) - clamp(5.5rem,27vw,8.5rem) - clamp(.65rem,3vw,2rem) - .2rem)/8.3),3.25rem)}
   .role-row{flex-wrap:nowrap;min-width:0;gap:.5rem clamp(.35rem,2.5vw,.9rem)}
   .role{flex:1 1 auto;min-width:0;font-size:clamp(.8rem,3.6vw,1.15rem)}
-  .palette-mobile{flex:0 0 clamp(2.5rem,11.3vw,2.75rem);width:clamp(2.5rem,11.3vw,2.75rem);height:clamp(2.5rem,11.3vw,2.75rem)}
-  .palette-mobile .ic{width:clamp(1.1rem,4.5vw,1.25rem);height:clamp(1.1rem,4.5vw,1.25rem)}
+  .palette-mobile{flex:0 0 clamp(2rem,9vw,2.5rem);width:clamp(2rem,9vw,2.5rem);height:clamp(2rem,9vw,2.5rem);margin-top:.35rem}
+  .palette-mobile .ic{width:clamp(1rem,4vw,1.125rem);height:clamp(1rem,4vw,1.125rem)}
   .who-links{gap:clamp(.2rem,1vw,.4rem)}
   .who-links .ib{width:clamp(2rem,9vw,2.5rem);height:clamp(2rem,9vw,2.5rem)}
   .who-links .ib .ic{width:clamp(1rem,4vw,1.125rem);height:clamp(1rem,4vw,1.125rem)}
