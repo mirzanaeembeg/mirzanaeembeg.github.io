@@ -29,22 +29,36 @@
         });
     }
 
-    /* theme: light by default, choice saved in localStorage */
-    const themeBtns = document.querySelectorAll('.theme');
-    const syncTheme = () => {
-        const label = root.getAttribute('data-theme') === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
-        themeBtns.forEach((button) => {
+    /* Palette: monochrome by default, with the choice saved in localStorage. */
+    const paletteBtns = document.querySelectorAll('.palette');
+    const syncPalette = () => {
+        const colorful = root.getAttribute('data-palette') === 'colorful';
+        const label = colorful ? 'Switch to monochrome theme' : 'Switch to colorful theme';
+        paletteBtns.forEach((button) => {
             button.setAttribute('aria-label', label);
             button.setAttribute('title', label);
         });
     };
-    themeBtns.forEach((button) => button.addEventListener('click', () => {
-        const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', next);
-        try { localStorage.setItem('theme', next); } catch (e) {}
-        syncTheme();
+    paletteBtns.forEach((button) => button.addEventListener('click', () => {
+        const next = root.getAttribute('data-palette') === 'colorful' ? 'monochrome' : 'colorful';
+        root.setAttribute('data-palette', next);
+        try { localStorage.setItem('palette', next); } catch (e) {}
+        syncPalette();
     }));
-    syncTheme();
+    syncPalette();
+
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    const syncThemeColor = () => {
+        const dark = root.getAttribute('data-theme') === 'dark';
+        const colorful = root.getAttribute('data-palette') === 'colorful';
+        if (themeColor) {
+            themeColor.setAttribute('content', colorful
+                ? (dark ? '#171f1b' : '#e8e4d6')
+                : (dark ? '#242321' : '#f3f1ec'));
+        }
+    };
+    syncThemeColor();
+    paletteBtns.forEach((button) => button.addEventListener('click', syncThemeColor));
 
     const year = document.getElementById('year');
     if (year) year.textContent = new Date().getFullYear();

@@ -13,7 +13,7 @@ This portfolio presents a focused narrative around:
 - Practical software, data, and AI project experience
 - Career interest in junior-level software, data, and AI roles
 
-The site is designed as a clean, modern single-page portfolio with a responsive layout, dark mode support, and an editorial-style presentation.
+The site is designed as a responsive, editorial-style single-page portfolio. It uses a warm monochrome palette by default, with an optional colorful palette available from the palette button.
 
 ## Highlights
 
@@ -23,6 +23,7 @@ The site is designed as a clean, modern single-page portfolio with a responsive 
 - Project showcase including academic and team-built software applications
 - Personal contact links for email, GitHub, LinkedIn, and X
 - Downloadable resume and professional profile resources
+- Warm monochrome styling with a toggle to restore the colorful palette
 
 ## Tech Stack
 
@@ -56,7 +57,8 @@ portfolio-v3/
 
 - Modern single-page portfolio layout
 - Responsive navigation and mobile-friendly menu
-- Dark/light theme switch
+- Monochrome/colorful palette toggle, with the selected palette saved in the browser
+- Bricolage Grotesque section headings in the main content
 - AOS-style reveal-on-scroll animations across page content; project cards mount near the viewport and retain live search and Solo/Team filters
 - Animated profile statistics and a scroll progress indicator
 - Academic timeline and coursework overview
