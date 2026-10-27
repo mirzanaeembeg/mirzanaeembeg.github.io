@@ -267,6 +267,7 @@ footer.site .top{display:inline-flex;align-items:center;gap:.5rem;min-height:2.7
 #papers .links a:hover{text-decoration-color:var(--accent)}
 /* all running text is justified; short labels stay left */
 main p,.paper li,.body li,.paper h3,.timeline h3,.hello h1,.memory-fig figcaption{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+#academic .timeline p{text-align:left;text-justify:auto}
 .paper h3,.timeline h3,.hello h1{text-wrap:wrap;hyphens:manual;-webkit-hyphens:manual}
 main .eyebrow,main .badge,main .meta,main .pmeta{text-align:left;hyphens:manual;-webkit-hyphens:manual}
 @media (max-width:39.99rem){

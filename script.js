@@ -29,7 +29,7 @@
         });
     }
 
-    /* Palette: monochrome by default, with the choice saved in localStorage. */
+    /* Palette: colorful by default, with the choice saved in localStorage. */
     const paletteBtns = document.querySelectorAll('.palette');
     const syncPalette = () => {
         const colorful = root.getAttribute('data-palette') === 'colorful';
