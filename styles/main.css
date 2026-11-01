@@ -639,6 +639,7 @@ footer.site .top{border:1px solid var(--ink);padding:0 .65rem;text-decoration:no
 @media (max-width:61.99rem){
   main{margin-bottom:1rem}
   .section-nav{background:var(--bg)}
+  .hello .lead,.hello .badge-text{text-align:justify}
 }
 @media (prefers-reduced-motion:reduce){
   body{transition:none}
