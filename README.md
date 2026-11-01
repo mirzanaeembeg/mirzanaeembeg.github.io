@@ -1,95 +1,50 @@
-# Mirza Naeem Beg | Portfolio
+# Mirza Naeem Beg — Portfolio
 
-A personal portfolio website for Mirza Naeem Beg, showcasing academic achievements, research interests, technical skills, projects, and professional background as an aspiring AI engineer.
+The source for my responsive personal portfolio: [mirzanaeembeg.github.io](https://mirzanaeembeg.github.io/). It presents my academic background, research, skills, projects, and interests as an aspiring AI engineer.
 
-Visit the live site: https://mirzanaeembeg.github.io/
+## About the site
 
-## Overview
+This is a static website built with HTML, CSS, and vanilla JavaScript, and hosted on GitHub Pages. It adapts from a desktop profile sidebar and centered section navigation to a compact mobile layout.
 
-This portfolio presents a focused narrative around:
+The site includes:
 
-- AI, NLP, computer vision, and deep learning
-- Academic work and research in Bangla language processing
-- Practical software, data, and AI project experience
-- Career interest in junior-level software, data, and AI roles
+- Academic timeline, coursework, certificates, skills, research, and project details
+- Responsive section navigation with current-section tracking
+- Colorful and monochrome palettes, with the selected palette saved in the browser
+- Scroll progress, reveal-on-scroll effects, and animated profile statistics
+- Project search and Solo/Team filters, plus swipeable project screenshots
+- A scroll-driven interactive idea diagram
+- Reduced-motion support and keyboard-accessible controls
 
-The site is designed as a responsive, editorial-style single-page portfolio. It uses a colorful palette by default, with an optional warm monochrome palette available from the palette button.
+## Use this as a template
 
-## Highlights
+You may copy and adapt the original template code and design in `index.html`, `styles/main.css`, and `script.js` under the [Creative Commons Attribution 4.0 International license](./LICENSE).
 
-- Academic profile from Ahsanullah University of Science and Technology (AUST)
-- Research and thesis work in Bangla multimodal AI and low-resource language technology
-- Technical toolbox covering Python, SQL, C/C++, Java, deep learning, computer vision, NLP, and web development
-- Project showcase including academic and team-built software applications
-- Personal contact links for email, GitHub, LinkedIn, and X
-- Downloadable resume and professional profile resources
-- Colorful styling by default, with a toggle for the warm monochrome palette
+**Attribution is required.** When you publish a site based on this template, include a visible credit in the site itself, such as in its footer or an About/Credits section. Link the credit to the [original portfolio](https://mirzanaeembeg.github.io/) or [this source repository](https://github.com/mirzanaeembeg/mirzanaeembeg.github.io), link to [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), and indicate that you modified the template.
 
-## Tech Stack
+Example:
 
-This project is built with:
-
-- HTML5
-- CSS3
-- JavaScript
-- Google Fonts
-- Static asset delivery with local design files
-
-## Project Structure
-
-```text
-portfolio-v3/
-├── index.html
-├── script.js
-├── README.md
-├── assets/
-│   ├── avatar.png
-│   ├── profile1.png
-│   ├── *.pdf
-│   ├── *.png
-│   └── *.webp
-├── styles/
-│   └── main.css
-└── .git/
+```html
+<small>
+  Based on the portfolio template by
+  <a href="https://mirzanaeembeg.github.io/">Mirza Naeem Beg</a>
+  (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>).
+  Modified for my own portfolio.
+</small>
 ```
 
-## Features
+Replace the example site's identity, copy, contact information, links, and metadata with your own. Review the JavaScript for my analytics ID and remove or replace it before publishing.
 
-- Modern single-page portfolio layout
-- Responsive navigation and mobile-friendly menu
-- Monochrome/colorful palette toggle, with the selected palette saved in the browser
-- Bricolage Grotesque section headings in the main content
-- AOS-style reveal-on-scroll animations across page content; project cards mount near the viewport and retain live search and Solo/Team filters
-- Animated profile statistics and a scroll progress indicator
-- Academic timeline and coursework overview
-- Research section highlighting thesis and studies
-- Project cards with technical stack and screenshots
-- Footer with social links and resume access
+## License and exclusions
 
-## Customization
+The CC BY 4.0 license applies to the original website template code and design in `index.html`, `styles/main.css`, and `script.js`. It does **not** grant permission to reuse personal content embedded in the page, such as my biography, contact details, academic and project descriptions, or thesis writing. It also excludes personal and third-party materials in `assets/`, including my photos, resume, certificates, thesis materials, project screenshots, and logos. Replace these with content you own or are licensed to use.
 
-To adapt this portfolio for your own use:
+Third-party fonts, libraries, marks, and other materials retain their own licenses and terms. Check those terms before reusing them. The license does not imply endorsement by me.
 
-1. Update the personal information in `index.html`
-2. Replace asset files in the `assets/` folder
-3. Edit the theme and layout in `styles/main.css`
-4. Update contact links, resume filename, and social profiles as needed
+## Run locally
+
+Open `index.html` in a browser, or serve the repository root with any static-file server. No build step or package installation is required.
 
 ## Author
 
-Mirza Naeem Beg
-
-- Role: Aspiring AI Engineer
-- Location: Dhaka, Bangladesh
-- Email: mirzanaeem278@gmail.com
-- GitHub: https://github.com/mirzanaeembeg
-- LinkedIn: https://www.linkedin.com/in/mirza-naeem-beg/
-- X: https://x.com/mn_beg
-
-## License
-
-This project is intended for personal portfolio use. Please respect copyright and usage rights for assets, content, and media included in the repository.
-
----
-
-Built to reflect a professional portfolio presence for academic, research, and early-career opportunities in software, data, and AI roles.
+[Mirza Naeem Beg](https://mirzanaeembeg.github.io/) · [GitHub](https://github.com/mirzanaeembeg)

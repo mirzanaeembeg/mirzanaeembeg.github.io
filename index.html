@@ -74,22 +74,6 @@
             <a class="ib resume-mobile" href="assets/[Mirza Naeem Beg]_Resume.pdf" download="mirza-naeem-beg-resume2026.pdf" aria-label="Download resume" title="Download resume"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-download"/></svg></a>
         </div>
     </div>
-    <nav aria-label="Sections">
-        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-list">
-            <svg class="ic ic-menu" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
-            <svg class="ic ic-close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
-            <span>Menu</span>
-            <span class="cur" aria-hidden="true">01 Hello</span>
-        </button>
-        <ol id="nav-list">
-            <li><a href="#hello"><span>Hello</span></a></li>
-            <li><a href="#academic"><span>Academic</span></a></li>
-            <li><a href="#toolbox"><span>Toolbox</span></a></li>
-            <li><a href="#papers"><span>Papers</span></a></li>
-            <li><a href="#projects"><span>Projects</span></a></li>
-            <li><a href="#memory"><span>Memory</span></a></li>
-        </ol>
-    </nav>
     <div class="rail-foot">
         <div class="icons">
             <a class="ib" href="https://github.com/mirzanaeembeg" target="_blank" rel="noopener" aria-label="GitHub profile"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-github"/></svg></a>
@@ -102,12 +86,29 @@
     </div>
 </aside>
 
+<nav class="section-nav" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-list">
+        <svg class="ic ic-menu" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+        <svg class="ic ic-close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+        <span>Menu</span>
+        <span class="cur" aria-hidden="true">01 Hello</span>
+    </button>
+    <ol id="nav-list">
+        <li><a href="#hello"><span>Hello</span></a></li>
+        <li><a href="#academic"><span>Academic</span></a></li>
+        <li><a href="#toolbox"><span>Toolbox</span></a></li>
+        <li><a href="#papers"><span>Papers</span></a></li>
+        <li><a href="#projects"><span>Projects</span></a></li>
+        <li><a href="#memory"><span>Memory</span></a></li>
+    </ol>
+</nav>
+
 <main>
 <section class="hello" id="hello">
     <p class="eyebrow">Greetings.</p>
     <p class="lead">Hi, I've completed my undergraduate degree in Computer Science and Engineering at <a class="university-link" href="https://www.aust.edu/"><strong>Ahsanullah University of Science and Technology (AUST)</strong></a>, Dhaka, Bangladesh.</p>
     <p class="badge"><i class="dot"></i><span class="badge-text">Currently building my skills &middot; Open to Junior/Trainee roles after completion</span></p>
-    <h1>Aspiring AI engineer turning <span class="mark">language, vision, and data</span> into working software, starting with Bangla, a language that still lacks good tools.</h1>
+    <h1>Aspiring AI engineer, turning language, vision, and data into working software that makes life better, easier, and safer.</h1>
     <p>I’m especially interested in working on NLP, computer vision, LLMs, and deep learning, particularly for healthcare and low-resource languages. In my day-to-day work, I mostly use Python with PyTorch, SQL, Pandas, NumPy, Matplotlib, and a few other libraries and frameworks.</p>
     <p>Most of these skills came from my thesis and course projects, with plenty of self-study along the way. I also take professional, skill-based courses on Coursera and other platforms that fit my research interests and career goals.</p>
     <p class="plan">To build my AI engineering skills from the foundations, I'm working through a full-time plan I wrote after studying real AI job posts. It runs from Python, Linux, Git and data engineering, through deep learning, LLMs, RAG and agents, to evaluation, deployment and monitoring, with a constant eye on latency, memory and cost. It also covers working with coding agents and deciding what is worth building. Every stage ends in a hands-on lab, and the plan produces 16 portfolio projects, including a deployed capstone.</p>
@@ -164,7 +165,7 @@
         <li><img src="assets/pms_logo.jpg" alt="PMS logo"><div><span class="when">2017 <span class="separator-dot">·</span> Science</span><h3>Secondary School Certificate</h3><p>Progressive Model School, Mymensingh <span class="separator-dot">&middot;</span> GPA 5.0 / 5.0</p></div></li>
     </ol>
 
-    <h3 class="sub">Coursework</h3>
+    <h3 class="sub" id="coursework">Coursework</h3>
     <p>I finished the programme by the grace of Almighty: <strong>156 credits</strong>, of which <strong>33 were labs and projects</strong>, all version-controlled and public in my <a href="https://github.com/mirzanaeembeg/semester-wise-lab-codes" target="_blank" rel="noopener">lab repository<svg class="ic" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a>. Full <a href="https://aust.edu/cse/syllabus" target="_blank" rel="noopener">syllabus<svg class="ic" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a> (Bulletin Spring 2020).</p>
     <p class="course-text"><b>Closest to my focus:</b> Data Structures, Algorithms, Object Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Introduction to AI, Pattern Recognition &amp; ML, Soft Computing, Digital Image Processing, Software Development I&ndash;V, and Mathematics I&ndash;IV.</p>
 
@@ -233,7 +234,7 @@
     <h2><small>Builds</small><span class="sn" aria-hidden="true">05</span>Projects</h2>
     <div class="project-explorer" hidden>
         <label class="project-search">Find a project
-            <input type="search" id="project-search" placeholder="Try PHP, Flutter, or game…" autocomplete="off">
+            <input type="search" id="project-search" placeholder="Search projects…" autocomplete="off">
         </label>
         <div class="project-filters" role="group" aria-label="Filter projects by team">
             <button type="button" class="project-filter active" data-filter="all" aria-pressed="true">All</button>
@@ -245,7 +246,7 @@
     <div class="projects">
 <details open data-project-type="solo">
 <summary><span class="i">01</span><span class="t">BechaKena.Com: Auction Feature</span><span class="k">Solo</span><span class="stack"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span></span></summary>
-<div class="body"><p class="pmeta"><span class="tag cat">Software Development IV</span><span>Solo</span><span class="ph">2024</span></p><p>An e-commerce platform with an integrated real-time auction feature, where users can browse, bid on, and purchase products. I built it on my own with PHP, MySQL and Bootstrap, and most of the demanding e-commerce features are in place.</p><div class="shots" tabindex="0" aria-label="BechaKena.Com: Auction Feature screenshots"><img class="demo" src="assets/bechakena-demo.webp" loading="lazy" alt="BechaKena.Com auction feature, short screen recording" onerror="this.remove()"><img src="assets/bechakena1.png" loading="lazy" alt="BechaKena.Com: Auction Feature screenshot 1"><img src="assets/bechakena2.png" loading="lazy" alt="BechaKena.Com: Auction Feature screenshot 2"><img src="assets/bechakena3.png" loading="lazy" alt="BechaKena.Com: Auction Feature screenshot 3"></div><h4>Key features</h4><ul><li>Integrated auction with real-time bidding.</li><li>Most of the demanding e-commerce features are implemented.</li><li>Robust back-end management.</li></ul><div class="links"><a href="https://github.com/mirzanaeembeg/CSE3100-SD-IV" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>GitHub</a><a href="https://youtu.be/JnbI_pToNd4" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Screencast</a></div></div></details><details data-project-type="team">
+<div class="body"><p class="pmeta"><span class="tag cat">Software Development IV</span><span>Solo</span><span class="ph">2024</span></p><p>An e-commerce platform with an integrated real-time auction feature, where users can browse, bid on, and purchase products. I built it on my own with PHP, MySQL and Bootstrap, and most of the demanding e-commerce features are in place.</p><div class="shots" tabindex="0" aria-label="BechaKena.Com: Auction Feature screenshots"><img class="demo" src="assets/bechakena-demo.webp" loading="lazy" alt="BechaKena.Com auction feature, short screen recording" onerror="this.remove()"><img src="assets/bechakena1.png" loading="lazy" alt="BechaKena.Com: Auction Feature screenshot 1"><img src="assets/bechakena2.png" loading="lazy" alt="BechaKena.Com: Auction Feature screenshot 2"><img src="assets/bechakena3.png" loading="lazy" alt="BechaKena.Com: Auction Feature screenshot 3"></div><h4>Key features</h4><ul><li>Integrated auction with real-time bidding.</li><li>Most of the demanding e-commerce features are implemented.</li><li>Robust back-end management.</li></ul><div class="links project-links"><a href="https://github.com/mirzanaeembeg/CSE3100-SD-IV" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>GitHub</a><a href="https://youtu.be/JnbI_pToNd4" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Screencast</a></div></div></details><details data-project-type="team">
 <summary><span class="i">02</span><span class="t">TrendWave: inspired by TikTok</span><span class="k">Team</span><span class="stack"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase</span></span></summary>
 <div class="body"><p class="pmeta"><span class="tag cat">Software Development III</span><span>Team</span><span class="ph">2024</span></p><p>A TikTok-inspired short-video mobile app with video sharing, user profiles, and social interactions. We built it as a team with Flutter, Dart and Firebase.</p><div class="shots" tabindex="0" aria-label="TrendWave: inspired by TikTok screenshots"><img class="demo" src="assets/trendwave-demo.webp" loading="lazy" alt="TrendWave app, short screen recording" onerror="this.remove()"><img src="assets/trend1.png" loading="lazy" alt="TrendWave: inspired by TikTok screenshot 1"><img src="assets/trend2.png" loading="lazy" alt="TrendWave: inspired by TikTok screenshot 2"></div><h4>My part</h4><ul><li>Contributed to designing the UI/UX.</li><li>Implemented Firebase and the login page.</li><li>Coordinated the team and delivered the final presentation.</li></ul></div>
 </details><details data-project-type="team">
@@ -289,13 +290,8 @@
 </div>
 
 <footer class="site">
-    <p><span>&copy; <span id="year"></span> Mirza Naeem Beg <span class="separator-dot">&middot;</span> Dhaka, Bangladesh</span><span class="badge"><i class="dot"></i>Open to roles soon</span></p>
-    <div class="icons">
-        <a class="ib" href="mailto:mirzanaeem278@gmail.com" aria-label="Email Mirza Naeem Beg"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></a>
-        <a class="ib" href="https://github.com/mirzanaeembeg" target="_blank" rel="noopener" aria-label="GitHub profile"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-github"/></svg></a>
-        <a class="ib" href="https://www.linkedin.com/in/mirza-naeem-beg/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></a>
-        <a class="ib" href="https://x.com/mn_beg" target="_blank" rel="noopener" aria-label="X profile"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-x"/></svg></a>
-    </div>
+    <p><span>&copy; <span id="year"></span> Mirza Naeem Beg <span class="separator-dot">&middot;</span> Dhaka, Bangladesh</span></p>
+    <p class="footer-status"><span class="badge"><i class="dot"></i>Open to roles soon</span></p>
     <a class="top" href="#top">Back to top<svg class="ic" aria-hidden="true" focusable="false"><use href="#i-up"/></svg></a>
 </footer>
 <script src="script.js"></script>

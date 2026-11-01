@@ -281,7 +281,7 @@
     }
 
     /* mobile menu */
-    const nav = document.querySelector('.rail nav');
+    const nav = document.querySelector('.section-nav');
     const menuBtn = nav.querySelector('.menu-btn');
     const setMenu = (open) => {
         nav.classList.toggle('open', open);
