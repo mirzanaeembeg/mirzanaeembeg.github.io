@@ -1,6 +1,7 @@
 (function () {
     const root = document.documentElement;
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const coarse = window.matchMedia('(pointer: coarse)'); /* touch: screenshots are swipe-only, no autoplay */
     let revealObserver;
     const revealOnScroll = (elements) => {
         if (!revealObserver) return;
@@ -81,7 +82,7 @@
     /* project screenshot carousel; also used when a project mounts on scroll */
     const carouselBoxes = new WeakSet();
     const setupCarousel = (box) => {
-        if (reduce.matches || carouselBoxes.has(box)) return;
+        if (reduce.matches || coarse.matches || carouselBoxes.has(box)) return;
         carouselBoxes.add(box);
         let paused = false, visible = false, resume;
         new IntersectionObserver((entries) => { visible = entries[0].isIntersecting; }).observe(box);
@@ -106,64 +107,20 @@
         const projectItems = [...projectList.querySelectorAll('details[data-project-type]')].map((element) => ({
             element,
             type: element.dataset.projectType,
-            searchText: element.textContent.toLocaleLowerCase(),
-            placeholder: null,
-            template: null
+            searchText: element.textContent.toLocaleLowerCase()
         }));
         const search = explorer.querySelector('input[type="search"]');
         const filters = [...explorer.querySelectorAll('.project-filter')];
         const count = explorer.querySelector('.project-count');
         let activeFilter = 'all';
-        let projectObserver;
-
-        const mountProject = (item) => {
-            if (!item.placeholder) return;
-            projectObserver?.unobserve(item.placeholder);
-            item.placeholder.replaceWith(item.element);
-            item.placeholder = null;
-            item.template.remove();
-            item.template = null;
-            revealOnScroll([item.element, ...item.element.querySelectorAll('.body > *')]);
-            item.element.querySelectorAll('.shots').forEach(setupCarousel);
-        };
-
-        if ('IntersectionObserver' in window) {
-            projectObserver = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (!entry.isIntersecting) return;
-                    mountProject(entry.target.projectItem);
-                });
-            }, { rootMargin: '250px 0px' });
-
-            projectItems.slice(1).forEach((item) => {
-                item.template = document.createElement('template');
-                item.template.content.append(item.element);
-                item.placeholder = document.createElement('div');
-                item.placeholder.className = 'project-loading';
-                item.placeholder.setAttribute('aria-hidden', 'true');
-                item.placeholder.textContent = 'Project details load as you scroll';
-                item.placeholder.projectItem = item;
-                item.template.dataset.projectTemplate = '';
-                projectList.append(item.placeholder, item.template);
-                projectObserver.observe(item.placeholder);
-            });
-        } else {
-            projectItems.slice(1).forEach((item) => setupCarousel(item.element.querySelector('.shots')));
-        }
 
         const filterProjects = () => {
             const query = search.value.trim().toLocaleLowerCase();
             let visible = 0;
             projectItems.forEach((item) => {
-                const matchesType = activeFilter === 'all' || item.type === activeFilter;
-                const matchesQuery = !query || item.searchText.includes(query);
-                const matches = matchesType && matchesQuery;
-                if (item.placeholder) {
-                    item.placeholder.hidden = !matches;
-                    if (matches && query) mountProject(item);
-                } else {
-                    item.element.hidden = !matches;
-                }
+                const matches = (activeFilter === 'all' || item.type === activeFilter) &&
+                    (!query || item.searchText.includes(query));
+                item.element.hidden = !matches;
                 if (matches) visible += 1;
             });
             count.textContent = visible
@@ -233,6 +190,13 @@
         const lenB = scene.querySelector('.br-b .code').textContent.length;
         const typed = (t, len) => Math.round(t * len) / len;
         let forced = false, completed = false, frame = 0;
+        /* measured once (and on resize), not on every scroll frame */
+        let stickTop = 0, runway = 0;
+        const measure = () => {
+            stickTop = parseFloat(getComputedStyle(stage).top) || 0;
+            runway = scene.offsetHeight - stage.offsetHeight;
+        };
+        measure();
 
         const render = () => {
             frame = 0;
@@ -240,9 +204,8 @@
             if (!forced && !completed) {
                 const vh = window.innerHeight;
                 const top = scene.getBoundingClientRect().top;
-                const stickTop = parseFloat(getComputedStyle(stage).top) || 0;
                 const start = vh * 0.6;                                   /* avatar begins as the scene scrolls into view */
-                const end = stickTop - (scene.offsetHeight - stage.offsetHeight);
+                const end = stickTop - runway;
                 p = clamp((start - top) / (start - end));
             }
             const q = p * 0.78;                                          /* phases finish near p = .92, then a short pause */
@@ -261,7 +224,12 @@
                 ia: back(seg(q, 0.63, 0.68)),
                 ib: back(seg(q, 0.67, 0.72))
             };
-            if (!forced && v.ib >= 1) completed = true;
+            if (!forced && v.ib >= 1 && !completed) {
+                completed = true;
+                /* finished: stop listening so later scrolling costs nothing */
+                window.removeEventListener('scroll', schedule);
+                window.removeEventListener('resize', onResize);
+            }
             for (const key in v) scene.style.setProperty('--' + key, v[key].toFixed(4));
             scene.classList.toggle('ready-a', v.ia > 0.9);
             scene.classList.toggle('ready-b', v.ib > 0.9);
@@ -270,8 +238,11 @@
             scene.classList.toggle('typing-b', v.tb > 0 && v.tb < 1);
         };
         const schedule = () => { if (!frame) frame = requestAnimationFrame(render); };
+        const onResize = () => { measure(); schedule(); };
         window.addEventListener('scroll', schedule, { passive: true });
-        window.addEventListener('resize', schedule);
+        window.addEventListener('resize', onResize);
+        window.addEventListener('load', onResize);
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(onResize);
         /* keyboard users tabbing into the diagram, and printing, see the finished state */
         scene.addEventListener('focusin', () => { forced = true; schedule(); });
         scene.addEventListener('focusout', () => { forced = false; schedule(); });
@@ -305,6 +276,14 @@
                 const on = l.getAttribute('href') === '#' + e.target.id;
                 l.classList.toggle('on', on);
                 if (on && cur) cur.textContent = String(i + 1).padStart(2, '0') + ' ' + l.textContent.trim();
+                if (on) {
+                    /* keep the active tab centred in the scrollable mobile tab bar */
+                    const bar = l.closest('ol');
+                    if (bar && bar.scrollWidth > bar.clientWidth) {
+                        const a = l.getBoundingClientRect(), b = bar.getBoundingClientRect();
+                        bar.scrollTo({ left: bar.scrollLeft + (a.left - b.left) - (b.width - a.width) / 2, behavior: reduce.matches ? 'auto' : 'smooth' });
+                    }
+                }
             });
         });
     }, { rootMargin: '-20% 0px -65% 0px' });
